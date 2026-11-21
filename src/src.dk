@@ -3,6 +3,7 @@ import constants.*;
 import helpers.*;
 import puzzles.*;
 import queens.*;
+import strategies.*;
 
 var solution_found: Solution;
 fun solve(solution: ref Solution, start: i32 = 0) -> bool = {
@@ -41,6 +42,43 @@ fun solve(solution: ref Solution, start: i32 = 0) -> bool = {
     return false;
 }
 
+fun solveLikeHuman(solution: ref Solution) = {
+    print("Attempting to solve\n");
+    print(f"{solution}");
+    
+    while (not solution.isSolved())
+    {
+        # var progres: bool = true;
+        if(apply1(&solution))
+        {
+            print("\n");
+            print("  Applied strategy 1\n");
+            print(" Now board looks like\n");
+            print(f"{solution}");
+            continue;
+        }
+
+        if(apply2(&solution))
+        {
+            print("\n");
+            print("  Applied strategy 2\n");
+            print(" Now board looks like\n");
+            print(f"{solution}");
+            continue;
+        }
+        
+        if(apply3(&solution))
+        {
+            print("\n");
+            print("  Applied strategy 3\n");
+            print(" Now board looks like\n");
+            print(f"{solution}");
+            continue;
+        }
+        break;
+    }
+}
+
 fun main() = {
     var boardList: List[i32] = toList[i32, Puzzles.N2](&Puzzles.board);
     
@@ -50,5 +88,6 @@ fun main() = {
         &boardList
     );
 
-    solve(&solution);
+    # solve(&solution);
+    solveLikeHuman(&solution);
 }

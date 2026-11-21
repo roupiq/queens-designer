@@ -2,8 +2,233 @@ import core.builtins.*;
 import src.constants.*;
 import src.helpers.*;
 import src.puzzles.*;
+import src.queens.*;
 
-class Strategy {
-    level: i32;
-    
+fun min(a: i32, b: i32) -> i32 = {
+    return if a < b then a else b;
 }
+
+fun max(a: i32, b: i32) -> i32 = {
+    return if a > b then a else b;
+}
+
+## min_x, max_x, min_y, max_y
+fun getColorRange(solution: ref Solution, color: i32) -> i32[4] = {
+    var result: i32[4] = [INF, -1, INF, -1];
+    var x = 0;
+
+    while (x < solution.n)
+    {
+        var y = 0;
+        while (y < solution.n)
+        {
+            if (solution.getColor(x, y) == color and solution.canPlace(x, y))
+            {
+                result[0] = min(x, result[0]);
+                result[1] = max(x, result[1]);
+                result[2] = min(y, result[2]);
+                result[3] = max(y, result[3]);
+            }
+            y += 1;
+        }
+
+        x += 1;
+    }
+    return result;
+}
+
+fun getColorCount(solution: ref Solution, color: i32) -> i32 = {
+    var result: i32 = 0;
+    var x = 0;
+    while (x < solution.n)
+    {
+        var y = 0;
+        while (y < solution.n)
+        {
+            if (solution.getColor(x, y) == color and solution.canPlace(x, y))
+                result += 1;
+            y += 1;
+        }
+
+        x += 1;
+    }
+    return result;
+}
+
+fun findFreeColor(solution: ref Solution, color: i32) -> i32[2] = {
+    var x = 0;
+    while (x < solution.n)
+    {
+        var y = 0;
+        while (y < solution.n)
+        {
+            if (solution.getColor(x, y) == color and solution.canPlace(x, y))
+                return [x, y];
+            y += 1;
+        }
+
+        x += 1;
+    }
+    return [-1, -1];
+}
+
+fun areColorsValid(solution: ref Solution) -> bool = {
+    var color: i32 = 0;
+    while(color < solution.n)
+    {
+        if (solution.occupiedColors.at(color) == 0 and getColorCount(&solution, color) == 0)
+        {
+            return false;
+        }
+        color += 1;
+    }
+    return true;
+}
+
+fun apply1(solution: ref Solution) -> bool = {
+    var i = 0;
+
+    # Checking each color
+    while (i < solution.n)
+    {
+        var freeColorI: i32 = getColorCount(&solution, i);
+        if(freeColorI == 1)
+        {
+            var pos = findFreeColor(&solution, i);
+            solution.placeQueen(pos[0], pos[1]);
+            return true;
+        }
+        i += 1;
+    }
+    return false;
+}
+
+fun apply2(solution: ref Solution) -> bool = {
+    var i = 0;
+
+    # Checking each color
+    while (i < solution.n)
+    {
+        var range = getColorRange(&solution, i);
+        var anything_changed: bool = false;
+        # every tile of this color is on the same x coordinate
+        if (range[0] == range[1])
+        {
+            var x = range[0];
+            var y = 0;
+            while (y < solution.n)
+            {
+                if(solution.getColor(x, y) != i and solution.canPlace(x, y))
+                {
+                    anything_changed = true;
+                    solution.placeCross(x, y);
+                }
+                y += 1;
+            }
+            if(anything_changed)
+            {
+                print(f"{range}");
+                # print(f"{range[0]}, {range[1]}, {range[2]}, {range[3]}");
+                print(f"Color {COLOR_NAMES[i]} has every tile on the same width {x}\n");
+                return true;
+            }
+        }
+
+        # every tile of this color is on the same y coordinate
+        if (range[2] == range[3])
+        {
+            var x = 0;
+            var y = range[2];
+            while (x < solution.n)
+            {
+                if(solution.getColor(x, y) != i and solution.canPlace(x, y))
+                {
+                    anything_changed = true;
+                    solution.placeCross(x, y);
+                }
+                x += 1;
+            }
+            if(anything_changed)
+            {
+                print(f"Color {COLOR_NAMES[i]} has every tile on the same height {y}\n");
+                return true;
+            }
+        }
+
+        i += 1;
+    }
+    return false;
+}
+
+fun apply3(solution: ref Solution) -> bool = {
+    # For each cell placing queen and checking if it does break.
+    var x = 0;
+
+    while (x < solution.n)
+    {
+        var y = 0;
+        while (y < solution.n) {
+            if(solution.canPlace(x, y))
+            {
+                var next_solution: Solution = copy solution;
+                next_solution.placeQueen(x, y);
+                if (not areColorsValid(&next_solution))
+                {
+                    solution.placeCross(x, y);
+                    print(f"Queen at position {x}, {y} bloks other colors entierly\n");
+                    return true;
+                }
+            }
+            y += 1;
+        }
+        x += 1;
+    }
+    return false;
+}
+
+# fun XWing(solution: ref Solution) -> bool = {
+#     var i = 0;
+
+#     # Checking each color
+#     while (i < solution.n)
+#     {
+#         var anything_changed: bool = false;
+#         if (getColorCount(&solution, i) == 2)
+#         {
+#             var range = getColorRange(&solution, i);
+
+#             var x = range[0];
+#             var y = range[2];
+#             if (solution.getColor(x, y))
+#             {
+#                 if (solution.canPlace(x, y))
+#                 {
+#                     anything_changed = true;
+#                     solution.placeCross(x, y);
+#                 }
+#             }
+
+# var x = range[0];
+#             var y = range[2];
+#             if (solution.getColor(x, y))
+#             {
+#                 if (solution.canPlace(x, y))
+#                 {
+#                     anything_changed = true;
+#                     solution.placeCross(x, y);
+#                 }
+#             }
+
+
+#             # if(anything_changed)
+#             # {
+#             #     print(f"Color {COLOR_NAMES[i]} has every tile on the same height {y}\n");
+#             #     return true;
+#             # }
+#         }
+#         }
+
+#         i += 1;
+#     }
+#     return false;
+# }
