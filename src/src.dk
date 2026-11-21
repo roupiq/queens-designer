@@ -49,34 +49,42 @@ fun solveLikeHuman(solution: ref Solution) = {
     while (not solution.isSolved())
     {
         # var progres: bool = true;
+        print("\n");
+        print("\n");
+        print("\n");
+
         if(apply1(&solution))
         {
-            print("\n");
-            print("  Applied strategy 1\n");
-            print(" Now board looks like\n");
             print(f"{solution}");
+            print(" -- Applied strategy 1 -- \n");
             continue;
         }
 
         if(apply2(&solution))
         {
-            print("\n");
-            print("  Applied strategy 2\n");
-            print(" Now board looks like\n");
             print(f"{solution}");
+            print(" -- Applied strategy 2 -- \n");
             continue;
         }
         
         if(apply3(&solution))
         {
-            print("\n");
-            print("  Applied strategy 3\n");
-            print(" Now board looks like\n");
             print(f"{solution}");
+            print(" -- Applied strategy 3 -- \n");
             continue;
         }
-        break;
+
+        if(apply4(&solution))
+        {
+            print(f"{solution}");
+            print(" -- Applied strategy 4 -- \n");
+            continue;
+        }
+        
+        print("Heuristics failed! 😔\n");
+        return;
     }
+    print("GAME SOLVED! 😃\n");
 }
 
 fun main() = {

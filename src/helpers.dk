@@ -25,3 +25,15 @@ fun toList(array: ref T[N]) -> List[T] = {
     
     return list;
 }
+
+template(T: type)
+fun sum(array: ref List[T]) -> T = {
+    var result: T;
+    var i: i32 = 0;
+    while(i < array.length())
+    {
+        result += array.at(i);
+        i += 1;
+    }
+    return result;
+}

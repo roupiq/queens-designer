@@ -28,7 +28,7 @@ class Solution {
     fun placeQueen(x: i32, y: i32) = {
         if (occupiedColors.at(getColor(x, y)) != 0) error("Placing queen on of the same color twice");
 
-        occupiedColors.at(getColor(x, y)) = 1;
+        occupiedColors.at(getColor(x, y)) = 2;
 
         var z = 0;
         while (z < n)
@@ -53,17 +53,47 @@ class Solution {
         occupied.at(x * n + y) = 1;
     }
 
-    fun placeCross(x: i32, y: i32) = {
-        if (0 <= x < n and 0 <= y < n)
-            occupied.at(x * n + y) = -1;
+    fun rowHasQueen(x: i32) -> bool = {
+        var y: i32 = 0;
+        while(y < n)
+        {
+            if (hasQueen(x, y))
+            {
+                # print(f"Row checking queen at {x} {y}\n");
+                return true;
+            }
+            y += 1;
+        }
+        # print("queen not found\n");
+        return false;
     }
 
-    fun getOccupied(x: i32, y: i32) -> i32 = {
-        return occupied.at(x * n + y);
+    fun columnHasQueen(y: i32) -> bool = {
+        var x: i32 = 0;
+        while(x < n)
+        {
+            if (hasQueen(x, y))
+            {
+                # print(f"Column checking queen at {x} {y}\n");
+                return true;
+            }
+            x += 1;
+        }
+        # print("queen not found\n");
+        return false;
+    }
+
+    fun placeCross(x: i32, y: i32) = {
+        if (0 <= x < n and 0 <= y < n)
+            occupied.at(x * n + y) = -2;
     }
 
     fun canPlace(x: i32, y: i32) -> bool = {
         return occupied.at(x * n + y) == 0 and occupiedColors.at(getColor(x, y)) == 0;
+    }
+
+    fun hasQueen(x: i32, y: i32) -> bool = {
+        return occupied.at(x * n + y) > 0;
     }
     
     fun isSolved() -> bool = {
@@ -85,9 +115,29 @@ class Solution {
         return "|";
     }
 
-    # fun refresh(x: i32, y: i32) = {
-    #     occupied.at(x * n + y);
-    # }
+    fun isNew(x: i32, y: i32) -> bool = {
+        var cell: i32 = occupied.at(x * n + y);
+        if (cell == 2 or cell == -2)
+        {
+            return true;
+        }
+        return false;
+    }
+
+    fun refresh(x: i32, y: i32) -> bool = {
+        var cell: i32 = occupied.at(x * n + y);
+        if (cell == 2)
+        {
+            occupied.at(x * n + y) = 1;
+            return true;
+        }
+        else if (cell == -2)
+        {
+            occupied.at(x * n + y) = -1;
+            return true;
+        }
+        return false;
+    }
 
     fun toString() -> String = {
         var result: String = "".toString();
@@ -160,12 +210,22 @@ class Solution {
                 var row: str = "       ";
                 if (occupied.at(i * n + j) == 1)
                     row = "  / \\  ";
+                if (isNew(i,  j))
+                    row = " ##### ";
 
                 var color: i32 = getColor(i, j);
                 concat(&result, f"{verticalSeparator(i, j)}{BACK_COLORS[color]}{row}{RESET_COLOR}".asSlice());
                 j += 1;
             }
             concat(&result, "|\n");
+
+
+            j = 0;
+            while (j < n)
+            {
+                refresh(i, j);
+                j += 1;
+            }
 
             i += 1;
         }
