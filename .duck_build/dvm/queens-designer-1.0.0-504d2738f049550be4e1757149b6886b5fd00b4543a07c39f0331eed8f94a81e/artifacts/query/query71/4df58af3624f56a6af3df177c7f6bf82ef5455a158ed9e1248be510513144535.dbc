@@ -1,0 +1,25 @@
+type primitive: i32 4
+type primitive: i64 8
+
+
+
+function _Q_P4core4coreG1aFuEE {  } -> {  } {
+    label                   label_0;
+    init_pany_type             var0,      i64;
+    init_pany_type             var1,      i64;
+    init_pany_type         cast_src_tmp0,      i32;
+    mov_p32_imm            cast_src_tmp0,       42;
+    sext_p64_p32               var0, cast_src_tmp0;
+    deinit                ;
+    init_pany_type         call_result1,      i64;
+    init_pany_type         call_arg0_2,      i64;
+    mov_p64_p64            call_arg0_2,     var0;
+    call_func              _Q_P4core4core8builtinsG18builtin_output_i64FiqiqE1vE;
+    mov_p64_p64                var1, call_result1;
+    deinit                ;
+    deinit                ;
+    deinit                ;
+    ret                   ;
+}
+
+

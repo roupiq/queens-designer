@@ -1,0 +1,9 @@
+import core.builtins.*;
+import src.constants.*;
+import src.helpers.*;
+import src.puzzles.*;
+
+class Strategy {
+    level: i32;
+    
+}

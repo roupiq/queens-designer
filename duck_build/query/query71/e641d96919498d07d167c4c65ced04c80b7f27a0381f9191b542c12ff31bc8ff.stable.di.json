@@ -1,0 +1,124 @@
+{
+    "functions": {
+        "_Q_P4core4core9panickingG5panicFvEE": {
+            "function_name": "panic",
+            "instr_offsets_to_metadata": [
+                [
+                    2,
+                    {
+                        "position": {
+                            "type": "PstHashPosition",
+                            "value": {
+                                "position_scope_begin": [
+                                    8515946351222681873,
+                                    6014367621020116908,
+                                    3703925274526188354,
+                                    1096834388978413117
+                                ],
+                                "position_scope_end": [
+                                    6342835226881131125,
+                                    8751659757847228266,
+                                    1014457412808869660,
+                                    9103767624610676729
+                                ]
+                            }
+                        }
+                    }
+                ],
+                [
+                    9,
+                    {
+                        "position": {
+                            "type": "PstHashPosition",
+                            "value": {
+                                "position_scope_begin": [
+                                    14804992002268590364,
+                                    10505865525563338475,
+                                    7396950907138419240,
+                                    15411532619196882773
+                                ],
+                                "position_scope_end": [
+                                    17082701536374237964,
+                                    12846301433610366846,
+                                    16885940028319245256,
+                                    3959564418844996799
+                                ]
+                            }
+                        }
+                    }
+                ]
+            ],
+            "instr_offsets_to_variable_init": [],
+            "parameter_indexes_to_metadata": [],
+            "position": {
+                "type": "PstHashPosition",
+                "value": {
+                    "position_scope_begin": [
+                        9745553002842877340,
+                        9353481292401991674,
+                        16881472363897877714,
+                        7560122798180811913
+                    ]
+                }
+            }
+        },
+        "_Q_P4core4core9panickingG7doPanicFvEE": {
+            "function_name": "doPanic",
+            "instr_offsets_to_metadata": [
+                [
+                    1,
+                    {
+                        "position": {
+                            "type": "PstHashPosition",
+                            "value": {
+                                "position_scope_begin": [
+                                    18281006645304590009,
+                                    2002360422581584263,
+                                    1640035326586864996,
+                                    7435254132498565017
+                                ],
+                                "position_scope_end": [
+                                    15678795813106664451,
+                                    16158539889426051263,
+                                    8650640634721407124,
+                                    8540663736684788603
+                                ]
+                            }
+                        }
+                    }
+                ]
+            ],
+            "instr_offsets_to_variable_init": [],
+            "parameter_indexes_to_metadata": [],
+            "position": {
+                "type": "PstHashPosition",
+                "value": {
+                    "position_scope_begin": [
+                        12619153694511106607,
+                        6625681504421653797,
+                        15273822197947798184,
+                        2085864443758825474
+                    ]
+                }
+            }
+        }
+    },
+    "globals": {},
+    "module_path": "/home/karol/code/projects/queens-designer/duck_build/query/query71/e641d96919498d07d167c4c65ced04c80b7f27a0381f9191b542c12ff31bc8ff.dbc",
+    "source_positions_type": "PstHash",
+    "target": "DBC",
+    "types": {
+        "ScE": {
+            "name": "slice char"
+        },
+        "i64": {
+            "name": "i64"
+        },
+        "i8": {
+            "name": "char"
+        },
+        "ptr_dyntable_i8": {
+            "name": "manyptr char"
+        }
+    }
+}

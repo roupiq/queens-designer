@@ -1,3 +1,7 @@
 metadata:
   name: queens-designer
   version: '1.0.0'
+# profiles:
+#   dvm:
+#     inherits: dev
+#     dvm-bytecode: trueduc

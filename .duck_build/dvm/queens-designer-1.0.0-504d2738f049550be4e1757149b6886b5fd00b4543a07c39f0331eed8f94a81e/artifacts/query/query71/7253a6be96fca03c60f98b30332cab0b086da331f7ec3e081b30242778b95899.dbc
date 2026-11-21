@@ -1,0 +1,405 @@
+type data: ScE {
+    _0: ptr_dyntable_i8,
+    _1: i64,
+}
+
+type fixed_size_table: arr_ScE_9 ScE 9
+type fixed_size_table: arr_i8_5 i8 5
+type dynamic_table: dyntable_i8 i8
+type primitive: i64 8
+type primitive: i8 1
+type pointer: ptr_ScE ScE
+type pointer: ptr_arr_ScE_9 arr_ScE_9
+type pointer: ptr_arr_i8_5 arr_i8_5
+type pointer: ptr_dyntable_i8 dyntable_i8
+type pointer: ptr_i64 i64
+type pointer: ptr_ptr_dyntable_i8 ptr_dyntable_i8
+
+global_data str_data_module_87acc349678609fc8436f3ed9a8597100f267e6b25f79a7b35d7cf188959f8b6_1 arr_i8_5 {
+    is_constant: true,
+    initial_value: fixed_size_table [ 0x1B, 0x5B, 0x34, 0x39, 0x6D ]
+}
+global_data ctv_value_module_87acc349678609fc8436f3ed9a8597100f267e6b25f79a7b35d7cf188959f8b6_0 ScE {
+    is_constant: true,
+    constructor: ctv_value_module_87acc349678609fc8436f3ed9a8597100f267e6b25f79a7b35d7cf188959f8b6_0_ctor
+}
+global_data _Q_P15queens_designer3src9constantsG11RESET_COLOR ScE {
+    constructor: _Q_P15queens_designer3src9constantsG11RESET_COLORgc
+}
+global_data str_data_module_87acc349678609fc8436f3ed9a8597100f267e6b25f79a7b35d7cf188959f8b6_3 arr_i8_5 {
+    is_constant: true,
+    initial_value: fixed_size_table [ 0x1B, 0x5B, 0x34, 0x30, 0x6D ]
+}
+global_data ctv_value_module_87acc349678609fc8436f3ed9a8597100f267e6b25f79a7b35d7cf188959f8b6_2 ScE {
+    is_constant: true,
+    constructor: ctv_value_module_87acc349678609fc8436f3ed9a8597100f267e6b25f79a7b35d7cf188959f8b6_2_ctor
+}
+global_data str_data_module_87acc349678609fc8436f3ed9a8597100f267e6b25f79a7b35d7cf188959f8b6_5 arr_i8_5 {
+    is_constant: true,
+    initial_value: fixed_size_table [ 0x1B, 0x5B, 0x34, 0x31, 0x6D ]
+}
+global_data ctv_value_module_87acc349678609fc8436f3ed9a8597100f267e6b25f79a7b35d7cf188959f8b6_4 ScE {
+    is_constant: true,
+    constructor: ctv_value_module_87acc349678609fc8436f3ed9a8597100f267e6b25f79a7b35d7cf188959f8b6_4_ctor
+}
+global_data str_data_module_87acc349678609fc8436f3ed9a8597100f267e6b25f79a7b35d7cf188959f8b6_7 arr_i8_5 {
+    is_constant: true,
+    initial_value: fixed_size_table [ 0x1B, 0x5B, 0x34, 0x32, 0x6D ]
+}
+global_data ctv_value_module_87acc349678609fc8436f3ed9a8597100f267e6b25f79a7b35d7cf188959f8b6_6 ScE {
+    is_constant: true,
+    constructor: ctv_value_module_87acc349678609fc8436f3ed9a8597100f267e6b25f79a7b35d7cf188959f8b6_6_ctor
+}
+global_data str_data_module_87acc349678609fc8436f3ed9a8597100f267e6b25f79a7b35d7cf188959f8b6_9 arr_i8_5 {
+    is_constant: true,
+    initial_value: fixed_size_table [ 0x1B, 0x5B, 0x34, 0x33, 0x6D ]
+}
+global_data ctv_value_module_87acc349678609fc8436f3ed9a8597100f267e6b25f79a7b35d7cf188959f8b6_8 ScE {
+    is_constant: true,
+    constructor: ctv_value_module_87acc349678609fc8436f3ed9a8597100f267e6b25f79a7b35d7cf188959f8b6_8_ctor
+}
+global_data str_data_module_87acc349678609fc8436f3ed9a8597100f267e6b25f79a7b35d7cf188959f8b6_11 arr_i8_5 {
+    is_constant: true,
+    initial_value: fixed_size_table [ 0x1B, 0x5B, 0x34, 0x34, 0x6D ]
+}
+global_data ctv_value_module_87acc349678609fc8436f3ed9a8597100f267e6b25f79a7b35d7cf188959f8b6_10 ScE {
+    is_constant: true,
+    constructor: ctv_value_module_87acc349678609fc8436f3ed9a8597100f267e6b25f79a7b35d7cf188959f8b6_10_ctor
+}
+global_data str_data_module_87acc349678609fc8436f3ed9a8597100f267e6b25f79a7b35d7cf188959f8b6_13 arr_i8_5 {
+    is_constant: true,
+    initial_value: fixed_size_table [ 0x1B, 0x5B, 0x34, 0x35, 0x6D ]
+}
+global_data ctv_value_module_87acc349678609fc8436f3ed9a8597100f267e6b25f79a7b35d7cf188959f8b6_12 ScE {
+    is_constant: true,
+    constructor: ctv_value_module_87acc349678609fc8436f3ed9a8597100f267e6b25f79a7b35d7cf188959f8b6_12_ctor
+}
+global_data str_data_module_87acc349678609fc8436f3ed9a8597100f267e6b25f79a7b35d7cf188959f8b6_15 arr_i8_5 {
+    is_constant: true,
+    initial_value: fixed_size_table [ 0x1B, 0x5B, 0x34, 0x36, 0x6D ]
+}
+global_data ctv_value_module_87acc349678609fc8436f3ed9a8597100f267e6b25f79a7b35d7cf188959f8b6_14 ScE {
+    is_constant: true,
+    constructor: ctv_value_module_87acc349678609fc8436f3ed9a8597100f267e6b25f79a7b35d7cf188959f8b6_14_ctor
+}
+global_data str_data_module_87acc349678609fc8436f3ed9a8597100f267e6b25f79a7b35d7cf188959f8b6_17 arr_i8_5 {
+    is_constant: true,
+    initial_value: fixed_size_table [ 0x1B, 0x5B, 0x34, 0x37, 0x6D ]
+}
+global_data ctv_value_module_87acc349678609fc8436f3ed9a8597100f267e6b25f79a7b35d7cf188959f8b6_16 ScE {
+    is_constant: true,
+    constructor: ctv_value_module_87acc349678609fc8436f3ed9a8597100f267e6b25f79a7b35d7cf188959f8b6_16_ctor
+}
+global_data str_data_module_87acc349678609fc8436f3ed9a8597100f267e6b25f79a7b35d7cf188959f8b6_19 arr_i8_5 {
+    is_constant: true,
+    initial_value: fixed_size_table [ 0x1B, 0x5B, 0x34, 0x38, 0x6D ]
+}
+global_data ctv_value_module_87acc349678609fc8436f3ed9a8597100f267e6b25f79a7b35d7cf188959f8b6_18 ScE {
+    is_constant: true,
+    constructor: ctv_value_module_87acc349678609fc8436f3ed9a8597100f267e6b25f79a7b35d7cf188959f8b6_18_ctor
+}
+global_data _Q_P15queens_designer3src9constantsG11BACK_COLORS arr_ScE_9 {
+    constructor: _Q_P15queens_designer3src9constantsG11BACK_COLORSgc
+}
+
+
+function _Q_P15queens_designer3src9constantsG11BACK_COLORSgc {  } -> {  } {
+    label                   label_0;
+    init_pany_type             var0, arr_ScE_9;
+    init_pany_type             var1, ptr_arr_ScE_9;
+    init_pany_type         addr_of0, ptr_arr_ScE_9;
+    ref_pptr_pany          addr_of0, _Q_P15queens_designer3src9constantsG11BACK_COLORS;
+    mov_pptr_pptr              var1, addr_of0;
+    deinit                ;
+    init_pany_type         index_addr1,  ptr_ScE;
+    init_pany_type         index_tmp2,      i64;
+    mov_p64_imm            index_tmp2,        0;
+    fixedSizeTableLea_pptr_pfst_p64 index_addr1,     var0, index_tmp2;
+    store_pptr_pany        index_addr1, ctv_value_module_87acc349678609fc8436f3ed9a8597100f267e6b25f79a7b35d7cf188959f8b6_2;
+    deinit                ;
+    deinit                ;
+    init_pany_type         index_addr3,  ptr_ScE;
+    init_pany_type         index_tmp4,      i64;
+    mov_p64_imm            index_tmp4,        1;
+    fixedSizeTableLea_pptr_pfst_p64 index_addr3,     var0, index_tmp4;
+    store_pptr_pany        index_addr3, ctv_value_module_87acc349678609fc8436f3ed9a8597100f267e6b25f79a7b35d7cf188959f8b6_4;
+    deinit                ;
+    deinit                ;
+    init_pany_type         index_addr5,  ptr_ScE;
+    init_pany_type         index_tmp6,      i64;
+    mov_p64_imm            index_tmp6,        2;
+    fixedSizeTableLea_pptr_pfst_p64 index_addr5,     var0, index_tmp6;
+    store_pptr_pany        index_addr5, ctv_value_module_87acc349678609fc8436f3ed9a8597100f267e6b25f79a7b35d7cf188959f8b6_6;
+    deinit                ;
+    deinit                ;
+    init_pany_type         index_addr7,  ptr_ScE;
+    init_pany_type         index_tmp8,      i64;
+    mov_p64_imm            index_tmp8,        3;
+    fixedSizeTableLea_pptr_pfst_p64 index_addr7,     var0, index_tmp8;
+    store_pptr_pany        index_addr7, ctv_value_module_87acc349678609fc8436f3ed9a8597100f267e6b25f79a7b35d7cf188959f8b6_8;
+    deinit                ;
+    deinit                ;
+    init_pany_type         index_addr9,  ptr_ScE;
+    init_pany_type         index_tmp10,      i64;
+    mov_p64_imm            index_tmp10,        4;
+    fixedSizeTableLea_pptr_pfst_p64 index_addr9,     var0, index_tmp10;
+    store_pptr_pany        index_addr9, ctv_value_module_87acc349678609fc8436f3ed9a8597100f267e6b25f79a7b35d7cf188959f8b6_10;
+    deinit                ;
+    deinit                ;
+    init_pany_type         index_addr11,  ptr_ScE;
+    init_pany_type         index_tmp12,      i64;
+    mov_p64_imm            index_tmp12,        5;
+    fixedSizeTableLea_pptr_pfst_p64 index_addr11,     var0, index_tmp12;
+    store_pptr_pany        index_addr11, ctv_value_module_87acc349678609fc8436f3ed9a8597100f267e6b25f79a7b35d7cf188959f8b6_12;
+    deinit                ;
+    deinit                ;
+    init_pany_type         index_addr13,  ptr_ScE;
+    init_pany_type         index_tmp14,      i64;
+    mov_p64_imm            index_tmp14,        6;
+    fixedSizeTableLea_pptr_pfst_p64 index_addr13,     var0, index_tmp14;
+    store_pptr_pany        index_addr13, ctv_value_module_87acc349678609fc8436f3ed9a8597100f267e6b25f79a7b35d7cf188959f8b6_14;
+    deinit                ;
+    deinit                ;
+    init_pany_type         index_addr15,  ptr_ScE;
+    init_pany_type         index_tmp16,      i64;
+    mov_p64_imm            index_tmp16,        7;
+    fixedSizeTableLea_pptr_pfst_p64 index_addr15,     var0, index_tmp16;
+    store_pptr_pany        index_addr15, ctv_value_module_87acc349678609fc8436f3ed9a8597100f267e6b25f79a7b35d7cf188959f8b6_16;
+    deinit                ;
+    deinit                ;
+    init_pany_type         index_addr17,  ptr_ScE;
+    init_pany_type         index_tmp18,      i64;
+    mov_p64_imm            index_tmp18,        8;
+    fixedSizeTableLea_pptr_pfst_p64 index_addr17,     var0, index_tmp18;
+    store_pptr_pany        index_addr17, ctv_value_module_87acc349678609fc8436f3ed9a8597100f267e6b25f79a7b35d7cf188959f8b6_18;
+    deinit                ;
+    deinit                ;
+    store_pptr_pany            var1,     var0;
+    deinit                ;
+    deinit                ;
+    ret                   ;
+}
+
+function _Q_P15queens_designer3src9constantsG11RESET_COLORgc {  } -> {  } {
+    label                   label_0;
+    init_pany_type             var0,  ptr_ScE;
+    init_pany_type         addr_of0,  ptr_ScE;
+    ref_pptr_pany          addr_of0, _Q_P15queens_designer3src9constantsG11RESET_COLOR;
+    mov_pptr_pptr              var0, addr_of0;
+    deinit                ;
+    store_pptr_pany            var0, ctv_value_module_87acc349678609fc8436f3ed9a8597100f267e6b25f79a7b35d7cf188959f8b6_0;
+    deinit                ;
+    ret                   ;
+}
+
+function ctv_value_module_87acc349678609fc8436f3ed9a8597100f267e6b25f79a7b35d7cf188959f8b6_0_ctor {  } -> {  } {
+    init_pany_type         str_fst_ptr0, ptr_arr_i8_5;
+    ref_pptr_pany          str_fst_ptr0, str_data_module_87acc349678609fc8436f3ed9a8597100f267e6b25f79a7b35d7cf188959f8b6_1;
+    init_pany_type         str_dyn_ptr1, ptr_dyntable_i8;
+    fstToDynTable_pptr_pptr str_dyn_ptr1, str_fst_ptr0;
+    init_pany_type         str_slice_field2, ptr_ptr_dyntable_i8;
+    structLea_pptr_pste_field str_slice_field2, ctv_value_module_87acc349678609fc8436f3ed9a8597100f267e6b25f79a7b35d7cf188959f8b6_0,   ScE._0;
+    store_pptr_pany        str_slice_field2, str_dyn_ptr1;
+    init_pany_type         str_slice_field3,  ptr_i64;
+    structLea_pptr_pste_field str_slice_field3, ctv_value_module_87acc349678609fc8436f3ed9a8597100f267e6b25f79a7b35d7cf188959f8b6_0,   ScE._1;
+    init_pany_type         store_tmp4,      i64;
+    mov_p64_imm            store_tmp4,        5;
+    store_pptr_pany        str_slice_field3, store_tmp4;
+    deinit                ;
+    deinit                ;
+    deinit                ;
+    deinit                ;
+    deinit                ;
+    ret                   ;
+}
+
+function ctv_value_module_87acc349678609fc8436f3ed9a8597100f267e6b25f79a7b35d7cf188959f8b6_10_ctor {  } -> {  } {
+    init_pany_type         str_fst_ptr0, ptr_arr_i8_5;
+    ref_pptr_pany          str_fst_ptr0, str_data_module_87acc349678609fc8436f3ed9a8597100f267e6b25f79a7b35d7cf188959f8b6_11;
+    init_pany_type         str_dyn_ptr1, ptr_dyntable_i8;
+    fstToDynTable_pptr_pptr str_dyn_ptr1, str_fst_ptr0;
+    init_pany_type         str_slice_field2, ptr_ptr_dyntable_i8;
+    structLea_pptr_pste_field str_slice_field2, ctv_value_module_87acc349678609fc8436f3ed9a8597100f267e6b25f79a7b35d7cf188959f8b6_10,   ScE._0;
+    store_pptr_pany        str_slice_field2, str_dyn_ptr1;
+    init_pany_type         str_slice_field3,  ptr_i64;
+    structLea_pptr_pste_field str_slice_field3, ctv_value_module_87acc349678609fc8436f3ed9a8597100f267e6b25f79a7b35d7cf188959f8b6_10,   ScE._1;
+    init_pany_type         store_tmp4,      i64;
+    mov_p64_imm            store_tmp4,        5;
+    store_pptr_pany        str_slice_field3, store_tmp4;
+    deinit                ;
+    deinit                ;
+    deinit                ;
+    deinit                ;
+    deinit                ;
+    ret                   ;
+}
+
+function ctv_value_module_87acc349678609fc8436f3ed9a8597100f267e6b25f79a7b35d7cf188959f8b6_12_ctor {  } -> {  } {
+    init_pany_type         str_fst_ptr0, ptr_arr_i8_5;
+    ref_pptr_pany          str_fst_ptr0, str_data_module_87acc349678609fc8436f3ed9a8597100f267e6b25f79a7b35d7cf188959f8b6_13;
+    init_pany_type         str_dyn_ptr1, ptr_dyntable_i8;
+    fstToDynTable_pptr_pptr str_dyn_ptr1, str_fst_ptr0;
+    init_pany_type         str_slice_field2, ptr_ptr_dyntable_i8;
+    structLea_pptr_pste_field str_slice_field2, ctv_value_module_87acc349678609fc8436f3ed9a8597100f267e6b25f79a7b35d7cf188959f8b6_12,   ScE._0;
+    store_pptr_pany        str_slice_field2, str_dyn_ptr1;
+    init_pany_type         str_slice_field3,  ptr_i64;
+    structLea_pptr_pste_field str_slice_field3, ctv_value_module_87acc349678609fc8436f3ed9a8597100f267e6b25f79a7b35d7cf188959f8b6_12,   ScE._1;
+    init_pany_type         store_tmp4,      i64;
+    mov_p64_imm            store_tmp4,        5;
+    store_pptr_pany        str_slice_field3, store_tmp4;
+    deinit                ;
+    deinit                ;
+    deinit                ;
+    deinit                ;
+    deinit                ;
+    ret                   ;
+}
+
+function ctv_value_module_87acc349678609fc8436f3ed9a8597100f267e6b25f79a7b35d7cf188959f8b6_14_ctor {  } -> {  } {
+    init_pany_type         str_fst_ptr0, ptr_arr_i8_5;
+    ref_pptr_pany          str_fst_ptr0, str_data_module_87acc349678609fc8436f3ed9a8597100f267e6b25f79a7b35d7cf188959f8b6_15;
+    init_pany_type         str_dyn_ptr1, ptr_dyntable_i8;
+    fstToDynTable_pptr_pptr str_dyn_ptr1, str_fst_ptr0;
+    init_pany_type         str_slice_field2, ptr_ptr_dyntable_i8;
+    structLea_pptr_pste_field str_slice_field2, ctv_value_module_87acc349678609fc8436f3ed9a8597100f267e6b25f79a7b35d7cf188959f8b6_14,   ScE._0;
+    store_pptr_pany        str_slice_field2, str_dyn_ptr1;
+    init_pany_type         str_slice_field3,  ptr_i64;
+    structLea_pptr_pste_field str_slice_field3, ctv_value_module_87acc349678609fc8436f3ed9a8597100f267e6b25f79a7b35d7cf188959f8b6_14,   ScE._1;
+    init_pany_type         store_tmp4,      i64;
+    mov_p64_imm            store_tmp4,        5;
+    store_pptr_pany        str_slice_field3, store_tmp4;
+    deinit                ;
+    deinit                ;
+    deinit                ;
+    deinit                ;
+    deinit                ;
+    ret                   ;
+}
+
+function ctv_value_module_87acc349678609fc8436f3ed9a8597100f267e6b25f79a7b35d7cf188959f8b6_16_ctor {  } -> {  } {
+    init_pany_type         str_fst_ptr0, ptr_arr_i8_5;
+    ref_pptr_pany          str_fst_ptr0, str_data_module_87acc349678609fc8436f3ed9a8597100f267e6b25f79a7b35d7cf188959f8b6_17;
+    init_pany_type         str_dyn_ptr1, ptr_dyntable_i8;
+    fstToDynTable_pptr_pptr str_dyn_ptr1, str_fst_ptr0;
+    init_pany_type         str_slice_field2, ptr_ptr_dyntable_i8;
+    structLea_pptr_pste_field str_slice_field2, ctv_value_module_87acc349678609fc8436f3ed9a8597100f267e6b25f79a7b35d7cf188959f8b6_16,   ScE._0;
+    store_pptr_pany        str_slice_field2, str_dyn_ptr1;
+    init_pany_type         str_slice_field3,  ptr_i64;
+    structLea_pptr_pste_field str_slice_field3, ctv_value_module_87acc349678609fc8436f3ed9a8597100f267e6b25f79a7b35d7cf188959f8b6_16,   ScE._1;
+    init_pany_type         store_tmp4,      i64;
+    mov_p64_imm            store_tmp4,        5;
+    store_pptr_pany        str_slice_field3, store_tmp4;
+    deinit                ;
+    deinit                ;
+    deinit                ;
+    deinit                ;
+    deinit                ;
+    ret                   ;
+}
+
+function ctv_value_module_87acc349678609fc8436f3ed9a8597100f267e6b25f79a7b35d7cf188959f8b6_18_ctor {  } -> {  } {
+    init_pany_type         str_fst_ptr0, ptr_arr_i8_5;
+    ref_pptr_pany          str_fst_ptr0, str_data_module_87acc349678609fc8436f3ed9a8597100f267e6b25f79a7b35d7cf188959f8b6_19;
+    init_pany_type         str_dyn_ptr1, ptr_dyntable_i8;
+    fstToDynTable_pptr_pptr str_dyn_ptr1, str_fst_ptr0;
+    init_pany_type         str_slice_field2, ptr_ptr_dyntable_i8;
+    structLea_pptr_pste_field str_slice_field2, ctv_value_module_87acc349678609fc8436f3ed9a8597100f267e6b25f79a7b35d7cf188959f8b6_18,   ScE._0;
+    store_pptr_pany        str_slice_field2, str_dyn_ptr1;
+    init_pany_type         str_slice_field3,  ptr_i64;
+    structLea_pptr_pste_field str_slice_field3, ctv_value_module_87acc349678609fc8436f3ed9a8597100f267e6b25f79a7b35d7cf188959f8b6_18,   ScE._1;
+    init_pany_type         store_tmp4,      i64;
+    mov_p64_imm            store_tmp4,        5;
+    store_pptr_pany        str_slice_field3, store_tmp4;
+    deinit                ;
+    deinit                ;
+    deinit                ;
+    deinit                ;
+    deinit                ;
+    ret                   ;
+}
+
+function ctv_value_module_87acc349678609fc8436f3ed9a8597100f267e6b25f79a7b35d7cf188959f8b6_2_ctor {  } -> {  } {
+    init_pany_type         str_fst_ptr0, ptr_arr_i8_5;
+    ref_pptr_pany          str_fst_ptr0, str_data_module_87acc349678609fc8436f3ed9a8597100f267e6b25f79a7b35d7cf188959f8b6_3;
+    init_pany_type         str_dyn_ptr1, ptr_dyntable_i8;
+    fstToDynTable_pptr_pptr str_dyn_ptr1, str_fst_ptr0;
+    init_pany_type         str_slice_field2, ptr_ptr_dyntable_i8;
+    structLea_pptr_pste_field str_slice_field2, ctv_value_module_87acc349678609fc8436f3ed9a8597100f267e6b25f79a7b35d7cf188959f8b6_2,   ScE._0;
+    store_pptr_pany        str_slice_field2, str_dyn_ptr1;
+    init_pany_type         str_slice_field3,  ptr_i64;
+    structLea_pptr_pste_field str_slice_field3, ctv_value_module_87acc349678609fc8436f3ed9a8597100f267e6b25f79a7b35d7cf188959f8b6_2,   ScE._1;
+    init_pany_type         store_tmp4,      i64;
+    mov_p64_imm            store_tmp4,        5;
+    store_pptr_pany        str_slice_field3, store_tmp4;
+    deinit                ;
+    deinit                ;
+    deinit                ;
+    deinit                ;
+    deinit                ;
+    ret                   ;
+}
+
+function ctv_value_module_87acc349678609fc8436f3ed9a8597100f267e6b25f79a7b35d7cf188959f8b6_4_ctor {  } -> {  } {
+    init_pany_type         str_fst_ptr0, ptr_arr_i8_5;
+    ref_pptr_pany          str_fst_ptr0, str_data_module_87acc349678609fc8436f3ed9a8597100f267e6b25f79a7b35d7cf188959f8b6_5;
+    init_pany_type         str_dyn_ptr1, ptr_dyntable_i8;
+    fstToDynTable_pptr_pptr str_dyn_ptr1, str_fst_ptr0;
+    init_pany_type         str_slice_field2, ptr_ptr_dyntable_i8;
+    structLea_pptr_pste_field str_slice_field2, ctv_value_module_87acc349678609fc8436f3ed9a8597100f267e6b25f79a7b35d7cf188959f8b6_4,   ScE._0;
+    store_pptr_pany        str_slice_field2, str_dyn_ptr1;
+    init_pany_type         str_slice_field3,  ptr_i64;
+    structLea_pptr_pste_field str_slice_field3, ctv_value_module_87acc349678609fc8436f3ed9a8597100f267e6b25f79a7b35d7cf188959f8b6_4,   ScE._1;
+    init_pany_type         store_tmp4,      i64;
+    mov_p64_imm            store_tmp4,        5;
+    store_pptr_pany        str_slice_field3, store_tmp4;
+    deinit                ;
+    deinit                ;
+    deinit                ;
+    deinit                ;
+    deinit                ;
+    ret                   ;
+}
+
+function ctv_value_module_87acc349678609fc8436f3ed9a8597100f267e6b25f79a7b35d7cf188959f8b6_6_ctor {  } -> {  } {
+    init_pany_type         str_fst_ptr0, ptr_arr_i8_5;
+    ref_pptr_pany          str_fst_ptr0, str_data_module_87acc349678609fc8436f3ed9a8597100f267e6b25f79a7b35d7cf188959f8b6_7;
+    init_pany_type         str_dyn_ptr1, ptr_dyntable_i8;
+    fstToDynTable_pptr_pptr str_dyn_ptr1, str_fst_ptr0;
+    init_pany_type         str_slice_field2, ptr_ptr_dyntable_i8;
+    structLea_pptr_pste_field str_slice_field2, ctv_value_module_87acc349678609fc8436f3ed9a8597100f267e6b25f79a7b35d7cf188959f8b6_6,   ScE._0;
+    store_pptr_pany        str_slice_field2, str_dyn_ptr1;
+    init_pany_type         str_slice_field3,  ptr_i64;
+    structLea_pptr_pste_field str_slice_field3, ctv_value_module_87acc349678609fc8436f3ed9a8597100f267e6b25f79a7b35d7cf188959f8b6_6,   ScE._1;
+    init_pany_type         store_tmp4,      i64;
+    mov_p64_imm            store_tmp4,        5;
+    store_pptr_pany        str_slice_field3, store_tmp4;
+    deinit                ;
+    deinit                ;
+    deinit                ;
+    deinit                ;
+    deinit                ;
+    ret                   ;
+}
+
+function ctv_value_module_87acc349678609fc8436f3ed9a8597100f267e6b25f79a7b35d7cf188959f8b6_8_ctor {  } -> {  } {
+    init_pany_type         str_fst_ptr0, ptr_arr_i8_5;
+    ref_pptr_pany          str_fst_ptr0, str_data_module_87acc349678609fc8436f3ed9a8597100f267e6b25f79a7b35d7cf188959f8b6_9;
+    init_pany_type         str_dyn_ptr1, ptr_dyntable_i8;
+    fstToDynTable_pptr_pptr str_dyn_ptr1, str_fst_ptr0;
+    init_pany_type         str_slice_field2, ptr_ptr_dyntable_i8;
+    structLea_pptr_pste_field str_slice_field2, ctv_value_module_87acc349678609fc8436f3ed9a8597100f267e6b25f79a7b35d7cf188959f8b6_8,   ScE._0;
+    store_pptr_pany        str_slice_field2, str_dyn_ptr1;
+    init_pany_type         str_slice_field3,  ptr_i64;
+    structLea_pptr_pste_field str_slice_field3, ctv_value_module_87acc349678609fc8436f3ed9a8597100f267e6b25f79a7b35d7cf188959f8b6_8,   ScE._1;
+    init_pany_type         store_tmp4,      i64;
+    mov_p64_imm            store_tmp4,        5;
+    store_pptr_pany        str_slice_field3, store_tmp4;
+    deinit                ;
+    deinit                ;
+    deinit                ;
+    deinit                ;
+    deinit                ;
+    ret                   ;
+}
+
+

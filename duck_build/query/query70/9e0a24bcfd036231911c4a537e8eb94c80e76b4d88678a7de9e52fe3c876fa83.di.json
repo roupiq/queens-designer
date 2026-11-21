@@ -1,0 +1,536 @@
+{
+    "functions": {
+        "_Q_P4core4core7runtimeG13i64_to_stringFiqiqMPcEiqE5value1p10buffer_capE": {
+            "function_name": "i64_to_string",
+            "instr_offsets_to_metadata": [
+                [
+                    1,
+                    {
+                        "position": {
+                            "type": "FilePosition",
+                            "value": {
+                                "end_column": 50,
+                                "end_line": 84,
+                                "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/core/runtime.dk",
+                                "start_column": 15,
+                                "start_line": 84
+                            }
+                        }
+                    }
+                ],
+                [
+                    11,
+                    {
+                        "position": {
+                            "type": "FilePosition",
+                            "value": {
+                                "end_column": 51,
+                                "end_line": 84,
+                                "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/core/runtime.dk",
+                                "start_column": 5,
+                                "start_line": 84
+                            }
+                        }
+                    }
+                ]
+            ],
+            "instr_offsets_to_variable_init": [],
+            "parameter_indexes_to_metadata": [
+                [
+                    0,
+                    {
+                        "name": "value",
+                        "position": {
+                            "type": "FilePosition",
+                            "value": {
+                                "end_column": 28,
+                                "end_line": 83,
+                                "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/core/runtime.dk",
+                                "start_column": 19,
+                                "start_line": 83
+                            }
+                        }
+                    }
+                ],
+                [
+                    1,
+                    {
+                        "name": "p",
+                        "position": {
+                            "type": "FilePosition",
+                            "value": {
+                                "end_column": 49,
+                                "end_line": 83,
+                                "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/core/runtime.dk",
+                                "start_column": 31,
+                                "start_line": 83
+                            }
+                        }
+                    }
+                ],
+                [
+                    2,
+                    {
+                        "name": "buffer_cap",
+                        "position": {
+                            "type": "FilePosition",
+                            "value": {
+                                "end_column": 66,
+                                "end_line": 83,
+                                "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/core/runtime.dk",
+                                "start_column": 52,
+                                "start_line": 83
+                            }
+                        }
+                    }
+                ]
+            ],
+            "position": {
+                "type": "FilePosition",
+                "value": {
+                    "end_column": 1,
+                    "end_line": 85,
+                    "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/core/runtime.dk",
+                    "start_column": 1,
+                    "start_line": 82
+                }
+            }
+        },
+        "_Q_P4core4core7runtimeG13u64_to_stringFiqjqMPcEiqE5value1p10buffer_capE": {
+            "function_name": "u64_to_string",
+            "instr_offsets_to_metadata": [
+                [
+                    1,
+                    {
+                        "position": {
+                            "type": "FilePosition",
+                            "value": {
+                                "end_column": 50,
+                                "end_line": 69,
+                                "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/core/runtime.dk",
+                                "start_column": 15,
+                                "start_line": 69
+                            }
+                        }
+                    }
+                ],
+                [
+                    11,
+                    {
+                        "position": {
+                            "type": "FilePosition",
+                            "value": {
+                                "end_column": 51,
+                                "end_line": 69,
+                                "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/core/runtime.dk",
+                                "start_column": 5,
+                                "start_line": 69
+                            }
+                        }
+                    }
+                ]
+            ],
+            "instr_offsets_to_variable_init": [],
+            "parameter_indexes_to_metadata": [
+                [
+                    0,
+                    {
+                        "name": "value",
+                        "position": {
+                            "type": "FilePosition",
+                            "value": {
+                                "end_column": 28,
+                                "end_line": 68,
+                                "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/core/runtime.dk",
+                                "start_column": 19,
+                                "start_line": 68
+                            }
+                        }
+                    }
+                ],
+                [
+                    1,
+                    {
+                        "name": "p",
+                        "position": {
+                            "type": "FilePosition",
+                            "value": {
+                                "end_column": 49,
+                                "end_line": 68,
+                                "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/core/runtime.dk",
+                                "start_column": 31,
+                                "start_line": 68
+                            }
+                        }
+                    }
+                ],
+                [
+                    2,
+                    {
+                        "name": "buffer_cap",
+                        "position": {
+                            "type": "FilePosition",
+                            "value": {
+                                "end_column": 66,
+                                "end_line": 68,
+                                "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/core/runtime.dk",
+                                "start_column": 52,
+                                "start_line": 68
+                            }
+                        }
+                    }
+                ]
+            ],
+            "position": {
+                "type": "FilePosition",
+                "value": {
+                    "end_column": 1,
+                    "end_line": 70,
+                    "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/core/runtime.dk",
+                    "start_column": 1,
+                    "start_line": 67
+                }
+            }
+        },
+        "_Q_P4core4core7runtimeG15float_to_stringFiqdMPcEiqE5value1p10buffer_capE": {
+            "function_name": "float_to_string",
+            "instr_offsets_to_metadata": [
+                [
+                    1,
+                    {
+                        "position": {
+                            "type": "FilePosition",
+                            "value": {
+                                "end_column": 52,
+                                "end_line": 54,
+                                "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/core/runtime.dk",
+                                "start_column": 15,
+                                "start_line": 54
+                            }
+                        }
+                    }
+                ],
+                [
+                    11,
+                    {
+                        "position": {
+                            "type": "FilePosition",
+                            "value": {
+                                "end_column": 53,
+                                "end_line": 54,
+                                "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/core/runtime.dk",
+                                "start_column": 5,
+                                "start_line": 54
+                            }
+                        }
+                    }
+                ]
+            ],
+            "instr_offsets_to_variable_init": [],
+            "parameter_indexes_to_metadata": [
+                [
+                    0,
+                    {
+                        "name": "value",
+                        "position": {
+                            "type": "FilePosition",
+                            "value": {
+                                "end_column": 30,
+                                "end_line": 53,
+                                "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/core/runtime.dk",
+                                "start_column": 21,
+                                "start_line": 53
+                            }
+                        }
+                    }
+                ],
+                [
+                    1,
+                    {
+                        "name": "p",
+                        "position": {
+                            "type": "FilePosition",
+                            "value": {
+                                "end_column": 51,
+                                "end_line": 53,
+                                "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/core/runtime.dk",
+                                "start_column": 33,
+                                "start_line": 53
+                            }
+                        }
+                    }
+                ],
+                [
+                    2,
+                    {
+                        "name": "buffer_cap",
+                        "position": {
+                            "type": "FilePosition",
+                            "value": {
+                                "end_column": 68,
+                                "end_line": 53,
+                                "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/core/runtime.dk",
+                                "start_column": 54,
+                                "start_line": 53
+                            }
+                        }
+                    }
+                ]
+            ],
+            "position": {
+                "type": "FilePosition",
+                "value": {
+                    "end_column": 1,
+                    "end_line": 55,
+                    "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/core/runtime.dk",
+                    "start_column": 1,
+                    "start_line": 52
+                }
+            }
+        },
+        "_Q_P4core4core7runtimeN6native13writtenLengthEFiqidiqE7written10buffer_capE": {
+            "function_name": "writtenLength",
+            "instr_offsets_to_metadata": [
+                [
+                    3,
+                    {
+                        "position": {
+                            "type": "FilePosition",
+                            "value": {
+                                "end_column": 26,
+                                "end_line": 9,
+                                "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/core/runtime.dk",
+                                "start_column": 13,
+                                "start_line": 9
+                            }
+                        }
+                    }
+                ],
+                [
+                    6,
+                    {
+                        "position": {
+                            "type": "FilePosition",
+                            "value": {
+                                "end_column": 40,
+                                "end_line": 9,
+                                "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/core/runtime.dk",
+                                "start_column": 9,
+                                "start_line": 9
+                            }
+                        }
+                    }
+                ],
+                [
+                    16,
+                    {
+                        "position": {
+                            "type": "FilePosition",
+                            "value": {
+                                "end_column": 40,
+                                "end_line": 9,
+                                "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/core/runtime.dk",
+                                "start_column": 29,
+                                "start_line": 9
+                            }
+                        }
+                    }
+                ],
+                [
+                    22,
+                    {
+                        "position": {
+                            "type": "FilePosition",
+                            "value": {
+                                "end_column": 36,
+                                "end_line": 11,
+                                "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/core/runtime.dk",
+                                "start_column": 9,
+                                "start_line": 11
+                            }
+                        }
+                    }
+                ],
+                [
+                    24,
+                    {
+                        "position": {
+                            "type": "FilePosition",
+                            "value": {
+                                "end_column": 32,
+                                "end_line": 12,
+                                "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/core/runtime.dk",
+                                "start_column": 13,
+                                "start_line": 12
+                            }
+                        }
+                    }
+                ],
+                [
+                    27,
+                    {
+                        "position": {
+                            "type": "FilePosition",
+                            "value": {
+                                "end_column": 46,
+                                "end_line": 12,
+                                "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/core/runtime.dk",
+                                "start_column": 9,
+                                "start_line": 12
+                            }
+                        }
+                    }
+                ],
+                [
+                    37,
+                    {
+                        "position": {
+                            "type": "FilePosition",
+                            "value": {
+                                "end_column": 46,
+                                "end_line": 12,
+                                "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/core/runtime.dk",
+                                "start_column": 35,
+                                "start_line": 12
+                            }
+                        }
+                    }
+                ],
+                [
+                    44,
+                    {
+                        "position": {
+                            "type": "FilePosition",
+                            "value": {
+                                "end_column": 22,
+                                "end_line": 13,
+                                "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/core/runtime.dk",
+                                "start_column": 9,
+                                "start_line": 13
+                            }
+                        }
+                    }
+                ]
+            ],
+            "instr_offsets_to_variable_init": [
+                [
+                    1,
+                    {
+                        "name": "length",
+                        "position": {
+                            "type": "FilePosition",
+                            "value": {
+                                "end_column": 36,
+                                "end_line": 11,
+                                "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/core/runtime.dk",
+                                "start_column": 9,
+                                "start_line": 11
+                            }
+                        }
+                    }
+                ]
+            ],
+            "parameter_indexes_to_metadata": [
+                [
+                    0,
+                    {
+                        "name": "written",
+                        "position": {
+                            "type": "FilePosition",
+                            "value": {
+                                "end_column": 34,
+                                "end_line": 8,
+                                "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/core/runtime.dk",
+                                "start_column": 23,
+                                "start_line": 8
+                            }
+                        }
+                    }
+                ],
+                [
+                    1,
+                    {
+                        "name": "buffer_cap",
+                        "position": {
+                            "type": "FilePosition",
+                            "value": {
+                                "end_column": 51,
+                                "end_line": 8,
+                                "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/core/runtime.dk",
+                                "start_column": 37,
+                                "start_line": 8
+                            }
+                        }
+                    }
+                ]
+            ],
+            "position": {
+                "type": "FilePosition",
+                "value": {
+                    "end_column": 5,
+                    "end_line": 14,
+                    "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/core/runtime.dk",
+                    "start_column": 5,
+                    "start_line": 8
+                }
+            }
+        },
+        "_Q_P4core4core8builtinsG14ptr_from_sliceItcEFMPcEScEE1sE": {
+            "function_name": "ptr_from_slice",
+            "instr_offsets_to_metadata": [],
+            "instr_offsets_to_variable_init": [],
+            "parameter_indexes_to_metadata": [
+                [
+                    0,
+                    {
+                        "name": "s",
+                        "position": {
+                            "type": "FilePosition",
+                            "value": {
+                                "end_column": 33,
+                                "end_line": 10,
+                                "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/core/builtins.dk",
+                                "start_column": 24,
+                                "start_line": 10
+                            }
+                        }
+                    }
+                ]
+            ],
+            "position": {
+                "type": "FilePosition",
+                "value": {
+                    "end_column": 48,
+                    "end_line": 10,
+                    "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/core/builtins.dk",
+                    "start_column": 1,
+                    "start_line": 9
+                }
+            }
+        }
+    },
+    "globals": {},
+    "module_path": "/home/karol/code/projects/queens-designer/duck_build/query/query71/6bedd1dfc98858e32709d34639c49b1659d395f1e7a6cb1c40613a19cba360c1.dbc",
+    "source_positions_type": "LineColumn",
+    "target": "DBC",
+    "types": {
+        "ScE": {
+            "name": "slice char"
+        },
+        "f64": {
+            "name": "f64"
+        },
+        "i32": {
+            "name": "i32"
+        },
+        "i64": {
+            "name": "i64"
+        },
+        "i8": {
+            "name": "bool"
+        },
+        "ptr_dyntable_i8": {
+            "name": "manyptr char"
+        }
+    }
+}

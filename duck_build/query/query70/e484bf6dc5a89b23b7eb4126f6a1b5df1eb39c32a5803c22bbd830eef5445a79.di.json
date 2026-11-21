@@ -1,0 +1,583 @@
+{
+    "functions": {
+        "_Q_P4core4core8builtinsG17builtin_input_f64FdEE": {
+            "function_name": "builtin_input_f64",
+            "instr_offsets_to_metadata": [
+                [
+                    1,
+                    {
+                        "position": {
+                            "type": "FilePosition",
+                            "value": {
+                                "end_column": 45,
+                                "end_line": 104,
+                                "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/core/builtins.dk",
+                                "start_column": 36,
+                                "start_line": 104
+                            }
+                        }
+                    }
+                ],
+                [
+                    5,
+                    {
+                        "position": {
+                            "type": "FilePosition",
+                            "value": {
+                                "end_column": 45,
+                                "end_line": 104,
+                                "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/core/builtins.dk",
+                                "start_column": 36,
+                                "start_line": 104
+                            }
+                        }
+                    }
+                ]
+            ],
+            "instr_offsets_to_variable_init": [],
+            "parameter_indexes_to_metadata": [],
+            "position": {
+                "type": "FilePosition",
+                "value": {
+                    "end_column": 46,
+                    "end_line": 104,
+                    "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/core/builtins.dk",
+                    "start_column": 1,
+                    "start_line": 104
+                }
+            }
+        },
+        "_Q_P4core4core8builtinsG17builtin_input_i64FiqEE": {
+            "function_name": "builtin_input_i64",
+            "instr_offsets_to_metadata": [
+                [
+                    1,
+                    {
+                        "position": {
+                            "type": "FilePosition",
+                            "value": {
+                                "end_column": 45,
+                                "end_line": 102,
+                                "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/core/builtins.dk",
+                                "start_column": 36,
+                                "start_line": 102
+                            }
+                        }
+                    }
+                ],
+                [
+                    5,
+                    {
+                        "position": {
+                            "type": "FilePosition",
+                            "value": {
+                                "end_column": 45,
+                                "end_line": 102,
+                                "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/core/builtins.dk",
+                                "start_column": 36,
+                                "start_line": 102
+                            }
+                        }
+                    }
+                ]
+            ],
+            "instr_offsets_to_variable_init": [],
+            "parameter_indexes_to_metadata": [],
+            "position": {
+                "type": "FilePosition",
+                "value": {
+                    "end_column": 46,
+                    "end_line": 102,
+                    "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/core/builtins.dk",
+                    "start_column": 1,
+                    "start_line": 102
+                }
+            }
+        },
+        "_Q_P4core4core8builtinsG17builtin_input_u64FjqEE": {
+            "function_name": "builtin_input_u64",
+            "instr_offsets_to_metadata": [
+                [
+                    1,
+                    {
+                        "position": {
+                            "type": "FilePosition",
+                            "value": {
+                                "end_column": 45,
+                                "end_line": 103,
+                                "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/core/builtins.dk",
+                                "start_column": 36,
+                                "start_line": 103
+                            }
+                        }
+                    }
+                ],
+                [
+                    5,
+                    {
+                        "position": {
+                            "type": "FilePosition",
+                            "value": {
+                                "end_column": 45,
+                                "end_line": 103,
+                                "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/core/builtins.dk",
+                                "start_column": 36,
+                                "start_line": 103
+                            }
+                        }
+                    }
+                ]
+            ],
+            "instr_offsets_to_variable_init": [],
+            "parameter_indexes_to_metadata": [],
+            "position": {
+                "type": "FilePosition",
+                "value": {
+                    "end_column": 46,
+                    "end_line": 103,
+                    "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/core/builtins.dk",
+                    "start_column": 1,
+                    "start_line": 103
+                }
+            }
+        },
+        "_Q_P4core4core8builtinsG18builtin_input_charFcEE": {
+            "function_name": "builtin_input_char",
+            "instr_offsets_to_metadata": [
+                [
+                    1,
+                    {
+                        "position": {
+                            "type": "FilePosition",
+                            "value": {
+                                "end_column": 48,
+                                "end_line": 101,
+                                "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/core/builtins.dk",
+                                "start_column": 38,
+                                "start_line": 101
+                            }
+                        }
+                    }
+                ],
+                [
+                    5,
+                    {
+                        "position": {
+                            "type": "FilePosition",
+                            "value": {
+                                "end_column": 48,
+                                "end_line": 101,
+                                "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/core/builtins.dk",
+                                "start_column": 38,
+                                "start_line": 101
+                            }
+                        }
+                    }
+                ]
+            ],
+            "instr_offsets_to_variable_init": [],
+            "parameter_indexes_to_metadata": [],
+            "position": {
+                "type": "FilePosition",
+                "value": {
+                    "end_column": 49,
+                    "end_line": 101,
+                    "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/core/builtins.dk",
+                    "start_column": 1,
+                    "start_line": 101
+                }
+            }
+        },
+        "_Q_P4core4core8builtinsG18builtin_output_f64FiqdE1vE": {
+            "function_name": "builtin_output_f64",
+            "instr_offsets_to_metadata": [
+                [
+                    1,
+                    {
+                        "position": {
+                            "type": "FilePosition",
+                            "value": {
+                                "end_column": 54,
+                                "end_line": 110,
+                                "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/core/builtins.dk",
+                                "start_column": 43,
+                                "start_line": 110
+                            }
+                        }
+                    }
+                ],
+                [
+                    7,
+                    {
+                        "position": {
+                            "type": "FilePosition",
+                            "value": {
+                                "end_column": 54,
+                                "end_line": 110,
+                                "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/core/builtins.dk",
+                                "start_column": 43,
+                                "start_line": 110
+                            }
+                        }
+                    }
+                ]
+            ],
+            "instr_offsets_to_variable_init": [],
+            "parameter_indexes_to_metadata": [
+                [
+                    0,
+                    {
+                        "name": "v",
+                        "position": {
+                            "type": "FilePosition",
+                            "value": {
+                                "end_column": 29,
+                                "end_line": 110,
+                                "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/core/builtins.dk",
+                                "start_column": 24,
+                                "start_line": 110
+                            }
+                        }
+                    }
+                ]
+            ],
+            "position": {
+                "type": "FilePosition",
+                "value": {
+                    "end_column": 55,
+                    "end_line": 110,
+                    "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/core/builtins.dk",
+                    "start_column": 1,
+                    "start_line": 110
+                }
+            }
+        },
+        "_Q_P4core4core8builtinsG18builtin_output_i64FiqiqE1vE": {
+            "function_name": "builtin_output_i64",
+            "instr_offsets_to_metadata": [
+                [
+                    1,
+                    {
+                        "position": {
+                            "type": "FilePosition",
+                            "value": {
+                                "end_column": 54,
+                                "end_line": 108,
+                                "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/core/builtins.dk",
+                                "start_column": 43,
+                                "start_line": 108
+                            }
+                        }
+                    }
+                ],
+                [
+                    7,
+                    {
+                        "position": {
+                            "type": "FilePosition",
+                            "value": {
+                                "end_column": 54,
+                                "end_line": 108,
+                                "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/core/builtins.dk",
+                                "start_column": 43,
+                                "start_line": 108
+                            }
+                        }
+                    }
+                ]
+            ],
+            "instr_offsets_to_variable_init": [],
+            "parameter_indexes_to_metadata": [
+                [
+                    0,
+                    {
+                        "name": "v",
+                        "position": {
+                            "type": "FilePosition",
+                            "value": {
+                                "end_column": 29,
+                                "end_line": 108,
+                                "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/core/builtins.dk",
+                                "start_column": 24,
+                                "start_line": 108
+                            }
+                        }
+                    }
+                ]
+            ],
+            "position": {
+                "type": "FilePosition",
+                "value": {
+                    "end_column": 55,
+                    "end_line": 108,
+                    "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/core/builtins.dk",
+                    "start_column": 1,
+                    "start_line": 108
+                }
+            }
+        },
+        "_Q_P4core4core8builtinsG18builtin_output_strFiqScEE1vE": {
+            "function_name": "builtin_output_str",
+            "instr_offsets_to_metadata": [
+                [
+                    1,
+                    {
+                        "position": {
+                            "type": "FilePosition",
+                            "value": {
+                                "end_column": 54,
+                                "end_line": 111,
+                                "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/core/builtins.dk",
+                                "start_column": 43,
+                                "start_line": 111
+                            }
+                        }
+                    }
+                ],
+                [
+                    7,
+                    {
+                        "position": {
+                            "type": "FilePosition",
+                            "value": {
+                                "end_column": 54,
+                                "end_line": 111,
+                                "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/core/builtins.dk",
+                                "start_column": 43,
+                                "start_line": 111
+                            }
+                        }
+                    }
+                ]
+            ],
+            "instr_offsets_to_variable_init": [],
+            "parameter_indexes_to_metadata": [
+                [
+                    0,
+                    {
+                        "name": "v",
+                        "position": {
+                            "type": "FilePosition",
+                            "value": {
+                                "end_column": 29,
+                                "end_line": 111,
+                                "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/core/builtins.dk",
+                                "start_column": 24,
+                                "start_line": 111
+                            }
+                        }
+                    }
+                ]
+            ],
+            "position": {
+                "type": "FilePosition",
+                "value": {
+                    "end_column": 55,
+                    "end_line": 111,
+                    "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/core/builtins.dk",
+                    "start_column": 1,
+                    "start_line": 111
+                }
+            }
+        },
+        "_Q_P4core4core8builtinsG18builtin_output_u64FiqjqE1vE": {
+            "function_name": "builtin_output_u64",
+            "instr_offsets_to_metadata": [
+                [
+                    1,
+                    {
+                        "position": {
+                            "type": "FilePosition",
+                            "value": {
+                                "end_column": 54,
+                                "end_line": 109,
+                                "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/core/builtins.dk",
+                                "start_column": 43,
+                                "start_line": 109
+                            }
+                        }
+                    }
+                ],
+                [
+                    7,
+                    {
+                        "position": {
+                            "type": "FilePosition",
+                            "value": {
+                                "end_column": 54,
+                                "end_line": 109,
+                                "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/core/builtins.dk",
+                                "start_column": 43,
+                                "start_line": 109
+                            }
+                        }
+                    }
+                ]
+            ],
+            "instr_offsets_to_variable_init": [],
+            "parameter_indexes_to_metadata": [
+                [
+                    0,
+                    {
+                        "name": "v",
+                        "position": {
+                            "type": "FilePosition",
+                            "value": {
+                                "end_column": 29,
+                                "end_line": 109,
+                                "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/core/builtins.dk",
+                                "start_column": 24,
+                                "start_line": 109
+                            }
+                        }
+                    }
+                ]
+            ],
+            "position": {
+                "type": "FilePosition",
+                "value": {
+                    "end_column": 55,
+                    "end_line": 109,
+                    "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/core/builtins.dk",
+                    "start_column": 1,
+                    "start_line": 109
+                }
+            }
+        },
+        "_Q_P4core4core8builtinsG19builtin_output_charFiqcE1cE": {
+            "function_name": "builtin_output_char",
+            "instr_offsets_to_metadata": [
+                [
+                    1,
+                    {
+                        "position": {
+                            "type": "FilePosition",
+                            "value": {
+                                "end_column": 57,
+                                "end_line": 107,
+                                "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/core/builtins.dk",
+                                "start_column": 45,
+                                "start_line": 107
+                            }
+                        }
+                    }
+                ],
+                [
+                    7,
+                    {
+                        "position": {
+                            "type": "FilePosition",
+                            "value": {
+                                "end_column": 57,
+                                "end_line": 107,
+                                "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/core/builtins.dk",
+                                "start_column": 45,
+                                "start_line": 107
+                            }
+                        }
+                    }
+                ]
+            ],
+            "instr_offsets_to_variable_init": [],
+            "parameter_indexes_to_metadata": [
+                [
+                    0,
+                    {
+                        "name": "c",
+                        "position": {
+                            "type": "FilePosition",
+                            "value": {
+                                "end_column": 31,
+                                "end_line": 107,
+                                "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/core/builtins.dk",
+                                "start_column": 25,
+                                "start_line": 107
+                            }
+                        }
+                    }
+                ]
+            ],
+            "position": {
+                "type": "FilePosition",
+                "value": {
+                    "end_column": 58,
+                    "end_line": 107,
+                    "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/core/builtins.dk",
+                    "start_column": 1,
+                    "start_line": 107
+                }
+            }
+        },
+        "_Q_P4core4core8builtinsG20builtin_input_stringF_Q_CP4core4core10containersG6StringEE": {
+            "function_name": "builtin_input_string",
+            "instr_offsets_to_metadata": [
+                [
+                    1,
+                    {
+                        "position": {
+                            "type": "FilePosition",
+                            "value": {
+                                "end_column": 65,
+                                "end_line": 105,
+                                "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/core/builtins.dk",
+                                "start_column": 53,
+                                "start_line": 105
+                            }
+                        }
+                    }
+                ],
+                [
+                    5,
+                    {
+                        "position": {
+                            "type": "FilePosition",
+                            "value": {
+                                "end_column": 65,
+                                "end_line": 105,
+                                "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/core/builtins.dk",
+                                "start_column": 53,
+                                "start_line": 105
+                            }
+                        }
+                    }
+                ]
+            ],
+            "instr_offsets_to_variable_init": [],
+            "parameter_indexes_to_metadata": [],
+            "position": {
+                "type": "FilePosition",
+                "value": {
+                    "end_column": 66,
+                    "end_line": 105,
+                    "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/core/builtins.dk",
+                    "start_column": 1,
+                    "start_line": 105
+                }
+            }
+        }
+    },
+    "globals": {},
+    "module_path": "/home/karol/code/projects/queens-designer/duck_build/query/query71/fd003303706399711aad7c5b98870ff13edd493921552196c3cc0a6d9b62241e.dbc",
+    "source_positions_type": "LineColumn",
+    "target": "DBC",
+    "types": {
+        "ScE": {
+            "name": "slice char"
+        },
+        "_Q_CP4core4core10containersG6String": {
+            "name": "Class String"
+        },
+        "f64": {
+            "name": "f64"
+        },
+        "i64": {
+            "name": "u64"
+        },
+        "i8": {
+            "name": "char"
+        },
+        "ptr_dyntable_i8": {
+            "name": "manyptr char"
+        }
+    }
+}

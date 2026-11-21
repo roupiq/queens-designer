@@ -1,0 +1,56 @@
+{
+    "functions": {
+        "_Q_P3std3stdG1bFuEE": {
+            "function_name": "b",
+            "instr_offsets_to_metadata": [
+                [
+                    1,
+                    {
+                        "position": {
+                            "type": "FilePosition",
+                            "value": {
+                                "end_column": 18,
+                                "end_line": 4,
+                                "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/std.dk",
+                                "start_column": 15,
+                                "start_line": 4
+                            }
+                        }
+                    }
+                ],
+                [
+                    2,
+                    {
+                        "position": {
+                            "type": "FilePosition",
+                            "value": {
+                                "end_column": 18,
+                                "end_line": 4,
+                                "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/std.dk",
+                                "start_column": 15,
+                                "start_line": 4
+                            }
+                        }
+                    }
+                ]
+            ],
+            "instr_offsets_to_variable_init": [],
+            "parameter_indexes_to_metadata": [],
+            "position": {
+                "type": "FilePosition",
+                "value": {
+                    "end_column": 19,
+                    "end_line": 4,
+                    "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/std.dk",
+                    "start_column": 1,
+                    "start_line": 4
+                }
+            }
+        }
+    },
+    "globals": {},
+    "module_path": "/home/karol/code/projects/queens-designer/.duck_build/dvm/queens-designer-1.0.0-504d2738f049550be4e1757149b6886b5fd00b4543a07c39f0331eed8f94a81e/artifacts/query/query71/c7b9555f8d479f768bf3ad583b8f3d654a9436001a2e89f54a1709fd1e101e21.dbc",
+    "source_positions_type": "LineColumn",
+    "target": "DBC",
+    "types": {}
+}

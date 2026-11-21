@@ -1,0 +1,166 @@
+import core.builtins.*;
+import src.constants.*;
+import src.helpers.*;
+import src.puzzles.*;
+
+class Solution {
+    n: i32;
+    board: List[i32];
+    occupied: List[i32];
+    occupiedColors: List[i32];
+
+
+    fun getColor(x: i32, y: i32) -> i32 = {
+        return board.at(x * n + y);
+    }
+
+    fun initialize(_n: i32, _board: ref List[i32]) = {
+        board = copy _board;
+        n = _n;
+
+        resize(&occupiedColors, n);
+        resize(&occupied, n * n);
+    }
+
+    fun clear(x: i32, y: i32) = {
+        occupied.at(x * n + y) = 0;
+    }
+
+    fun placeQueen(x: i32, y: i32) = {
+        if (occupiedColors.at(getColor(x, y)) != 0) error("Placing queen on of the same color twice");
+
+        occupiedColors.at(getColor(x, y)) = 1;
+
+        var z = 0;
+        while (z < n)
+        {
+            placeCross(z, y);
+            z += 1;
+        }
+
+        z = 0;
+        while (z < n)
+        {
+            placeCross(x, z);
+            z += 1;
+        }
+
+        # Diagonal
+        placeCross(x + 1, y + 1);
+        placeCross(x + 1, y - 1);
+        placeCross(x - 1, y + 1);
+        placeCross(x - 1, y - 1);
+
+        occupied.at(x * n + y) = 1;
+    }
+
+    fun placeCross(x: i32, y: i32) = {
+        if (0 <= x < n and 0 <= y < n)
+            occupied.at(x * n + y) = -1;
+    }
+
+    fun getOccupied(x: i32, y: i32) -> i32 = {
+        return occupied.at(x * n + y);
+    }
+
+    fun canPlace(x: i32, y: i32) -> bool = {
+        return occupied.at(x * n + y) == 0 and occupiedColors.at(getColor(x, y)) == 0;
+    }
+
+    fun isSolved() -> bool = {
+        var i = 0;
+        while(i < n)
+        {
+            if(occupiedColors.at(i) == 0) return false;
+            i += 1;
+        }
+        return true;
+    }
+
+    fun verticalSeparator(x: i32, y: i32) -> str = {
+        if (0 < y < n)
+        {
+            if(getColor(x, y - 1) == getColor(x, y))
+                return " ";
+        }
+        return "|";
+    }
+
+    fun toString() -> String = {
+        var result: String = "".toString();
+        var i = 0;
+        while (i < n)
+        {
+            var k = 0;
+            while (k < n)
+            {
+                var row: str = "--------";
+                if (0 < i < n)
+                {
+                    if(getColor(i - 1, k) == getColor(i, k))
+                        row = "*       ";
+                }
+
+                concat(&result, row);
+                k += 1;
+            }
+            concat(&result, "-\n");
+
+            var j = 0;
+            while (j < n)
+            {
+                var row: str = "       ";
+                if (occupied.at(i * n + j) == 1)
+                    row = "  \\ /  ";
+
+                var color: i32 = getColor(i, j);
+                concat(&result, f"{verticalSeparator(i, j)}{BACK_COLORS[color]}{row}{RESET_COLOR}".asSlice());
+                j += 1;
+            }
+            concat(&result, "|\n");
+
+
+            j = 0;
+            while (j < n)
+            {
+                # (color + '0' as i8) as char
+                var row = "       ";
+                var color: i32 = getColor(i, j);
+                
+                if (not canPlace(i, j))
+                    row = "   x   ";
+                if (occupied.at(i * n + j) == 1)
+                    row = "   Q   ";
+
+                concat(&result, f"{verticalSeparator(i, j)}{BACK_COLORS[color]}{row}{RESET_COLOR}".asSlice());
+                j += 1;
+            }
+            concat(&result, "|\n");
+
+            j = 0;
+            while (j < n)
+            {
+                var row: str = "       ";
+                if (occupied.at(i * n + j) == 1)
+                    row = "  / \\  ";
+
+                var color: i32 = getColor(i, j);
+                concat(&result, f"{verticalSeparator(i, j)}{BACK_COLORS[color]}{row}{RESET_COLOR}".asSlice());
+                j += 1;
+            }
+            concat(&result, "|\n");
+
+            i += 1;
+        }
+
+        i = 0;
+        while (i < n)
+        {
+            concat(&result, "--------");
+            i += 1;
+        }
+        concat(&result, "-\n");
+        return result;
+    }
+
+}

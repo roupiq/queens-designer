@@ -1,0 +1,121 @@
+type data: ScE {
+    _0: ptr_dyntable_i8,
+    _1: i64,
+}
+
+type data: _Q_CP4core4core10containersG6String {
+    _0: ptr_dyntable_i8,
+    _1: i64,
+    _2: i64,
+    _3: i64,
+}
+
+type dynamic_table: dyntable_i8 i8
+type primitive: f64 8
+type primitive: i64 8
+type primitive: i8 1
+type pointer: ptr_dyntable_i8 dyntable_i8
+
+
+
+function _Q_P4core4core8builtinsG17builtin_input_f64FdEE {  } -> { f64 } {
+    label                   label_0;
+    init_pany_type         call_result0,      f64;
+    call_func              _Q_P4core4core12primitive_ioG7readF64FdEE;
+    mov_p64_p64                ret0, call_result0;
+    deinit                ;
+    ret                   ;
+}
+
+function _Q_P4core4core8builtinsG17builtin_input_i64FiqEE {  } -> { i64 } {
+    label                   label_0;
+    init_pany_type         call_result0,      i64;
+    call_func              _Q_P4core4core12primitive_ioG7readI64FiqEE;
+    mov_p64_p64                ret0, call_result0;
+    deinit                ;
+    ret                   ;
+}
+
+function _Q_P4core4core8builtinsG17builtin_input_u64FjqEE {  } -> { i64 } {
+    label                   label_0;
+    init_pany_type         call_result0,      i64;
+    call_func              _Q_P4core4core12primitive_ioG7readU64FjqEE;
+    mov_p64_p64                ret0, call_result0;
+    deinit                ;
+    ret                   ;
+}
+
+function _Q_P4core4core8builtinsG18builtin_input_charFcEE {  } -> { i8 } {
+    label                   label_0;
+    init_pany_type         call_result0,       i8;
+    call_func              _Q_P4core4core12primitive_ioG8readCharFcEE;
+    mov_p8_p8                  ret0, call_result0;
+    deinit                ;
+    ret                   ;
+}
+
+function _Q_P4core4core8builtinsG18builtin_output_f64FiqdE1vE { f64 } -> { i64 } {
+    label                   label_0;
+    init_pany_type         call_result0,      i64;
+    init_pany_type         call_arg0_1,      f64;
+    mov_p64_p64            call_arg0_1,     arg0;
+    call_func              _Q_P4core4core12primitive_ioG8writeF64FiqdE1xE;
+    mov_p64_p64                ret0, call_result0;
+    deinit                ;
+    ret                   ;
+}
+
+function _Q_P4core4core8builtinsG18builtin_output_i64FiqiqE1vE { i64 } -> { i64 } {
+    label                   label_0;
+    init_pany_type         call_result0,      i64;
+    init_pany_type         call_arg0_1,      i64;
+    mov_p64_p64            call_arg0_1,     arg0;
+    call_func              _Q_P4core4core12primitive_ioG8writeI64FiqiqE1xE;
+    mov_p64_p64                ret0, call_result0;
+    deinit                ;
+    ret                   ;
+}
+
+function _Q_P4core4core8builtinsG18builtin_output_strFiqScEE1vE { ScE } -> { i64 } {
+    label                   label_0;
+    init_pany_type         call_result0,      i64;
+    init_pany_type         call_arg0_1,      ScE;
+    mov_pste_pste          call_arg0_1,     arg0;
+    call_func              _Q_P4core4core12primitive_ioG8writeStrFiqScEE1sE;
+    mov_p64_p64                ret0, call_result0;
+    deinit                ;
+    ret                   ;
+}
+
+function _Q_P4core4core8builtinsG18builtin_output_u64FiqjqE1vE { i64 } -> { i64 } {
+    label                   label_0;
+    init_pany_type         call_result0,      i64;
+    init_pany_type         call_arg0_1,      i64;
+    mov_p64_p64            call_arg0_1,     arg0;
+    call_func              _Q_P4core4core12primitive_ioG8writeU64FiqjqE1xE;
+    mov_p64_p64                ret0, call_result0;
+    deinit                ;
+    ret                   ;
+}
+
+function _Q_P4core4core8builtinsG19builtin_output_charFiqcE1cE { i8 } -> { i64 } {
+    label                   label_0;
+    init_pany_type         call_result0,      i64;
+    init_pany_type         call_arg0_1,       i8;
+    mov_p8_p8              call_arg0_1,     arg0;
+    call_func              _Q_P4core4core12primitive_ioG9writeCharFiqcE1cE;
+    mov_p64_p64                ret0, call_result0;
+    deinit                ;
+    ret                   ;
+}
+
+function _Q_P4core4core8builtinsG20builtin_input_stringF_Q_CP4core4core10containersG6StringEE {  } -> { _Q_CP4core4core10containersG6String } {
+    label                   label_0;
+    init_pany_type         call_result0, _Q_CP4core4core10containersG6String;
+    call_func              _Q_P4core4core12primitive_ioG10readStringF_Q_CP4core4core10containersG6StringEE;
+    mov_pste_pste              ret0, call_result0;
+    deinit                ;
+    ret                   ;
+}
+
+
