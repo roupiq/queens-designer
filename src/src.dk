@@ -18,8 +18,8 @@ class Solution {
         board = copy _board;
         n = _n;
 
-        resize(occupied, n);
-        resize(occupied, n * n);
+        resize(&occupied, n);
+        resize(&occupied, n * n);
     }
 
     fun clear(x: i32, y: i32) = {
@@ -190,9 +190,13 @@ fun solve(solution: ref Solution, start: i32 = 0) -> bool = {
 }
 
 fun main() = {
-    print("Hello, World!\n");
-
+    let boardList: List[i32] = toList[i32, Puzzles.N * Puzzles.N](&Puzzles.board);
+    
     var solution : Solution;
-    solution.initialize(N, board);
+    solution.initialize(
+        Puzzles.N,
+        &boardList
+    );
+
     solve(&solution);
 }

@@ -13,3 +13,15 @@ fun resize(list: ref List[i32], new_size: i32, value: i32 = 0) = {
     while(list.length() > new_size)
         list.pop();
 }
+
+template(T: type, N: i32)
+fun toList(array: ref T[N]) -> List[T] = {
+    var list: List[T];
+
+    for (element in array)
+    {
+        list.push(element);
+    }
+    
+    return list;
+}
