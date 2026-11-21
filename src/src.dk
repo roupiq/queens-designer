@@ -48,6 +48,9 @@ fun solveLikeHuman(solution: ref Solution) = {
     
     while (not solution.isSolved())
     {
+        print("Press any key to continue.");
+        var ignore: char = builtin_input_char();
+
         # var progres: bool = true;
         print("\n");
         print("\n");
@@ -60,12 +63,20 @@ fun solveLikeHuman(solution: ref Solution) = {
             continue;
         }
 
+        if(apply15(&solution))
+        {
+            print(f"{solution}");
+            print(" -- Applied strategy 1.5 -- \n");
+            continue;
+        }
+
         if(apply2(&solution))
         {
             print(f"{solution}");
             print(" -- Applied strategy 2 -- \n");
             continue;
         }
+        
         
         if(apply3(&solution))
         {

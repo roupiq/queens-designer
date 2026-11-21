@@ -72,17 +72,17 @@ fun findFreeColor(solution: ref Solution, color: i32) -> i32[2] = {
     return [-1, -1];
 }
 
-fun areColorsValid(solution: ref Solution) -> bool = {
+fun areColorsValid(solution: ref Solution) -> i32 = {
     var color: i32 = 0;
     while(color < solution.n)
     {
         if (solution.occupiedColors.at(color) == 0 and getColorCount(&solution, color) == 0)
         {
-            return false;
+            return color;
         }
         color += 1;
     }
-    return true;
+    return -1;
 }
 
 fun apply1(solution: ref Solution) -> bool = {
@@ -95,11 +95,21 @@ fun apply1(solution: ref Solution) -> bool = {
         if(freeColorI == 1)
         {
             var pos = findFreeColor(&solution, i);
+            print(f"Placing queen at {pos[0]} {pos[1]} because thats the only placable field with this color.\n");
             solution.placeQueen(pos[0], pos[1]);
             return true;
         }
         i += 1;
     }
+    return false;
+}
+
+# Checks if there are some rows (or columns) that have only one placable cell
+fun apply15(solution: ref Solution) -> bool = {
+    if (singleOneInColumn(&solution))
+        return true;
+    if (singleOneInRow(&solution))
+        return true;
     return false;
 }
 
@@ -129,7 +139,7 @@ fun apply2(solution: ref Solution) -> bool = {
             {
                 print(f"{range}");
                 # print(f"{range[0]}, {range[1]}, {range[2]}, {range[3]}");
-                print(f"Color {COLOR_NAMES[i]} has every tile on the same width {x}\n");
+                print(f"Color {COLOR_NAMES[i]} has every placable tile on the same row {x}\n");
                 return true;
             }
         }
@@ -150,7 +160,7 @@ fun apply2(solution: ref Solution) -> bool = {
             }
             if(anything_changed)
             {
-                print(f"Color {COLOR_NAMES[i]} has every tile on the same height {y}\n");
+                print(f"Color {COLOR_NAMES[i]} has every placable tile on the same column {y}\n");
                 return true;
             }
         }
@@ -160,10 +170,81 @@ fun apply2(solution: ref Solution) -> bool = {
     return false;
 }
 
+fun singleOneInColumn(solution: ref Solution) -> bool = {
+    var x = 0;
+    while (x < solution.n)
+    {
+        var pos: i32[2] = [-1, -1];
+
+        var y = 0;
+        while (y < solution.n) {
+            if (solution.canPlace(x, y))
+            {
+                if (pos[0] == -1)
+                {
+                    pos = [x, y];
+                }
+                else
+                {
+                    pos = [-1, -1];
+                    break;
+                }
+            }
+            y += 1;
+        }
+
+        if (pos[0] != -1)
+        {
+            solution.placeQueen(pos[0], pos[1]);
+            print(f"Cell {pos[0]}, {pos[1]} is the only placable one at this column");
+            return true;
+        }
+
+        x += 1;
+    }
+    return false;
+}
+
+fun singleOneInRow(solution: ref Solution) -> bool = {
+    var y = 0;
+    while (y < solution.n)
+    {
+        var pos: i32[2] = [-1, -1];
+
+        var x: i32 = 0;
+        while (x < solution.n) {
+            if (solution.canPlace(x, y))
+            {
+                if (pos[0] == -1)
+                {
+                    pos = [x, y];
+                }
+                else
+                {
+                    pos = [-1, -1];
+                    break;
+                }
+            }
+            x += 1;
+        }
+
+        if (pos[0] != -1)
+        {
+            solution.placeQueen(pos[0], pos[1]);
+            print(f"Cell {pos[0]}, {pos[1]} is the only placable one at this row.\n");
+            return true;
+        }
+
+        y += 1;
+    }
+    return false;
+}
+
+
 fun apply3(solution: ref Solution) -> bool = {
     # For each cell placing queen and checking if it does break.
-    var x = 0;
 
+    var x = 0;
     while (x < solution.n)
     {
         var y = 0;
@@ -172,10 +253,12 @@ fun apply3(solution: ref Solution) -> bool = {
             {
                 var next_solution: Solution = copy solution;
                 next_solution.placeQueen(x, y);
-                if (not areColorsValid(&next_solution))
+
+                var blocked_color: i32 = areColorsValid(&next_solution);
+                if (blocked_color != -1)
                 {
                     solution.placeCross(x, y);
-                    print(f"Queen at position {x}, {y} bloks other colors entierly\n");
+                    print(f"Queen at position {x}, {y} bloks {COLOR_NAMES[blocked_color]} fields.\n");
                     return true;
                 }
             }
@@ -213,7 +296,7 @@ fun rowsSegmentsStrategy(solution: ref Solution, x1: i32, x2: i32) -> bool = {
     }
 
     # Print colors
-    print(f"[{x1}, {x2}), {colors} {fillableCollumns}\n");
+    # print(f"[{x1}, {x2}), {colors} {fillableCollumns}\n");
 
     if (sum[i32](&colors) == fillableCollumns)
     {
@@ -325,6 +408,7 @@ fun columnsSegmentsStrategy(solution: ref Solution, y1: i32, y2: i32) -> bool = 
 fun apply4(solution: ref Solution) -> bool = {
     var i = 1;
     var n = solution.n;
+
     while (i <= n)
     {
         if(rowsSegmentsStrategy(&solution, n - i, n))
@@ -367,13 +451,13 @@ fun apply5(solution: ref Solution) -> bool = {
         {
             if(rowsSegmentsStrategy(&solution, j, i + j))
             {
-                print(f"There are exactly {i} placable colors on rows {j}-{j + i - 1}\n");
+                print(f"Same number of placable colors as number of placable rows on segment {j}-{j + i - 1}\n");
                 return true;
             }
 
             if(columnsSegmentsStrategy(&solution, j, i + j))
             {
-                print(f"There are exactly {i} placable colors on columns {j}-{j + i - 1}\n");
+                print(f"Same number of placable colors as number of placable columns on segment {j}-{j + i - 1}\n");
                 return true;
             }
             i += 1;

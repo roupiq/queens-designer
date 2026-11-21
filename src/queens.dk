@@ -28,7 +28,7 @@ class Solution {
     fun placeQueen(x: i32, y: i32) = {
         if (occupiedColors.at(getColor(x, y)) != 0) error("Placing queen on of the same color twice");
 
-        occupiedColors.at(getColor(x, y)) = 2;
+        occupiedColors.at(getColor(x, y)) = 1;
 
         var z = 0;
         while (z < n)
@@ -50,7 +50,7 @@ class Solution {
         placeCross(x - 1, y + 1);
         placeCross(x - 1, y - 1);
 
-        occupied.at(x * n + y) = 1;
+        occupied.at(x * n + y) = 2;
     }
 
     fun rowHasQueen(x: i32) -> bool = {
@@ -85,7 +85,8 @@ class Solution {
 
     fun placeCross(x: i32, y: i32) = {
         if (0 <= x < n and 0 <= y < n)
-            occupied.at(x * n + y) = -2;
+            if (occupied.at(x * n + y) == 0)
+                occupied.at(x * n + y) = -2;
     }
 
     fun canPlace(x: i32, y: i32) -> bool = {
@@ -188,7 +189,7 @@ class Solution {
                 {
                     row = "   x   ";
                 }
-                if (occupied.at(i * n + j) == 1)
+                if (hasQueen(i, j))
                     row = "  -Q-  ";
                 
                 var separator: String = f"{verticalSeparator(i, j)}";
@@ -208,8 +209,10 @@ class Solution {
             while (j < n)
             {
                 var row: str = "       ";
+                
                 if (occupied.at(i * n + j) == 1)
                     row = "  / \\  ";
+                
                 if (isNew(i,  j))
                     row = " ##### ";
 

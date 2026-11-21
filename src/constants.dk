@@ -12,15 +12,15 @@ let BACK_COLORS: str[9] = [
 ];
 
 let COLOR_NAMES: str[9] = [
-    "[40m",
-    "[41m",
-    "[42m",
-    "[43m",
-    "[44m",
+    "black",
+    "red",
+    "green",
+    "yellow",
+    "blue",
     "pink",
-    "[46m",
-    "[47m",
-    "[48m",
+    "light blue",
+    "white",
+    "gray",
 ];
 
 
