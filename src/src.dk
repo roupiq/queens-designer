@@ -190,7 +190,7 @@ fun solve(solution: ref Solution, start: i32 = 0) -> bool = {
 }
 
 fun main() = {
-    let boardList: List[i32] = toList[i32, Puzzles.N * Puzzles.N](&Puzzles.board);
+    var boardList: List[i32] = toList[i32, Puzzles.N * Puzzles.N](&Puzzles.board);
     
     var solution : Solution;
     solution.initialize(
