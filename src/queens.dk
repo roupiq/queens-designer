@@ -148,7 +148,7 @@ class Solution {
             var k = 0;
             while (k < n)
             {
-                var row: String = f"--------";
+                var row: String = f"*-------";
                 if (0 < i < n)
                 {
                     if(getColor(i - 1, k) == getColor(i, k))
@@ -156,13 +156,13 @@ class Solution {
                 }
                 if(i == 0 or i == n)
                 {
-                    row = f"----{k}---";
+                    row = f"*---{k}---";
                 }
 
                 result.append(&row);
                 k += 1;
             }
-            result.append("-\n");
+            result.append("*\n");
 
             var j = 0;
             while (j < n)
@@ -236,10 +236,10 @@ class Solution {
         i = 0;
         while (i < n)
         {
-            concat(&result, "--------");
+            concat(&result, "*-------");
             i += 1;
         }
-        concat(&result, "-\n");
+        concat(&result, "*\n");
         return result;
     }
 
