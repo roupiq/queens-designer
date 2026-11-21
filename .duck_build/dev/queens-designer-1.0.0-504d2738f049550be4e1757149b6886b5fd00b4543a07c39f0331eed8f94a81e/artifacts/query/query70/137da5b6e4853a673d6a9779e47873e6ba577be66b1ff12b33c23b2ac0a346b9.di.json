@@ -1,0 +1,3664 @@
+{
+    "functions": {
+        "_Q_P3std3std4mathG3absFddE1xE": {
+            "function_name": "abs",
+            "instr_offsets_to_metadata": [
+                [
+                    1,
+                    {
+                        "position": {
+                            "type": "FilePosition",
+                            "value": {
+                                "end_column": 55,
+                                "end_line": 18,
+                                "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                                "start_column": 48,
+                                "start_line": 18
+                            }
+                        }
+                    }
+                ],
+                [
+                    7,
+                    {
+                        "position": {
+                            "type": "FilePosition",
+                            "value": {
+                                "end_column": 55,
+                                "end_line": 18,
+                                "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                                "start_column": 48,
+                                "start_line": 18
+                            }
+                        }
+                    }
+                ]
+            ],
+            "instr_offsets_to_variable_init": [],
+            "parameter_indexes_to_metadata": [
+                [
+                    0,
+                    {
+                        "name": "x",
+                        "position": {
+                            "type": "FilePosition",
+                            "value": {
+                                "end_column": 14,
+                                "end_line": 18,
+                                "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                                "start_column": 9,
+                                "start_line": 18
+                            }
+                        }
+                    }
+                ]
+            ],
+            "position": {
+                "type": "FilePosition",
+                "value": {
+                    "end_column": 56,
+                    "end_line": 18,
+                    "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                    "start_column": 1,
+                    "start_line": 18
+                }
+            }
+        },
+        "_Q_P3std3std4mathG3absFffE1xE": {
+            "function_name": "abs",
+            "instr_offsets_to_metadata": [
+                [
+                    1,
+                    {
+                        "position": {
+                            "type": "FilePosition",
+                            "value": {
+                                "end_column": 56,
+                                "end_line": 17,
+                                "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                                "start_column": 48,
+                                "start_line": 17
+                            }
+                        }
+                    }
+                ],
+                [
+                    7,
+                    {
+                        "position": {
+                            "type": "FilePosition",
+                            "value": {
+                                "end_column": 56,
+                                "end_line": 17,
+                                "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                                "start_column": 48,
+                                "start_line": 17
+                            }
+                        }
+                    }
+                ]
+            ],
+            "instr_offsets_to_variable_init": [],
+            "parameter_indexes_to_metadata": [
+                [
+                    0,
+                    {
+                        "name": "x",
+                        "position": {
+                            "type": "FilePosition",
+                            "value": {
+                                "end_column": 14,
+                                "end_line": 17,
+                                "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                                "start_column": 9,
+                                "start_line": 17
+                            }
+                        }
+                    }
+                ]
+            ],
+            "position": {
+                "type": "FilePosition",
+                "value": {
+                    "end_column": 57,
+                    "end_line": 17,
+                    "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                    "start_column": 1,
+                    "start_line": 17
+                }
+            }
+        },
+        "_Q_P3std3std4mathG3absFididE1xE": {
+            "function_name": "abs",
+            "instr_offsets_to_metadata": [
+                [
+                    1,
+                    {
+                        "position": {
+                            "type": "FilePosition",
+                            "value": {
+                                "end_column": 54,
+                                "end_line": 15,
+                                "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                                "start_column": 48,
+                                "start_line": 15
+                            }
+                        }
+                    }
+                ],
+                [
+                    7,
+                    {
+                        "position": {
+                            "type": "FilePosition",
+                            "value": {
+                                "end_column": 54,
+                                "end_line": 15,
+                                "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                                "start_column": 48,
+                                "start_line": 15
+                            }
+                        }
+                    }
+                ]
+            ],
+            "instr_offsets_to_variable_init": [],
+            "parameter_indexes_to_metadata": [
+                [
+                    0,
+                    {
+                        "name": "x",
+                        "position": {
+                            "type": "FilePosition",
+                            "value": {
+                                "end_column": 14,
+                                "end_line": 15,
+                                "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                                "start_column": 9,
+                                "start_line": 15
+                            }
+                        }
+                    }
+                ]
+            ],
+            "position": {
+                "type": "FilePosition",
+                "value": {
+                    "end_column": 55,
+                    "end_line": 15,
+                    "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                    "start_column": 1,
+                    "start_line": 15
+                }
+            }
+        },
+        "_Q_P3std3std4mathG3absFiqiqE1xE": {
+            "function_name": "abs",
+            "instr_offsets_to_metadata": [
+                [
+                    1,
+                    {
+                        "position": {
+                            "type": "FilePosition",
+                            "value": {
+                                "end_column": 55,
+                                "end_line": 16,
+                                "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                                "start_column": 48,
+                                "start_line": 16
+                            }
+                        }
+                    }
+                ],
+                [
+                    7,
+                    {
+                        "position": {
+                            "type": "FilePosition",
+                            "value": {
+                                "end_column": 55,
+                                "end_line": 16,
+                                "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                                "start_column": 48,
+                                "start_line": 16
+                            }
+                        }
+                    }
+                ]
+            ],
+            "instr_offsets_to_variable_init": [],
+            "parameter_indexes_to_metadata": [
+                [
+                    0,
+                    {
+                        "name": "x",
+                        "position": {
+                            "type": "FilePosition",
+                            "value": {
+                                "end_column": 14,
+                                "end_line": 16,
+                                "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                                "start_column": 9,
+                                "start_line": 16
+                            }
+                        }
+                    }
+                ]
+            ],
+            "position": {
+                "type": "FilePosition",
+                "value": {
+                    "end_column": 56,
+                    "end_line": 16,
+                    "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                    "start_column": 1,
+                    "start_line": 16
+                }
+            }
+        },
+        "_Q_P3std3std4mathG3cosFddE1xE": {
+            "function_name": "cos",
+            "instr_offsets_to_metadata": [
+                [
+                    1,
+                    {
+                        "position": {
+                            "type": "FilePosition",
+                            "value": {
+                                "end_column": 55,
+                                "end_line": 48,
+                                "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                                "start_column": 49,
+                                "start_line": 48
+                            }
+                        }
+                    }
+                ],
+                [
+                    7,
+                    {
+                        "position": {
+                            "type": "FilePosition",
+                            "value": {
+                                "end_column": 55,
+                                "end_line": 48,
+                                "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                                "start_column": 49,
+                                "start_line": 48
+                            }
+                        }
+                    }
+                ]
+            ],
+            "instr_offsets_to_variable_init": [],
+            "parameter_indexes_to_metadata": [
+                [
+                    0,
+                    {
+                        "name": "x",
+                        "position": {
+                            "type": "FilePosition",
+                            "value": {
+                                "end_column": 14,
+                                "end_line": 48,
+                                "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                                "start_column": 9,
+                                "start_line": 48
+                            }
+                        }
+                    }
+                ]
+            ],
+            "position": {
+                "type": "FilePosition",
+                "value": {
+                    "end_column": 56,
+                    "end_line": 48,
+                    "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                    "start_column": 1,
+                    "start_line": 48
+                }
+            }
+        },
+        "_Q_P3std3std4mathG3cosFffE1xE": {
+            "function_name": "cos",
+            "instr_offsets_to_metadata": [
+                [
+                    1,
+                    {
+                        "position": {
+                            "type": "FilePosition",
+                            "value": {
+                                "end_column": 56,
+                                "end_line": 47,
+                                "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                                "start_column": 49,
+                                "start_line": 47
+                            }
+                        }
+                    }
+                ],
+                [
+                    7,
+                    {
+                        "position": {
+                            "type": "FilePosition",
+                            "value": {
+                                "end_column": 56,
+                                "end_line": 47,
+                                "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                                "start_column": 49,
+                                "start_line": 47
+                            }
+                        }
+                    }
+                ]
+            ],
+            "instr_offsets_to_variable_init": [],
+            "parameter_indexes_to_metadata": [
+                [
+                    0,
+                    {
+                        "name": "x",
+                        "position": {
+                            "type": "FilePosition",
+                            "value": {
+                                "end_column": 14,
+                                "end_line": 47,
+                                "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                                "start_column": 9,
+                                "start_line": 47
+                            }
+                        }
+                    }
+                ]
+            ],
+            "position": {
+                "type": "FilePosition",
+                "value": {
+                    "end_column": 57,
+                    "end_line": 47,
+                    "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                    "start_column": 1,
+                    "start_line": 47
+                }
+            }
+        },
+        "_Q_P3std3std4mathG3expFddE1xE": {
+            "function_name": "exp",
+            "instr_offsets_to_metadata": [
+                [
+                    1,
+                    {
+                        "position": {
+                            "type": "FilePosition",
+                            "value": {
+                                "end_column": 54,
+                                "end_line": 31,
+                                "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                                "start_column": 48,
+                                "start_line": 31
+                            }
+                        }
+                    }
+                ],
+                [
+                    7,
+                    {
+                        "position": {
+                            "type": "FilePosition",
+                            "value": {
+                                "end_column": 54,
+                                "end_line": 31,
+                                "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                                "start_column": 48,
+                                "start_line": 31
+                            }
+                        }
+                    }
+                ]
+            ],
+            "instr_offsets_to_variable_init": [],
+            "parameter_indexes_to_metadata": [
+                [
+                    0,
+                    {
+                        "name": "x",
+                        "position": {
+                            "type": "FilePosition",
+                            "value": {
+                                "end_column": 14,
+                                "end_line": 31,
+                                "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                                "start_column": 9,
+                                "start_line": 31
+                            }
+                        }
+                    }
+                ]
+            ],
+            "position": {
+                "type": "FilePosition",
+                "value": {
+                    "end_column": 55,
+                    "end_line": 31,
+                    "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                    "start_column": 1,
+                    "start_line": 31
+                }
+            }
+        },
+        "_Q_P3std3std4mathG3expFffE1xE": {
+            "function_name": "exp",
+            "instr_offsets_to_metadata": [
+                [
+                    1,
+                    {
+                        "position": {
+                            "type": "FilePosition",
+                            "value": {
+                                "end_column": 55,
+                                "end_line": 30,
+                                "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                                "start_column": 48,
+                                "start_line": 30
+                            }
+                        }
+                    }
+                ],
+                [
+                    7,
+                    {
+                        "position": {
+                            "type": "FilePosition",
+                            "value": {
+                                "end_column": 55,
+                                "end_line": 30,
+                                "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                                "start_column": 48,
+                                "start_line": 30
+                            }
+                        }
+                    }
+                ]
+            ],
+            "instr_offsets_to_variable_init": [],
+            "parameter_indexes_to_metadata": [
+                [
+                    0,
+                    {
+                        "name": "x",
+                        "position": {
+                            "type": "FilePosition",
+                            "value": {
+                                "end_column": 14,
+                                "end_line": 30,
+                                "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                                "start_column": 9,
+                                "start_line": 30
+                            }
+                        }
+                    }
+                ]
+            ],
+            "position": {
+                "type": "FilePosition",
+                "value": {
+                    "end_column": 56,
+                    "end_line": 30,
+                    "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                    "start_column": 1,
+                    "start_line": 30
+                }
+            }
+        },
+        "_Q_P3std3std4mathG3logFddE1xE": {
+            "function_name": "log",
+            "instr_offsets_to_metadata": [
+                [
+                    1,
+                    {
+                        "position": {
+                            "type": "FilePosition",
+                            "value": {
+                                "end_column": 54,
+                                "end_line": 34,
+                                "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                                "start_column": 48,
+                                "start_line": 34
+                            }
+                        }
+                    }
+                ],
+                [
+                    7,
+                    {
+                        "position": {
+                            "type": "FilePosition",
+                            "value": {
+                                "end_column": 54,
+                                "end_line": 34,
+                                "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                                "start_column": 48,
+                                "start_line": 34
+                            }
+                        }
+                    }
+                ]
+            ],
+            "instr_offsets_to_variable_init": [],
+            "parameter_indexes_to_metadata": [
+                [
+                    0,
+                    {
+                        "name": "x",
+                        "position": {
+                            "type": "FilePosition",
+                            "value": {
+                                "end_column": 14,
+                                "end_line": 34,
+                                "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                                "start_column": 9,
+                                "start_line": 34
+                            }
+                        }
+                    }
+                ]
+            ],
+            "position": {
+                "type": "FilePosition",
+                "value": {
+                    "end_column": 55,
+                    "end_line": 34,
+                    "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                    "start_column": 1,
+                    "start_line": 34
+                }
+            }
+        },
+        "_Q_P3std3std4mathG3logFffE1xE": {
+            "function_name": "log",
+            "instr_offsets_to_metadata": [
+                [
+                    1,
+                    {
+                        "position": {
+                            "type": "FilePosition",
+                            "value": {
+                                "end_column": 55,
+                                "end_line": 33,
+                                "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                                "start_column": 48,
+                                "start_line": 33
+                            }
+                        }
+                    }
+                ],
+                [
+                    7,
+                    {
+                        "position": {
+                            "type": "FilePosition",
+                            "value": {
+                                "end_column": 55,
+                                "end_line": 33,
+                                "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                                "start_column": 48,
+                                "start_line": 33
+                            }
+                        }
+                    }
+                ]
+            ],
+            "instr_offsets_to_variable_init": [],
+            "parameter_indexes_to_metadata": [
+                [
+                    0,
+                    {
+                        "name": "x",
+                        "position": {
+                            "type": "FilePosition",
+                            "value": {
+                                "end_column": 14,
+                                "end_line": 33,
+                                "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                                "start_column": 9,
+                                "start_line": 33
+                            }
+                        }
+                    }
+                ]
+            ],
+            "position": {
+                "type": "FilePosition",
+                "value": {
+                    "end_column": 56,
+                    "end_line": 33,
+                    "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                    "start_column": 1,
+                    "start_line": 33
+                }
+            }
+        },
+        "_Q_P3std3std4mathG3maxFdddE1x1yE": {
+            "function_name": "max",
+            "instr_offsets_to_metadata": [
+                [
+                    1,
+                    {
+                        "position": {
+                            "type": "FilePosition",
+                            "value": {
+                                "end_column": 66,
+                                "end_line": 23,
+                                "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                                "start_column": 56,
+                                "start_line": 23
+                            }
+                        }
+                    }
+                ],
+                [
+                    9,
+                    {
+                        "position": {
+                            "type": "FilePosition",
+                            "value": {
+                                "end_column": 66,
+                                "end_line": 23,
+                                "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                                "start_column": 56,
+                                "start_line": 23
+                            }
+                        }
+                    }
+                ]
+            ],
+            "instr_offsets_to_variable_init": [],
+            "parameter_indexes_to_metadata": [
+                [
+                    0,
+                    {
+                        "name": "x",
+                        "position": {
+                            "type": "FilePosition",
+                            "value": {
+                                "end_column": 14,
+                                "end_line": 23,
+                                "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                                "start_column": 9,
+                                "start_line": 23
+                            }
+                        }
+                    }
+                ],
+                [
+                    1,
+                    {
+                        "name": "y",
+                        "position": {
+                            "type": "FilePosition",
+                            "value": {
+                                "end_column": 22,
+                                "end_line": 23,
+                                "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                                "start_column": 17,
+                                "start_line": 23
+                            }
+                        }
+                    }
+                ]
+            ],
+            "position": {
+                "type": "FilePosition",
+                "value": {
+                    "end_column": 67,
+                    "end_line": 23,
+                    "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                    "start_column": 1,
+                    "start_line": 23
+                }
+            }
+        },
+        "_Q_P3std3std4mathG3maxFfffE1x1yE": {
+            "function_name": "max",
+            "instr_offsets_to_metadata": [
+                [
+                    1,
+                    {
+                        "position": {
+                            "type": "FilePosition",
+                            "value": {
+                                "end_column": 67,
+                                "end_line": 22,
+                                "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                                "start_column": 56,
+                                "start_line": 22
+                            }
+                        }
+                    }
+                ],
+                [
+                    9,
+                    {
+                        "position": {
+                            "type": "FilePosition",
+                            "value": {
+                                "end_column": 67,
+                                "end_line": 22,
+                                "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                                "start_column": 56,
+                                "start_line": 22
+                            }
+                        }
+                    }
+                ]
+            ],
+            "instr_offsets_to_variable_init": [],
+            "parameter_indexes_to_metadata": [
+                [
+                    0,
+                    {
+                        "name": "x",
+                        "position": {
+                            "type": "FilePosition",
+                            "value": {
+                                "end_column": 14,
+                                "end_line": 22,
+                                "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                                "start_column": 9,
+                                "start_line": 22
+                            }
+                        }
+                    }
+                ],
+                [
+                    1,
+                    {
+                        "name": "y",
+                        "position": {
+                            "type": "FilePosition",
+                            "value": {
+                                "end_column": 22,
+                                "end_line": 22,
+                                "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                                "start_column": 17,
+                                "start_line": 22
+                            }
+                        }
+                    }
+                ]
+            ],
+            "position": {
+                "type": "FilePosition",
+                "value": {
+                    "end_column": 68,
+                    "end_line": 22,
+                    "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                    "start_column": 1,
+                    "start_line": 22
+                }
+            }
+        },
+        "_Q_P3std3std4mathG3maxFidididE1x1yE": {
+            "function_name": "max",
+            "instr_offsets_to_metadata": [
+                [
+                    1,
+                    {
+                        "position": {
+                            "type": "FilePosition",
+                            "value": {
+                                "end_column": 52,
+                                "end_line": 20,
+                                "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                                "start_column": 38,
+                                "start_line": 20
+                            }
+                        }
+                    }
+                ],
+                [
+                    9,
+                    {
+                        "position": {
+                            "type": "FilePosition",
+                            "value": {
+                                "end_column": 52,
+                                "end_line": 20,
+                                "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                                "start_column": 38,
+                                "start_line": 20
+                            }
+                        }
+                    }
+                ]
+            ],
+            "instr_offsets_to_variable_init": [],
+            "parameter_indexes_to_metadata": [
+                [
+                    0,
+                    {
+                        "name": "x",
+                        "position": {
+                            "type": "FilePosition",
+                            "value": {
+                                "end_column": 14,
+                                "end_line": 20,
+                                "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                                "start_column": 9,
+                                "start_line": 20
+                            }
+                        }
+                    }
+                ],
+                [
+                    1,
+                    {
+                        "name": "y",
+                        "position": {
+                            "type": "FilePosition",
+                            "value": {
+                                "end_column": 22,
+                                "end_line": 20,
+                                "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                                "start_column": 17,
+                                "start_line": 20
+                            }
+                        }
+                    }
+                ]
+            ],
+            "position": {
+                "type": "FilePosition",
+                "value": {
+                    "end_column": 53,
+                    "end_line": 20,
+                    "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                    "start_column": 1,
+                    "start_line": 20
+                }
+            }
+        },
+        "_Q_P3std3std4mathG3maxFiqiqiqE1x1yE": {
+            "function_name": "max",
+            "instr_offsets_to_metadata": [
+                [
+                    1,
+                    {
+                        "position": {
+                            "type": "FilePosition",
+                            "value": {
+                                "end_column": 52,
+                                "end_line": 21,
+                                "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                                "start_column": 38,
+                                "start_line": 21
+                            }
+                        }
+                    }
+                ],
+                [
+                    9,
+                    {
+                        "position": {
+                            "type": "FilePosition",
+                            "value": {
+                                "end_column": 52,
+                                "end_line": 21,
+                                "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                                "start_column": 38,
+                                "start_line": 21
+                            }
+                        }
+                    }
+                ]
+            ],
+            "instr_offsets_to_variable_init": [],
+            "parameter_indexes_to_metadata": [
+                [
+                    0,
+                    {
+                        "name": "x",
+                        "position": {
+                            "type": "FilePosition",
+                            "value": {
+                                "end_column": 14,
+                                "end_line": 21,
+                                "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                                "start_column": 9,
+                                "start_line": 21
+                            }
+                        }
+                    }
+                ],
+                [
+                    1,
+                    {
+                        "name": "y",
+                        "position": {
+                            "type": "FilePosition",
+                            "value": {
+                                "end_column": 22,
+                                "end_line": 21,
+                                "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                                "start_column": 17,
+                                "start_line": 21
+                            }
+                        }
+                    }
+                ]
+            ],
+            "position": {
+                "type": "FilePosition",
+                "value": {
+                    "end_column": 53,
+                    "end_line": 21,
+                    "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                    "start_column": 1,
+                    "start_line": 21
+                }
+            }
+        },
+        "_Q_P3std3std4mathG3minFdddE1x1yE": {
+            "function_name": "min",
+            "instr_offsets_to_metadata": [
+                [
+                    1,
+                    {
+                        "position": {
+                            "type": "FilePosition",
+                            "value": {
+                                "end_column": 66,
+                                "end_line": 28,
+                                "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                                "start_column": 56,
+                                "start_line": 28
+                            }
+                        }
+                    }
+                ],
+                [
+                    9,
+                    {
+                        "position": {
+                            "type": "FilePosition",
+                            "value": {
+                                "end_column": 66,
+                                "end_line": 28,
+                                "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                                "start_column": 56,
+                                "start_line": 28
+                            }
+                        }
+                    }
+                ]
+            ],
+            "instr_offsets_to_variable_init": [],
+            "parameter_indexes_to_metadata": [
+                [
+                    0,
+                    {
+                        "name": "x",
+                        "position": {
+                            "type": "FilePosition",
+                            "value": {
+                                "end_column": 14,
+                                "end_line": 28,
+                                "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                                "start_column": 9,
+                                "start_line": 28
+                            }
+                        }
+                    }
+                ],
+                [
+                    1,
+                    {
+                        "name": "y",
+                        "position": {
+                            "type": "FilePosition",
+                            "value": {
+                                "end_column": 22,
+                                "end_line": 28,
+                                "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                                "start_column": 17,
+                                "start_line": 28
+                            }
+                        }
+                    }
+                ]
+            ],
+            "position": {
+                "type": "FilePosition",
+                "value": {
+                    "end_column": 67,
+                    "end_line": 28,
+                    "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                    "start_column": 1,
+                    "start_line": 28
+                }
+            }
+        },
+        "_Q_P3std3std4mathG3minFfffE1x1yE": {
+            "function_name": "min",
+            "instr_offsets_to_metadata": [
+                [
+                    1,
+                    {
+                        "position": {
+                            "type": "FilePosition",
+                            "value": {
+                                "end_column": 67,
+                                "end_line": 27,
+                                "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                                "start_column": 56,
+                                "start_line": 27
+                            }
+                        }
+                    }
+                ],
+                [
+                    9,
+                    {
+                        "position": {
+                            "type": "FilePosition",
+                            "value": {
+                                "end_column": 67,
+                                "end_line": 27,
+                                "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                                "start_column": 56,
+                                "start_line": 27
+                            }
+                        }
+                    }
+                ]
+            ],
+            "instr_offsets_to_variable_init": [],
+            "parameter_indexes_to_metadata": [
+                [
+                    0,
+                    {
+                        "name": "x",
+                        "position": {
+                            "type": "FilePosition",
+                            "value": {
+                                "end_column": 14,
+                                "end_line": 27,
+                                "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                                "start_column": 9,
+                                "start_line": 27
+                            }
+                        }
+                    }
+                ],
+                [
+                    1,
+                    {
+                        "name": "y",
+                        "position": {
+                            "type": "FilePosition",
+                            "value": {
+                                "end_column": 22,
+                                "end_line": 27,
+                                "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                                "start_column": 17,
+                                "start_line": 27
+                            }
+                        }
+                    }
+                ]
+            ],
+            "position": {
+                "type": "FilePosition",
+                "value": {
+                    "end_column": 68,
+                    "end_line": 27,
+                    "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                    "start_column": 1,
+                    "start_line": 27
+                }
+            }
+        },
+        "_Q_P3std3std4mathG3minFidididE1x1yE": {
+            "function_name": "min",
+            "instr_offsets_to_metadata": [
+                [
+                    1,
+                    {
+                        "position": {
+                            "type": "FilePosition",
+                            "value": {
+                                "end_column": 52,
+                                "end_line": 25,
+                                "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                                "start_column": 38,
+                                "start_line": 25
+                            }
+                        }
+                    }
+                ],
+                [
+                    9,
+                    {
+                        "position": {
+                            "type": "FilePosition",
+                            "value": {
+                                "end_column": 52,
+                                "end_line": 25,
+                                "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                                "start_column": 38,
+                                "start_line": 25
+                            }
+                        }
+                    }
+                ]
+            ],
+            "instr_offsets_to_variable_init": [],
+            "parameter_indexes_to_metadata": [
+                [
+                    0,
+                    {
+                        "name": "x",
+                        "position": {
+                            "type": "FilePosition",
+                            "value": {
+                                "end_column": 14,
+                                "end_line": 25,
+                                "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                                "start_column": 9,
+                                "start_line": 25
+                            }
+                        }
+                    }
+                ],
+                [
+                    1,
+                    {
+                        "name": "y",
+                        "position": {
+                            "type": "FilePosition",
+                            "value": {
+                                "end_column": 22,
+                                "end_line": 25,
+                                "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                                "start_column": 17,
+                                "start_line": 25
+                            }
+                        }
+                    }
+                ]
+            ],
+            "position": {
+                "type": "FilePosition",
+                "value": {
+                    "end_column": 53,
+                    "end_line": 25,
+                    "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                    "start_column": 1,
+                    "start_line": 25
+                }
+            }
+        },
+        "_Q_P3std3std4mathG3minFiqiqiqE1x1yE": {
+            "function_name": "min",
+            "instr_offsets_to_metadata": [
+                [
+                    1,
+                    {
+                        "position": {
+                            "type": "FilePosition",
+                            "value": {
+                                "end_column": 52,
+                                "end_line": 26,
+                                "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                                "start_column": 38,
+                                "start_line": 26
+                            }
+                        }
+                    }
+                ],
+                [
+                    9,
+                    {
+                        "position": {
+                            "type": "FilePosition",
+                            "value": {
+                                "end_column": 52,
+                                "end_line": 26,
+                                "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                                "start_column": 38,
+                                "start_line": 26
+                            }
+                        }
+                    }
+                ]
+            ],
+            "instr_offsets_to_variable_init": [],
+            "parameter_indexes_to_metadata": [
+                [
+                    0,
+                    {
+                        "name": "x",
+                        "position": {
+                            "type": "FilePosition",
+                            "value": {
+                                "end_column": 14,
+                                "end_line": 26,
+                                "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                                "start_column": 9,
+                                "start_line": 26
+                            }
+                        }
+                    }
+                ],
+                [
+                    1,
+                    {
+                        "name": "y",
+                        "position": {
+                            "type": "FilePosition",
+                            "value": {
+                                "end_column": 22,
+                                "end_line": 26,
+                                "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                                "start_column": 17,
+                                "start_line": 26
+                            }
+                        }
+                    }
+                ]
+            ],
+            "position": {
+                "type": "FilePosition",
+                "value": {
+                    "end_column": 53,
+                    "end_line": 26,
+                    "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                    "start_column": 1,
+                    "start_line": 26
+                }
+            }
+        },
+        "_Q_P3std3std4mathG3powFdddE1x1yE": {
+            "function_name": "pow",
+            "instr_offsets_to_metadata": [
+                [
+                    1,
+                    {
+                        "position": {
+                            "type": "FilePosition",
+                            "value": {
+                                "end_column": 65,
+                                "end_line": 39,
+                                "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                                "start_column": 56,
+                                "start_line": 39
+                            }
+                        }
+                    }
+                ],
+                [
+                    9,
+                    {
+                        "position": {
+                            "type": "FilePosition",
+                            "value": {
+                                "end_column": 65,
+                                "end_line": 39,
+                                "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                                "start_column": 56,
+                                "start_line": 39
+                            }
+                        }
+                    }
+                ]
+            ],
+            "instr_offsets_to_variable_init": [],
+            "parameter_indexes_to_metadata": [
+                [
+                    0,
+                    {
+                        "name": "x",
+                        "position": {
+                            "type": "FilePosition",
+                            "value": {
+                                "end_column": 14,
+                                "end_line": 39,
+                                "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                                "start_column": 9,
+                                "start_line": 39
+                            }
+                        }
+                    }
+                ],
+                [
+                    1,
+                    {
+                        "name": "y",
+                        "position": {
+                            "type": "FilePosition",
+                            "value": {
+                                "end_column": 22,
+                                "end_line": 39,
+                                "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                                "start_column": 17,
+                                "start_line": 39
+                            }
+                        }
+                    }
+                ]
+            ],
+            "position": {
+                "type": "FilePosition",
+                "value": {
+                    "end_column": 66,
+                    "end_line": 39,
+                    "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                    "start_column": 1,
+                    "start_line": 39
+                }
+            }
+        },
+        "_Q_P3std3std4mathG3powFfffE1x1yE": {
+            "function_name": "pow",
+            "instr_offsets_to_metadata": [
+                [
+                    1,
+                    {
+                        "position": {
+                            "type": "FilePosition",
+                            "value": {
+                                "end_column": 66,
+                                "end_line": 38,
+                                "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                                "start_column": 56,
+                                "start_line": 38
+                            }
+                        }
+                    }
+                ],
+                [
+                    9,
+                    {
+                        "position": {
+                            "type": "FilePosition",
+                            "value": {
+                                "end_column": 66,
+                                "end_line": 38,
+                                "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                                "start_column": 56,
+                                "start_line": 38
+                            }
+                        }
+                    }
+                ]
+            ],
+            "instr_offsets_to_variable_init": [],
+            "parameter_indexes_to_metadata": [
+                [
+                    0,
+                    {
+                        "name": "x",
+                        "position": {
+                            "type": "FilePosition",
+                            "value": {
+                                "end_column": 14,
+                                "end_line": 38,
+                                "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                                "start_column": 9,
+                                "start_line": 38
+                            }
+                        }
+                    }
+                ],
+                [
+                    1,
+                    {
+                        "name": "y",
+                        "position": {
+                            "type": "FilePosition",
+                            "value": {
+                                "end_column": 22,
+                                "end_line": 38,
+                                "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                                "start_column": 17,
+                                "start_line": 38
+                            }
+                        }
+                    }
+                ]
+            ],
+            "position": {
+                "type": "FilePosition",
+                "value": {
+                    "end_column": 67,
+                    "end_line": 38,
+                    "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                    "start_column": 1,
+                    "start_line": 38
+                }
+            }
+        },
+        "_Q_P3std3std4mathG3powFidididE1x1yE": {
+            "function_name": "pow",
+            "instr_offsets_to_metadata": [
+                [
+                    1,
+                    {
+                        "position": {
+                            "type": "FilePosition",
+                            "value": {
+                                "end_column": 53,
+                                "end_line": 36,
+                                "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                                "start_column": 38,
+                                "start_line": 36
+                            }
+                        }
+                    }
+                ],
+                [
+                    9,
+                    {
+                        "position": {
+                            "type": "FilePosition",
+                            "value": {
+                                "end_column": 53,
+                                "end_line": 36,
+                                "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                                "start_column": 38,
+                                "start_line": 36
+                            }
+                        }
+                    }
+                ]
+            ],
+            "instr_offsets_to_variable_init": [],
+            "parameter_indexes_to_metadata": [
+                [
+                    0,
+                    {
+                        "name": "x",
+                        "position": {
+                            "type": "FilePosition",
+                            "value": {
+                                "end_column": 14,
+                                "end_line": 36,
+                                "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                                "start_column": 9,
+                                "start_line": 36
+                            }
+                        }
+                    }
+                ],
+                [
+                    1,
+                    {
+                        "name": "y",
+                        "position": {
+                            "type": "FilePosition",
+                            "value": {
+                                "end_column": 22,
+                                "end_line": 36,
+                                "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                                "start_column": 17,
+                                "start_line": 36
+                            }
+                        }
+                    }
+                ]
+            ],
+            "position": {
+                "type": "FilePosition",
+                "value": {
+                    "end_column": 54,
+                    "end_line": 36,
+                    "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                    "start_column": 1,
+                    "start_line": 36
+                }
+            }
+        },
+        "_Q_P3std3std4mathG3powFiqiqiqE1x1yE": {
+            "function_name": "pow",
+            "instr_offsets_to_metadata": [
+                [
+                    1,
+                    {
+                        "position": {
+                            "type": "FilePosition",
+                            "value": {
+                                "end_column": 53,
+                                "end_line": 37,
+                                "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                                "start_column": 38,
+                                "start_line": 37
+                            }
+                        }
+                    }
+                ],
+                [
+                    9,
+                    {
+                        "position": {
+                            "type": "FilePosition",
+                            "value": {
+                                "end_column": 53,
+                                "end_line": 37,
+                                "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                                "start_column": 38,
+                                "start_line": 37
+                            }
+                        }
+                    }
+                ]
+            ],
+            "instr_offsets_to_variable_init": [],
+            "parameter_indexes_to_metadata": [
+                [
+                    0,
+                    {
+                        "name": "x",
+                        "position": {
+                            "type": "FilePosition",
+                            "value": {
+                                "end_column": 14,
+                                "end_line": 37,
+                                "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                                "start_column": 9,
+                                "start_line": 37
+                            }
+                        }
+                    }
+                ],
+                [
+                    1,
+                    {
+                        "name": "y",
+                        "position": {
+                            "type": "FilePosition",
+                            "value": {
+                                "end_column": 22,
+                                "end_line": 37,
+                                "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                                "start_column": 17,
+                                "start_line": 37
+                            }
+                        }
+                    }
+                ]
+            ],
+            "position": {
+                "type": "FilePosition",
+                "value": {
+                    "end_column": 54,
+                    "end_line": 37,
+                    "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                    "start_column": 1,
+                    "start_line": 37
+                }
+            }
+        },
+        "_Q_P3std3std4mathG3sinFddE1xE": {
+            "function_name": "sin",
+            "instr_offsets_to_metadata": [
+                [
+                    1,
+                    {
+                        "position": {
+                            "type": "FilePosition",
+                            "value": {
+                                "end_column": 55,
+                                "end_line": 45,
+                                "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                                "start_column": 49,
+                                "start_line": 45
+                            }
+                        }
+                    }
+                ],
+                [
+                    7,
+                    {
+                        "position": {
+                            "type": "FilePosition",
+                            "value": {
+                                "end_column": 55,
+                                "end_line": 45,
+                                "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                                "start_column": 49,
+                                "start_line": 45
+                            }
+                        }
+                    }
+                ]
+            ],
+            "instr_offsets_to_variable_init": [],
+            "parameter_indexes_to_metadata": [
+                [
+                    0,
+                    {
+                        "name": "x",
+                        "position": {
+                            "type": "FilePosition",
+                            "value": {
+                                "end_column": 14,
+                                "end_line": 45,
+                                "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                                "start_column": 9,
+                                "start_line": 45
+                            }
+                        }
+                    }
+                ]
+            ],
+            "position": {
+                "type": "FilePosition",
+                "value": {
+                    "end_column": 56,
+                    "end_line": 45,
+                    "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                    "start_column": 1,
+                    "start_line": 45
+                }
+            }
+        },
+        "_Q_P3std3std4mathG3sinFffE1xE": {
+            "function_name": "sin",
+            "instr_offsets_to_metadata": [
+                [
+                    1,
+                    {
+                        "position": {
+                            "type": "FilePosition",
+                            "value": {
+                                "end_column": 56,
+                                "end_line": 44,
+                                "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                                "start_column": 49,
+                                "start_line": 44
+                            }
+                        }
+                    }
+                ],
+                [
+                    7,
+                    {
+                        "position": {
+                            "type": "FilePosition",
+                            "value": {
+                                "end_column": 56,
+                                "end_line": 44,
+                                "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                                "start_column": 49,
+                                "start_line": 44
+                            }
+                        }
+                    }
+                ]
+            ],
+            "instr_offsets_to_variable_init": [],
+            "parameter_indexes_to_metadata": [
+                [
+                    0,
+                    {
+                        "name": "x",
+                        "position": {
+                            "type": "FilePosition",
+                            "value": {
+                                "end_column": 14,
+                                "end_line": 44,
+                                "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                                "start_column": 9,
+                                "start_line": 44
+                            }
+                        }
+                    }
+                ]
+            ],
+            "position": {
+                "type": "FilePosition",
+                "value": {
+                    "end_column": 57,
+                    "end_line": 44,
+                    "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                    "start_column": 1,
+                    "start_line": 44
+                }
+            }
+        },
+        "_Q_P3std3std4mathG4sqrtFddE1xE": {
+            "function_name": "sqrt",
+            "instr_offsets_to_metadata": [
+                [
+                    1,
+                    {
+                        "position": {
+                            "type": "FilePosition",
+                            "value": {
+                                "end_column": 56,
+                                "end_line": 42,
+                                "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                                "start_column": 49,
+                                "start_line": 42
+                            }
+                        }
+                    }
+                ],
+                [
+                    7,
+                    {
+                        "position": {
+                            "type": "FilePosition",
+                            "value": {
+                                "end_column": 56,
+                                "end_line": 42,
+                                "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                                "start_column": 49,
+                                "start_line": 42
+                            }
+                        }
+                    }
+                ]
+            ],
+            "instr_offsets_to_variable_init": [],
+            "parameter_indexes_to_metadata": [
+                [
+                    0,
+                    {
+                        "name": "x",
+                        "position": {
+                            "type": "FilePosition",
+                            "value": {
+                                "end_column": 15,
+                                "end_line": 42,
+                                "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                                "start_column": 10,
+                                "start_line": 42
+                            }
+                        }
+                    }
+                ]
+            ],
+            "position": {
+                "type": "FilePosition",
+                "value": {
+                    "end_column": 57,
+                    "end_line": 42,
+                    "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                    "start_column": 1,
+                    "start_line": 42
+                }
+            }
+        },
+        "_Q_P3std3std4mathG4sqrtFffE1xE": {
+            "function_name": "sqrt",
+            "instr_offsets_to_metadata": [
+                [
+                    1,
+                    {
+                        "position": {
+                            "type": "FilePosition",
+                            "value": {
+                                "end_column": 57,
+                                "end_line": 41,
+                                "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                                "start_column": 49,
+                                "start_line": 41
+                            }
+                        }
+                    }
+                ],
+                [
+                    7,
+                    {
+                        "position": {
+                            "type": "FilePosition",
+                            "value": {
+                                "end_column": 57,
+                                "end_line": 41,
+                                "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                                "start_column": 49,
+                                "start_line": 41
+                            }
+                        }
+                    }
+                ]
+            ],
+            "instr_offsets_to_variable_init": [],
+            "parameter_indexes_to_metadata": [
+                [
+                    0,
+                    {
+                        "name": "x",
+                        "position": {
+                            "type": "FilePosition",
+                            "value": {
+                                "end_column": 15,
+                                "end_line": 41,
+                                "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                                "start_column": 10,
+                                "start_line": 41
+                            }
+                        }
+                    }
+                ]
+            ],
+            "position": {
+                "type": "FilePosition",
+                "value": {
+                    "end_column": 58,
+                    "end_line": 41,
+                    "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                    "start_column": 1,
+                    "start_line": 41
+                }
+            }
+        },
+        "_Q_P3std3std4mathN4impl3maxItidEEFidididE1x1yE": {
+            "function_name": "max",
+            "instr_offsets_to_metadata": [
+                [
+                    2,
+                    {
+                        "position": {
+                            "type": "FilePosition",
+                            "value": {
+                                "end_column": 17,
+                                "end_line": 371,
+                                "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                                "start_column": 13,
+                                "start_line": 371
+                            }
+                        }
+                    }
+                ],
+                [
+                    5,
+                    {
+                        "position": {
+                            "type": "FilePosition",
+                            "value": {
+                                "end_column": 28,
+                                "end_line": 371,
+                                "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                                "start_column": 9,
+                                "start_line": 371
+                            }
+                        }
+                    }
+                ],
+                [
+                    16,
+                    {
+                        "position": {
+                            "type": "FilePosition",
+                            "value": {
+                                "end_column": 28,
+                                "end_line": 371,
+                                "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                                "start_column": 20,
+                                "start_line": 371
+                            }
+                        }
+                    }
+                ],
+                [
+                    21,
+                    {
+                        "position": {
+                            "type": "FilePosition",
+                            "value": {
+                                "end_column": 17,
+                                "end_line": 372,
+                                "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                                "start_column": 9,
+                                "start_line": 372
+                            }
+                        }
+                    }
+                ]
+            ],
+            "instr_offsets_to_variable_init": [],
+            "parameter_indexes_to_metadata": [
+                [
+                    0,
+                    {
+                        "name": "x",
+                        "position": {
+                            "type": "FilePosition",
+                            "value": {
+                                "end_column": 16,
+                                "end_line": 370,
+                                "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                                "start_column": 13,
+                                "start_line": 370
+                            }
+                        }
+                    }
+                ],
+                [
+                    1,
+                    {
+                        "name": "y",
+                        "position": {
+                            "type": "FilePosition",
+                            "value": {
+                                "end_column": 22,
+                                "end_line": 370,
+                                "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                                "start_column": 19,
+                                "start_line": 370
+                            }
+                        }
+                    }
+                ]
+            ],
+            "position": {
+                "type": "FilePosition",
+                "value": {
+                    "end_column": 5,
+                    "end_line": 373,
+                    "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                    "start_column": 5,
+                    "start_line": 370
+                }
+            }
+        },
+        "_Q_P3std3std4mathN4impl3maxItiqEEFiqiqiqE1x1yE": {
+            "function_name": "max",
+            "instr_offsets_to_metadata": [
+                [
+                    2,
+                    {
+                        "position": {
+                            "type": "FilePosition",
+                            "value": {
+                                "end_column": 17,
+                                "end_line": 371,
+                                "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                                "start_column": 13,
+                                "start_line": 371
+                            }
+                        }
+                    }
+                ],
+                [
+                    5,
+                    {
+                        "position": {
+                            "type": "FilePosition",
+                            "value": {
+                                "end_column": 28,
+                                "end_line": 371,
+                                "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                                "start_column": 9,
+                                "start_line": 371
+                            }
+                        }
+                    }
+                ],
+                [
+                    16,
+                    {
+                        "position": {
+                            "type": "FilePosition",
+                            "value": {
+                                "end_column": 28,
+                                "end_line": 371,
+                                "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                                "start_column": 20,
+                                "start_line": 371
+                            }
+                        }
+                    }
+                ],
+                [
+                    21,
+                    {
+                        "position": {
+                            "type": "FilePosition",
+                            "value": {
+                                "end_column": 17,
+                                "end_line": 372,
+                                "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                                "start_column": 9,
+                                "start_line": 372
+                            }
+                        }
+                    }
+                ]
+            ],
+            "instr_offsets_to_variable_init": [],
+            "parameter_indexes_to_metadata": [
+                [
+                    0,
+                    {
+                        "name": "x",
+                        "position": {
+                            "type": "FilePosition",
+                            "value": {
+                                "end_column": 16,
+                                "end_line": 370,
+                                "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                                "start_column": 13,
+                                "start_line": 370
+                            }
+                        }
+                    }
+                ],
+                [
+                    1,
+                    {
+                        "name": "y",
+                        "position": {
+                            "type": "FilePosition",
+                            "value": {
+                                "end_column": 22,
+                                "end_line": 370,
+                                "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                                "start_column": 19,
+                                "start_line": 370
+                            }
+                        }
+                    }
+                ]
+            ],
+            "position": {
+                "type": "FilePosition",
+                "value": {
+                    "end_column": 5,
+                    "end_line": 373,
+                    "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                    "start_column": 5,
+                    "start_line": 370
+                }
+            }
+        },
+        "_Q_P3std3std4mathN4impl3minItidEEFidididE1x1yE": {
+            "function_name": "min",
+            "instr_offsets_to_metadata": [
+                [
+                    2,
+                    {
+                        "position": {
+                            "type": "FilePosition",
+                            "value": {
+                                "end_column": 17,
+                                "end_line": 378,
+                                "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                                "start_column": 13,
+                                "start_line": 378
+                            }
+                        }
+                    }
+                ],
+                [
+                    5,
+                    {
+                        "position": {
+                            "type": "FilePosition",
+                            "value": {
+                                "end_column": 28,
+                                "end_line": 378,
+                                "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                                "start_column": 9,
+                                "start_line": 378
+                            }
+                        }
+                    }
+                ],
+                [
+                    16,
+                    {
+                        "position": {
+                            "type": "FilePosition",
+                            "value": {
+                                "end_column": 28,
+                                "end_line": 378,
+                                "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                                "start_column": 20,
+                                "start_line": 378
+                            }
+                        }
+                    }
+                ],
+                [
+                    21,
+                    {
+                        "position": {
+                            "type": "FilePosition",
+                            "value": {
+                                "end_column": 17,
+                                "end_line": 379,
+                                "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                                "start_column": 9,
+                                "start_line": 379
+                            }
+                        }
+                    }
+                ]
+            ],
+            "instr_offsets_to_variable_init": [],
+            "parameter_indexes_to_metadata": [
+                [
+                    0,
+                    {
+                        "name": "x",
+                        "position": {
+                            "type": "FilePosition",
+                            "value": {
+                                "end_column": 16,
+                                "end_line": 377,
+                                "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                                "start_column": 13,
+                                "start_line": 377
+                            }
+                        }
+                    }
+                ],
+                [
+                    1,
+                    {
+                        "name": "y",
+                        "position": {
+                            "type": "FilePosition",
+                            "value": {
+                                "end_column": 22,
+                                "end_line": 377,
+                                "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                                "start_column": 19,
+                                "start_line": 377
+                            }
+                        }
+                    }
+                ]
+            ],
+            "position": {
+                "type": "FilePosition",
+                "value": {
+                    "end_column": 5,
+                    "end_line": 380,
+                    "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                    "start_column": 5,
+                    "start_line": 377
+                }
+            }
+        },
+        "_Q_P3std3std4mathN4impl3minItiqEEFiqiqiqE1x1yE": {
+            "function_name": "min",
+            "instr_offsets_to_metadata": [
+                [
+                    2,
+                    {
+                        "position": {
+                            "type": "FilePosition",
+                            "value": {
+                                "end_column": 17,
+                                "end_line": 378,
+                                "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                                "start_column": 13,
+                                "start_line": 378
+                            }
+                        }
+                    }
+                ],
+                [
+                    5,
+                    {
+                        "position": {
+                            "type": "FilePosition",
+                            "value": {
+                                "end_column": 28,
+                                "end_line": 378,
+                                "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                                "start_column": 9,
+                                "start_line": 378
+                            }
+                        }
+                    }
+                ],
+                [
+                    16,
+                    {
+                        "position": {
+                            "type": "FilePosition",
+                            "value": {
+                                "end_column": 28,
+                                "end_line": 378,
+                                "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                                "start_column": 20,
+                                "start_line": 378
+                            }
+                        }
+                    }
+                ],
+                [
+                    21,
+                    {
+                        "position": {
+                            "type": "FilePosition",
+                            "value": {
+                                "end_column": 17,
+                                "end_line": 379,
+                                "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                                "start_column": 9,
+                                "start_line": 379
+                            }
+                        }
+                    }
+                ]
+            ],
+            "instr_offsets_to_variable_init": [],
+            "parameter_indexes_to_metadata": [
+                [
+                    0,
+                    {
+                        "name": "x",
+                        "position": {
+                            "type": "FilePosition",
+                            "value": {
+                                "end_column": 16,
+                                "end_line": 377,
+                                "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                                "start_column": 13,
+                                "start_line": 377
+                            }
+                        }
+                    }
+                ],
+                [
+                    1,
+                    {
+                        "name": "y",
+                        "position": {
+                            "type": "FilePosition",
+                            "value": {
+                                "end_column": 22,
+                                "end_line": 377,
+                                "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                                "start_column": 19,
+                                "start_line": 377
+                            }
+                        }
+                    }
+                ]
+            ],
+            "position": {
+                "type": "FilePosition",
+                "value": {
+                    "end_column": 5,
+                    "end_line": 380,
+                    "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                    "start_column": 5,
+                    "start_line": 377
+                }
+            }
+        },
+        "_Q_P3std3std4mathN4impl4lerpEFddddE1a1b1tE": {
+            "function_name": "lerp",
+            "instr_offsets_to_metadata": [
+                [
+                    3,
+                    {
+                        "position": {
+                            "type": "FilePosition",
+                            "value": {
+                                "end_column": 56,
+                                "end_line": 474,
+                                "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                                "start_column": 52,
+                                "start_line": 474
+                            }
+                        }
+                    }
+                ],
+                [
+                    5,
+                    {
+                        "position": {
+                            "type": "FilePosition",
+                            "value": {
+                                "end_column": 61,
+                                "end_line": 474,
+                                "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                                "start_column": 52,
+                                "start_line": 474
+                            }
+                        }
+                    }
+                ],
+                [
+                    7,
+                    {
+                        "position": {
+                            "type": "FilePosition",
+                            "value": {
+                                "end_column": 61,
+                                "end_line": 474,
+                                "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                                "start_column": 47,
+                                "start_line": 474
+                            }
+                        }
+                    }
+                ],
+                [
+                    9,
+                    {
+                        "position": {
+                            "type": "FilePosition",
+                            "value": {
+                                "end_column": 61,
+                                "end_line": 474,
+                                "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                                "start_column": 47,
+                                "start_line": 474
+                            }
+                        }
+                    }
+                ]
+            ],
+            "instr_offsets_to_variable_init": [],
+            "parameter_indexes_to_metadata": [
+                [
+                    0,
+                    {
+                        "name": "a",
+                        "position": {
+                            "type": "FilePosition",
+                            "value": {
+                                "end_column": 19,
+                                "end_line": 474,
+                                "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                                "start_column": 14,
+                                "start_line": 474
+                            }
+                        }
+                    }
+                ],
+                [
+                    1,
+                    {
+                        "name": "b",
+                        "position": {
+                            "type": "FilePosition",
+                            "value": {
+                                "end_column": 27,
+                                "end_line": 474,
+                                "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                                "start_column": 22,
+                                "start_line": 474
+                            }
+                        }
+                    }
+                ],
+                [
+                    2,
+                    {
+                        "name": "t",
+                        "position": {
+                            "type": "FilePosition",
+                            "value": {
+                                "end_column": 35,
+                                "end_line": 474,
+                                "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                                "start_column": 30,
+                                "start_line": 474
+                            }
+                        }
+                    }
+                ]
+            ],
+            "position": {
+                "type": "FilePosition",
+                "value": {
+                    "end_column": 62,
+                    "end_line": 474,
+                    "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                    "start_column": 5,
+                    "start_line": 474
+                }
+            }
+        },
+        "_Q_P3std3std4mathN4impl4powiItidEEFidididE1x1yE": {
+            "function_name": "powi",
+            "instr_offsets_to_metadata": [
+                [
+                    4,
+                    {
+                        "position": {
+                            "type": "FilePosition",
+                            "value": {
+                                "end_column": 17,
+                                "end_line": 387,
+                                "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                                "start_column": 13,
+                                "start_line": 387
+                            }
+                        }
+                    }
+                ],
+                [
+                    7,
+                    {
+                        "position": {
+                            "type": "FilePosition",
+                            "value": {
+                                "end_column": 42,
+                                "end_line": 387,
+                                "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                                "start_column": 9,
+                                "start_line": 387
+                            }
+                        }
+                    }
+                ],
+                [
+                    17,
+                    {
+                        "position": {
+                            "type": "FilePosition",
+                            "value": {
+                                "end_column": 41,
+                                "end_line": 387,
+                                "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                                "start_column": 34,
+                                "start_line": 387
+                            }
+                        }
+                    }
+                ],
+                [
+                    25,
+                    {
+                        "position": {
+                            "type": "FilePosition",
+                            "value": {
+                                "end_column": 31,
+                                "end_line": 389,
+                                "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                                "start_column": 9,
+                                "start_line": 389
+                            }
+                        }
+                    }
+                ],
+                [
+                    26,
+                    {
+                        "position": {
+                            "type": "FilePosition",
+                            "value": {
+                                "end_column": 24,
+                                "end_line": 390,
+                                "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                                "start_column": 9,
+                                "start_line": 390
+                            }
+                        }
+                    }
+                ],
+                [
+                    30,
+                    {
+                        "position": {
+                            "type": "FilePosition",
+                            "value": {
+                                "end_column": 21,
+                                "end_line": 392,
+                                "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                                "start_column": 17,
+                                "start_line": 392
+                            }
+                        }
+                    }
+                ],
+                [
+                    32,
+                    {
+                        "position": {
+                            "type": "FilePosition",
+                            "value": {
+                                "end_column": 31,
+                                "end_line": 392,
+                                "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                                "start_column": 17,
+                                "start_line": 392
+                            }
+                        }
+                    }
+                ],
+                [
+                    35,
+                    {
+                        "position": {
+                            "type": "FilePosition",
+                            "value": {
+                                "end_column": 13,
+                                "end_line": 394,
+                                "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                                "start_column": 13,
+                                "start_line": 392
+                            }
+                        }
+                    }
+                ],
+                [
+                    47,
+                    {
+                        "position": {
+                            "type": "FilePosition",
+                            "value": {
+                                "end_column": 38,
+                                "end_line": 393,
+                                "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                                "start_column": 17,
+                                "start_line": 393
+                            }
+                        }
+                    }
+                ],
+                [
+                    56,
+                    {
+                        "position": {
+                            "type": "FilePosition",
+                            "value": {
+                                "end_column": 28,
+                                "end_line": 395,
+                                "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                                "start_column": 13,
+                                "start_line": 395
+                            }
+                        }
+                    }
+                ],
+                [
+                    61,
+                    {
+                        "position": {
+                            "type": "FilePosition",
+                            "value": {
+                                "end_column": 30,
+                                "end_line": 396,
+                                "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                                "start_column": 13,
+                                "start_line": 396
+                            }
+                        }
+                    }
+                ],
+                [
+                    69,
+                    {
+                        "position": {
+                            "type": "FilePosition",
+                            "value": {
+                                "end_column": 20,
+                                "end_line": 391,
+                                "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                                "start_column": 16,
+                                "start_line": 391
+                            }
+                        }
+                    }
+                ],
+                [
+                    72,
+                    {
+                        "position": {
+                            "type": "FilePosition",
+                            "value": {
+                                "end_column": 9,
+                                "end_line": 397,
+                                "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                                "start_column": 9,
+                                "start_line": 391
+                            }
+                        }
+                    }
+                ],
+                [
+                    85,
+                    {
+                        "position": {
+                            "type": "FilePosition",
+                            "value": {
+                                "end_column": 22,
+                                "end_line": 398,
+                                "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                                "start_column": 9,
+                                "start_line": 398
+                            }
+                        }
+                    }
+                ]
+            ],
+            "instr_offsets_to_variable_init": [
+                [
+                    1,
+                    {
+                        "name": "result",
+                        "position": {
+                            "type": "FilePosition",
+                            "value": {
+                                "end_column": 31,
+                                "end_line": 389,
+                                "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                                "start_column": 9,
+                                "start_line": 389
+                            }
+                        }
+                    }
+                ],
+                [
+                    2,
+                    {
+                        "name": "base",
+                        "position": {
+                            "type": "FilePosition",
+                            "value": {
+                                "end_column": 24,
+                                "end_line": 390,
+                                "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                                "start_column": 9,
+                                "start_line": 390
+                            }
+                        }
+                    }
+                ]
+            ],
+            "parameter_indexes_to_metadata": [
+                [
+                    0,
+                    {
+                        "name": "x",
+                        "position": {
+                            "type": "FilePosition",
+                            "value": {
+                                "end_column": 17,
+                                "end_line": 386,
+                                "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                                "start_column": 14,
+                                "start_line": 386
+                            }
+                        }
+                    }
+                ],
+                [
+                    1,
+                    {
+                        "name": "y",
+                        "position": {
+                            "type": "FilePosition",
+                            "value": {
+                                "end_column": 23,
+                                "end_line": 386,
+                                "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                                "start_column": 20,
+                                "start_line": 386
+                            }
+                        }
+                    }
+                ]
+            ],
+            "position": {
+                "type": "FilePosition",
+                "value": {
+                    "end_column": 5,
+                    "end_line": 399,
+                    "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                    "start_column": 5,
+                    "start_line": 386
+                }
+            }
+        },
+        "_Q_P3std3std4mathN4impl4powiItiqEEFiqiqiqE1x1yE": {
+            "function_name": "powi",
+            "instr_offsets_to_metadata": [
+                [
+                    5,
+                    {
+                        "position": {
+                            "type": "FilePosition",
+                            "value": {
+                                "end_column": 17,
+                                "end_line": 387,
+                                "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                                "start_column": 17,
+                                "start_line": 387
+                            }
+                        }
+                    }
+                ],
+                [
+                    9,
+                    {
+                        "position": {
+                            "type": "FilePosition",
+                            "value": {
+                                "end_column": 17,
+                                "end_line": 387,
+                                "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                                "start_column": 13,
+                                "start_line": 387
+                            }
+                        }
+                    }
+                ],
+                [
+                    12,
+                    {
+                        "position": {
+                            "type": "FilePosition",
+                            "value": {
+                                "end_column": 42,
+                                "end_line": 387,
+                                "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                                "start_column": 9,
+                                "start_line": 387
+                            }
+                        }
+                    }
+                ],
+                [
+                    24,
+                    {
+                        "position": {
+                            "type": "FilePosition",
+                            "value": {
+                                "end_column": 41,
+                                "end_line": 387,
+                                "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                                "start_column": 34,
+                                "start_line": 387
+                            }
+                        }
+                    }
+                ],
+                [
+                    32,
+                    {
+                        "position": {
+                            "type": "FilePosition",
+                            "value": {
+                                "end_column": 31,
+                                "end_line": 389,
+                                "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                                "start_column": 9,
+                                "start_line": 389
+                            }
+                        }
+                    }
+                ],
+                [
+                    36,
+                    {
+                        "position": {
+                            "type": "FilePosition",
+                            "value": {
+                                "end_column": 24,
+                                "end_line": 390,
+                                "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                                "start_column": 9,
+                                "start_line": 390
+                            }
+                        }
+                    }
+                ],
+                [
+                    41,
+                    {
+                        "position": {
+                            "type": "FilePosition",
+                            "value": {
+                                "end_column": 21,
+                                "end_line": 392,
+                                "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                                "start_column": 21,
+                                "start_line": 392
+                            }
+                        }
+                    }
+                ],
+                [
+                    45,
+                    {
+                        "position": {
+                            "type": "FilePosition",
+                            "value": {
+                                "end_column": 21,
+                                "end_line": 392,
+                                "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                                "start_column": 17,
+                                "start_line": 392
+                            }
+                        }
+                    }
+                ],
+                [
+                    47,
+                    {
+                        "position": {
+                            "type": "FilePosition",
+                            "value": {
+                                "end_column": 31,
+                                "end_line": 392,
+                                "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                                "start_column": 31,
+                                "start_line": 392
+                            }
+                        }
+                    }
+                ],
+                [
+                    51,
+                    {
+                        "position": {
+                            "type": "FilePosition",
+                            "value": {
+                                "end_column": 31,
+                                "end_line": 392,
+                                "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                                "start_column": 17,
+                                "start_line": 392
+                            }
+                        }
+                    }
+                ],
+                [
+                    54,
+                    {
+                        "position": {
+                            "type": "FilePosition",
+                            "value": {
+                                "end_column": 13,
+                                "end_line": 394,
+                                "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                                "start_column": 13,
+                                "start_line": 392
+                            }
+                        }
+                    }
+                ],
+                [
+                    70,
+                    {
+                        "position": {
+                            "type": "FilePosition",
+                            "value": {
+                                "end_column": 38,
+                                "end_line": 393,
+                                "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                                "start_column": 17,
+                                "start_line": 393
+                            }
+                        }
+                    }
+                ],
+                [
+                    81,
+                    {
+                        "position": {
+                            "type": "FilePosition",
+                            "value": {
+                                "end_column": 22,
+                                "end_line": 395,
+                                "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                                "start_column": 22,
+                                "start_line": 395
+                            }
+                        }
+                    }
+                ],
+                [
+                    85,
+                    {
+                        "position": {
+                            "type": "FilePosition",
+                            "value": {
+                                "end_column": 28,
+                                "end_line": 395,
+                                "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                                "start_column": 13,
+                                "start_line": 395
+                            }
+                        }
+                    }
+                ],
+                [
+                    91,
+                    {
+                        "position": {
+                            "type": "FilePosition",
+                            "value": {
+                                "end_column": 30,
+                                "end_line": 396,
+                                "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                                "start_column": 13,
+                                "start_line": 396
+                            }
+                        }
+                    }
+                ],
+                [
+                    100,
+                    {
+                        "position": {
+                            "type": "FilePosition",
+                            "value": {
+                                "end_column": 20,
+                                "end_line": 391,
+                                "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                                "start_column": 20,
+                                "start_line": 391
+                            }
+                        }
+                    }
+                ],
+                [
+                    104,
+                    {
+                        "position": {
+                            "type": "FilePosition",
+                            "value": {
+                                "end_column": 20,
+                                "end_line": 391,
+                                "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                                "start_column": 16,
+                                "start_line": 391
+                            }
+                        }
+                    }
+                ],
+                [
+                    107,
+                    {
+                        "position": {
+                            "type": "FilePosition",
+                            "value": {
+                                "end_column": 9,
+                                "end_line": 397,
+                                "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                                "start_column": 9,
+                                "start_line": 391
+                            }
+                        }
+                    }
+                ],
+                [
+                    124,
+                    {
+                        "position": {
+                            "type": "FilePosition",
+                            "value": {
+                                "end_column": 22,
+                                "end_line": 398,
+                                "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                                "start_column": 9,
+                                "start_line": 398
+                            }
+                        }
+                    }
+                ]
+            ],
+            "instr_offsets_to_variable_init": [
+                [
+                    1,
+                    {
+                        "name": "result",
+                        "position": {
+                            "type": "FilePosition",
+                            "value": {
+                                "end_column": 31,
+                                "end_line": 389,
+                                "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                                "start_column": 9,
+                                "start_line": 389
+                            }
+                        }
+                    }
+                ],
+                [
+                    2,
+                    {
+                        "name": "base",
+                        "position": {
+                            "type": "FilePosition",
+                            "value": {
+                                "end_column": 24,
+                                "end_line": 390,
+                                "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                                "start_column": 9,
+                                "start_line": 390
+                            }
+                        }
+                    }
+                ]
+            ],
+            "parameter_indexes_to_metadata": [
+                [
+                    0,
+                    {
+                        "name": "x",
+                        "position": {
+                            "type": "FilePosition",
+                            "value": {
+                                "end_column": 17,
+                                "end_line": 386,
+                                "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                                "start_column": 14,
+                                "start_line": 386
+                            }
+                        }
+                    }
+                ],
+                [
+                    1,
+                    {
+                        "name": "y",
+                        "position": {
+                            "type": "FilePosition",
+                            "value": {
+                                "end_column": 23,
+                                "end_line": 386,
+                                "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                                "start_column": 20,
+                                "start_line": 386
+                            }
+                        }
+                    }
+                ]
+            ],
+            "position": {
+                "type": "FilePosition",
+                "value": {
+                    "end_column": 5,
+                    "end_line": 399,
+                    "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                    "start_column": 5,
+                    "start_line": 386
+                }
+            }
+        },
+        "_Q_P3std3std4mathN4impl5lerpfEFffffE1a1b1tE": {
+            "function_name": "lerpf",
+            "instr_offsets_to_metadata": [
+                [
+                    3,
+                    {
+                        "position": {
+                            "type": "FilePosition",
+                            "value": {
+                                "end_column": 57,
+                                "end_line": 473,
+                                "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                                "start_column": 53,
+                                "start_line": 473
+                            }
+                        }
+                    }
+                ],
+                [
+                    5,
+                    {
+                        "position": {
+                            "type": "FilePosition",
+                            "value": {
+                                "end_column": 62,
+                                "end_line": 473,
+                                "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                                "start_column": 53,
+                                "start_line": 473
+                            }
+                        }
+                    }
+                ],
+                [
+                    7,
+                    {
+                        "position": {
+                            "type": "FilePosition",
+                            "value": {
+                                "end_column": 62,
+                                "end_line": 473,
+                                "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                                "start_column": 48,
+                                "start_line": 473
+                            }
+                        }
+                    }
+                ],
+                [
+                    9,
+                    {
+                        "position": {
+                            "type": "FilePosition",
+                            "value": {
+                                "end_column": 62,
+                                "end_line": 473,
+                                "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                                "start_column": 48,
+                                "start_line": 473
+                            }
+                        }
+                    }
+                ]
+            ],
+            "instr_offsets_to_variable_init": [],
+            "parameter_indexes_to_metadata": [
+                [
+                    0,
+                    {
+                        "name": "a",
+                        "position": {
+                            "type": "FilePosition",
+                            "value": {
+                                "end_column": 20,
+                                "end_line": 473,
+                                "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                                "start_column": 15,
+                                "start_line": 473
+                            }
+                        }
+                    }
+                ],
+                [
+                    1,
+                    {
+                        "name": "b",
+                        "position": {
+                            "type": "FilePosition",
+                            "value": {
+                                "end_column": 28,
+                                "end_line": 473,
+                                "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                                "start_column": 23,
+                                "start_line": 473
+                            }
+                        }
+                    }
+                ],
+                [
+                    2,
+                    {
+                        "name": "t",
+                        "position": {
+                            "type": "FilePosition",
+                            "value": {
+                                "end_column": 36,
+                                "end_line": 473,
+                                "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                                "start_column": 31,
+                                "start_line": 473
+                            }
+                        }
+                    }
+                ]
+            ],
+            "position": {
+                "type": "FilePosition",
+                "value": {
+                    "end_column": 63,
+                    "end_line": 473,
+                    "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                    "start_column": 5,
+                    "start_line": 473
+                }
+            }
+        }
+    },
+    "globals": {
+        "_Q_P3std3std4mathN9constants10DEG_TO_RADE": {
+            "name": "DEG_TO_RAD",
+            "position": {
+                "type": "FilePosition",
+                "value": {
+                    "end_column": 57,
+                    "end_line": 579,
+                    "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                    "start_column": 5,
+                    "start_line": 579
+                }
+            }
+        },
+        "_Q_P3std3std4mathN9constants10FRAC_1_PHIE": {
+            "name": "FRAC_1_PHI",
+            "position": {
+                "type": "FilePosition",
+                "value": {
+                    "end_column": 57,
+                    "end_line": 574,
+                    "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                    "start_column": 5,
+                    "start_line": 574
+                }
+            }
+        },
+        "_Q_P3std3std4mathN9constants10RAD_TO_DEGE": {
+            "name": "RAD_TO_DEG",
+            "position": {
+                "type": "FilePosition",
+                "value": {
+                    "end_column": 55,
+                    "end_line": 578,
+                    "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                    "start_column": 5,
+                    "start_line": 578
+                }
+            }
+        },
+        "_Q_P3std3std4mathN9constants12FRAC_1_SQRT2E": {
+            "name": "FRAC_1_SQRT2",
+            "position": {
+                "type": "FilePosition",
+                "value": {
+                    "end_column": 58,
+                    "end_line": 589,
+                    "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                    "start_column": 5,
+                    "start_line": 589
+                }
+            }
+        },
+        "_Q_P3std3std4mathN9constants12FRAC_1_SQRT3E": {
+            "name": "FRAC_1_SQRT3",
+            "position": {
+                "type": "FilePosition",
+                "value": {
+                    "end_column": 58,
+                    "end_line": 590,
+                    "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                    "start_column": 5,
+                    "start_line": 590
+                }
+            }
+        },
+        "_Q_P3std3std4mathN9constants12FRAC_1_SQRT5E": {
+            "name": "FRAC_1_SQRT5",
+            "position": {
+                "type": "FilePosition",
+                "value": {
+                    "end_column": 58,
+                    "end_line": 591,
+                    "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                    "start_column": 5,
+                    "start_line": 591
+                }
+            }
+        },
+        "_Q_P3std3std4mathN9constants14FRAC_1_SQRT_PIE": {
+            "name": "FRAC_1_SQRT_PI",
+            "position": {
+                "type": "FilePosition",
+                "value": {
+                    "end_column": 60,
+                    "end_line": 547,
+                    "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                    "start_column": 5,
+                    "start_line": 547
+                }
+            }
+        },
+        "_Q_P3std3std4mathN9constants14FRAC_2_SQRT_PIE": {
+            "name": "FRAC_2_SQRT_PI",
+            "position": {
+                "type": "FilePosition",
+                "value": {
+                    "end_column": 60,
+                    "end_line": 556,
+                    "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                    "start_column": 5,
+                    "start_line": 556
+                }
+            }
+        },
+        "_Q_P3std3std4mathN9constants15FRAC_1_SQRT_2PIE": {
+            "name": "FRAC_1_SQRT_2PI",
+            "position": {
+                "type": "FilePosition",
+                "value": {
+                    "end_column": 61,
+                    "end_line": 555,
+                    "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                    "start_column": 5,
+                    "start_line": 555
+                }
+            }
+        },
+        "_Q_P3std3std4mathN9constants1EE": {
+            "name": "E",
+            "position": {
+                "type": "FilePosition",
+                "value": {
+                    "end_column": 54,
+                    "end_line": 562,
+                    "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                    "start_column": 5,
+                    "start_line": 562
+                }
+            }
+        },
+        "_Q_P3std3std4mathN9constants2PIE": {
+            "name": "PI",
+            "position": {
+                "type": "FilePosition",
+                "value": {
+                    "end_column": 59,
+                    "end_line": 544,
+                    "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                    "start_column": 5,
+                    "start_line": 544
+                }
+            }
+        },
+        "_Q_P3std3std4mathN9constants3PHIE": {
+            "name": "PHI",
+            "position": {
+                "type": "FilePosition",
+                "value": {
+                    "end_column": 56,
+                    "end_line": 572,
+                    "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                    "start_column": 5,
+                    "start_line": 572
+                }
+            }
+        },
+        "_Q_P3std3std4mathN9constants3TAUE": {
+            "name": "TAU",
+            "position": {
+                "type": "FilePosition",
+                "value": {
+                    "end_column": 48,
+                    "end_line": 559,
+                    "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                    "start_column": 5,
+                    "start_line": 559
+                }
+            }
+        },
+        "_Q_P3std3std4mathN9constants4LN_2E": {
+            "name": "LN_2",
+            "position": {
+                "type": "FilePosition",
+                "value": {
+                    "end_column": 53,
+                    "end_line": 582,
+                    "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                    "start_column": 5,
+                    "start_line": 582
+                }
+            }
+        },
+        "_Q_P3std3std4mathN9constants5LN_10E": {
+            "name": "LN_10",
+            "position": {
+                "type": "FilePosition",
+                "value": {
+                    "end_column": 52,
+                    "end_line": 583,
+                    "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                    "start_column": 5,
+                    "start_line": 583
+                }
+            }
+        },
+        "_Q_P3std3std4mathN9constants5SQRT2E": {
+            "name": "SQRT2",
+            "position": {
+                "type": "FilePosition",
+                "value": {
+                    "end_column": 57,
+                    "end_line": 586,
+                    "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                    "start_column": 5,
+                    "start_line": 586
+                }
+            }
+        },
+        "_Q_P3std3std4mathN9constants5SQRT3E": {
+            "name": "SQRT3",
+            "position": {
+                "type": "FilePosition",
+                "value": {
+                    "end_column": 57,
+                    "end_line": 587,
+                    "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                    "start_column": 5,
+                    "start_line": 587
+                }
+            }
+        },
+        "_Q_P3std3std4mathN9constants5SQRT5E": {
+            "name": "SQRT5",
+            "position": {
+                "type": "FilePosition",
+                "value": {
+                    "end_column": 57,
+                    "end_line": 588,
+                    "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                    "start_column": 5,
+                    "start_line": 588
+                }
+            }
+        },
+        "_Q_P3std3std4mathN9constants6EGAMMAE": {
+            "name": "EGAMMA",
+            "position": {
+                "type": "FilePosition",
+                "value": {
+                    "end_column": 52,
+                    "end_line": 569,
+                    "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                    "start_column": 5,
+                    "start_line": 569
+                }
+            }
+        },
+        "_Q_P3std3std4mathN9constants6LN_PHIE": {
+            "name": "LN_PHI",
+            "position": {
+                "type": "FilePosition",
+                "value": {
+                    "end_column": 57,
+                    "end_line": 575,
+                    "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                    "start_column": 5,
+                    "start_line": 575
+                }
+            }
+        },
+        "_Q_P3std3std4mathN9constants6LOG2_EE": {
+            "name": "LOG2_E",
+            "position": {
+                "type": "FilePosition",
+                "value": {
+                    "end_column": 54,
+                    "end_line": 565,
+                    "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                    "start_column": 5,
+                    "start_line": 565
+                }
+            }
+        },
+        "_Q_P3std3std4mathN9constants6SQRT_EE": {
+            "name": "SQRT_E",
+            "position": {
+                "type": "FilePosition",
+                "value": {
+                    "end_column": 54,
+                    "end_line": 563,
+                    "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                    "start_column": 5,
+                    "start_line": 563
+                }
+            }
+        },
+        "_Q_P3std3std4mathN9constants7LOG10_EE": {
+            "name": "LOG10_E",
+            "position": {
+                "type": "FilePosition",
+                "value": {
+                    "end_column": 55,
+                    "end_line": 566,
+                    "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                    "start_column": 5,
+                    "start_line": 566
+                }
+            }
+        },
+        "_Q_P3std3std4mathN9constants7LOG2_10E": {
+            "name": "LOG2_10",
+            "position": {
+                "type": "FilePosition",
+                "value": {
+                    "end_column": 52,
+                    "end_line": 584,
+                    "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                    "start_column": 5,
+                    "start_line": 584
+                }
+            }
+        },
+        "_Q_P3std3std4mathN9constants7SQRT_PIE": {
+            "name": "SQRT_PI",
+            "position": {
+                "type": "FilePosition",
+                "value": {
+                    "end_column": 59,
+                    "end_line": 545,
+                    "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                    "start_column": 5,
+                    "start_line": 545
+                }
+            }
+        },
+        "_Q_P3std3std4mathN9constants8FRAC_1_EE": {
+            "name": "FRAC_1_E",
+            "position": {
+                "type": "FilePosition",
+                "value": {
+                    "end_column": 55,
+                    "end_line": 564,
+                    "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                    "start_column": 5,
+                    "start_line": 564
+                }
+            }
+        },
+        "_Q_P3std3std4mathN9constants8SQRT_PHIE": {
+            "name": "SQRT_PHI",
+            "position": {
+                "type": "FilePosition",
+                "value": {
+                    "end_column": 56,
+                    "end_line": 573,
+                    "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                    "start_column": 5,
+                    "start_line": 573
+                }
+            }
+        },
+        "_Q_P3std3std4mathN9constants9FRAC_1_PIE": {
+            "name": "FRAC_1_PI",
+            "position": {
+                "type": "FilePosition",
+                "value": {
+                    "end_column": 60,
+                    "end_line": 546,
+                    "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                    "start_column": 5,
+                    "start_line": 546
+                }
+            }
+        },
+        "_Q_P3std3std4mathN9constants9FRAC_PI_2E": {
+            "name": "FRAC_PI_2",
+            "position": {
+                "type": "FilePosition",
+                "value": {
+                    "end_column": 54,
+                    "end_line": 549,
+                    "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                    "start_column": 5,
+                    "start_line": 549
+                }
+            }
+        },
+        "_Q_P3std3std4mathN9constants9FRAC_PI_3E": {
+            "name": "FRAC_PI_3",
+            "position": {
+                "type": "FilePosition",
+                "value": {
+                    "end_column": 54,
+                    "end_line": 550,
+                    "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                    "start_column": 5,
+                    "start_line": 550
+                }
+            }
+        },
+        "_Q_P3std3std4mathN9constants9FRAC_PI_4E": {
+            "name": "FRAC_PI_4",
+            "position": {
+                "type": "FilePosition",
+                "value": {
+                    "end_column": 55,
+                    "end_line": 551,
+                    "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                    "start_column": 5,
+                    "start_line": 551
+                }
+            }
+        },
+        "_Q_P3std3std4mathN9constants9FRAC_PI_6E": {
+            "name": "FRAC_PI_6",
+            "position": {
+                "type": "FilePosition",
+                "value": {
+                    "end_column": 55,
+                    "end_line": 552,
+                    "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                    "start_column": 5,
+                    "start_line": 552
+                }
+            }
+        },
+        "_Q_P3std3std4mathN9constants9FRAC_PI_8E": {
+            "name": "FRAC_PI_8",
+            "position": {
+                "type": "FilePosition",
+                "value": {
+                    "end_column": 55,
+                    "end_line": 553,
+                    "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/std/math.dk",
+                    "start_column": 5,
+                    "start_line": 553
+                }
+            }
+        }
+    },
+    "module_path": "/home/karol/code/projects/queens-designer/.duck_build/dev/queens-designer-1.0.0-504d2738f049550be4e1757149b6886b5fd00b4543a07c39f0331eed8f94a81e/artifacts/query/query71/9dda6befb746358e37b9d4aaf744145783a600f8dc70062fc1b49835d3b7fda1.dbc",
+    "source_positions_type": "LineColumn",
+    "target": "DBC",
+    "types": {
+        "f32": {
+            "name": "f32"
+        },
+        "f64": {
+            "name": "f64"
+        },
+        "i32": {
+            "name": "i32"
+        },
+        "i64": {
+            "name": "i64"
+        },
+        "i8": {
+            "name": "bool"
+        }
+    }
+}
