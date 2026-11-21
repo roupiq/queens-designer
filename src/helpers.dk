@@ -1,0 +1,15 @@
+fun error(message: str) = {
+    print(message);
+    print("\n");
+}
+
+fun concat(lhs: ref String, rhs: str) = {
+    lhs = copy lhs ++ (copy rhs.toString());
+}
+
+fun resize(list: ref List[i32], new_size: i32, value: i32 = 0) = {
+    while(list.length() < new_size)
+        list.push(value);
+    while(list.length() > new_size)
+        list.pop();
+}

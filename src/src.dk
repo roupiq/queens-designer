@@ -1,127 +1,35 @@
 import core.builtins.*;
+import constants.*;
+import helpers.*;
+import puzzles.*;
 
-let RESET_COLOR: str = "[49m";
-let colors: str[4] = [
-    "[44m",
-    "[46m",
-    "[42m",
-    "[40m",
-];
-
-class Queens {
-    n: i32 = 0;
+class Solution {
+    n: i32;
     board: List[i32];
+    occupied: List[i32];
+    occupiedColors: List[i32];
 
-    fun get(x: i32, y: i32) -> i32 = {
+
+    fun getColor(x: i32, y: i32) -> i32 = {
         return board.at(x * n + y);
     }
 
-    fun initialize(_n: i32) = {
+    fun initialize(_n: i32, _board: ref List[i32]) = {
+        board = copy _board;
         n = _n;
-        var i = 0;
-        while (board.length() < n * n)
-        {
-            board.push(0);
-            i += 1;
-        }
-    }
-}
 
-fun print_queens(queens: ref Queens) = {
-    var i = 0;
-    while (i < queens.n)
-    {
-        var k = 0;
-        while (k < queens.n)
-        {
-            print("--------");
-            k += 1;
-        }
-        print('-');
-        print('\n');
-
-        var j = 0;
-        while (j < queens.n)
-        {
-            print("|       ");
-            j += 1;
-        }
-        print("|\n");
-
-
-        j = 0;
-        while (j < queens.n)
-        {
-            var color: i32 = queens.get(i, j);
-            print(f"|{colors[color]}   {(color + '0' as i8) as char}   {RESET_COLOR}");
-            # print('|');
-            j += 1;
-        }
-        print("|\n");
-
-        j = 0;
-        while (j < queens.n)
-        {
-            print("|       ");
-            j += 1;
-        }
-        print("|\n");
-
-
-        i += 1;
-    }
-
-    i = 0;
-    while (i < queens.n)
-    {
-        print("--------");
-        i += 1;
-    }
-    print("-\n");
-}
-
-fun error(message: str) = {
-    print(message);
-    print("\n");
-}
-
-fun concat(lhs: ref String, rhs: str) = {
-    lhs = copy lhs ++ (copy rhs.toString());
-}
-
-class Solution {
-    queens: Queens;
-    occupied: List[i32];
-    occupiedColors: List[i32];
-    n: i32;
-
-    fun initialize(_queens: ref Queens) = {
-        queens = copy _queens;
-        var i = 0;
-        n = _queens.n;
-
-        while (i < n * n)
-        {
-            occupied.push(0);
-            i += 1;
-        }
-
-        i = 0;
-        while (i < n)
-        {
-            occupiedColors.push(0);
-            i += 1;
-        }
+        resize(occupied, n);
+        resize(occupied, n * n);
     }
 
     fun clear(x: i32, y: i32) = {
-        occupied.at(x * queens.n + y) = 0;
+        occupied.at(x * n + y) = 0;
     }
 
     fun placeQueen(x: i32, y: i32) = {
-        if (occupiedColors.at(queens.get(x, y)) != 0) error("Placing queen on of the same color twice");
+        if (occupiedColors.at(getColor(x, y)) != 0) error("Placing queen on of the same color twice");
 
-        occupiedColors.at(queens.get(x, y)) = 1;
+        occupiedColors.at(getColor(x, y)) = 1;
 
         var z = 0;
         while (z < n)
@@ -143,20 +51,20 @@ class Solution {
         placeCross(x - 1, y + 1);
         placeCross(x - 1, y - 1);
 
-        occupied.at(x * queens.n + y) = 1;
+        occupied.at(x * n + y) = 1;
     }
 
     fun placeCross(x: i32, y: i32) = {
         if (0 <= x < n and 0 <= y < n)
-            occupied.at(x * queens.n + y) = -1;
+            occupied.at(x * n + y) = -1;
     }
 
     fun getOccupied(x: i32, y: i32) -> i32 = {
-        return occupied.at(x * queens.n + y);
+        return occupied.at(x * n + y);
     }
 
     fun canPlace(x: i32, y: i32) -> bool = {
-        return occupied.at(x * queens.n + y) == 0 and occupiedColors.at(queens.get(x, y)) == 0;
+        return occupied.at(x * n + y) == 0 and occupiedColors.at(getColor(x, y)) == 0;
     }
 
     fun isSolved() -> bool = {
@@ -172,10 +80,10 @@ class Solution {
     fun toString() -> String = {
         var result: String = "".toString();
         var i = 0;
-        while (i < queens.n)
+        while (i < n)
         {
             var k = 0;
-            while (k < queens.n)
+            while (k < n)
             {
                 concat(&result, "--------");
                 k += 1;
@@ -183,35 +91,45 @@ class Solution {
             concat(&result, "-\n");
 
             var j = 0;
-            while (j < queens.n)
+            while (j < n)
             {
-                var color: i32 = queens.get(i, j);
-                concat(&result, f"|{colors[color]}       {RESET_COLOR}".asSlice());
-                j += 1;
-            }
-            concat(&result, "|\n");
-
-
-            j = 0;
-            while (j < queens.n)
-            {
-                var color: i32 = queens.get(i, j);
-                var C: char = ' ';
+                var row: str = "       ";
                 if (occupied.at(i * n + j) == 1)
-                    C = 'Q';
-                if (occupied.at(i * n + j) == -1)
-                    C = 'X';
+                    row = "  \\ /  ";
 
-                concat(&result, f"|{colors[color]}  {C}{(color + '0' as i8) as char}   {RESET_COLOR}".asSlice());
+                var color: i32 = getColor(i, j);
+                concat(&result, f"|{BACK_COLORS[color]}{row}{RESET_COLOR}".asSlice());
+                j += 1;
+            }
+            concat(&result, "|\n");
+
+
+            j = 0;
+            while (j < n)
+            {
+                # (color + '0' as i8) as char
+                var row = "       ";
+                var color: i32 = getColor(i, j);
+                
+                if (not canPlace(i, j))
+                    row = "   x   ";
+                if (occupied.at(i * n + j) == 1)
+                    row = "   Q   ";
+
+                concat(&result, f"|{BACK_COLORS[color]}{row}{RESET_COLOR}".asSlice());
                 j += 1;
             }
             concat(&result, "|\n");
 
             j = 0;
-            while (j < queens.n)
+            while (j < n)
             {
-                var color: i32 = queens.get(i, j);
-                concat(&result, f"|{colors[color]}       {RESET_COLOR}".asSlice());
+                var row: str = "       ";
+                if (occupied.at(i * n + j) == 1)
+                    row = "  / \\  ";
+
+                var color: i32 = getColor(i, j);
+                concat(&result, f"|{BACK_COLORS[color]}{row}{RESET_COLOR}".asSlice());
                 j += 1;
             }
             concat(&result, "|\n");
@@ -220,7 +138,7 @@ class Solution {
         }
 
         i = 0;
-        while (i < queens.n)
+        while (i < n)
         {
             concat(&result, "--------");
             i += 1;
@@ -232,34 +150,35 @@ class Solution {
 }
 
 
+
 var solution_found: Solution;
-fun solve(solution: ref Solution) -> bool = {
-    print(solution.toString());
+fun solve(solution: ref Solution, start: i32 = 0) -> bool = {
 
     if (solution.isSolved()) {
+        # print(f"{solution}\n");
         # print("Solved\n");
         solution_found = copy solution;
         return true;
     }
 
     var n = solution.n;
-    var i = 0;
+    var i = start;
+
     while (i < solution.n * solution.n)
     {
         var x: i32 = i / n;
         var y: i32 = i % n;
         
         # print(f"{x}, {y}\n");
-
         if (solution.canPlace(x, y))
         {
             var next_solution: Solution = copy solution;
             # print("Placing queen\n");
             next_solution.placeQueen(x, y);
             # print("Queen placed\n");
-            if(solve(&next_solution)) 
+            if(solve(&next_solution, i + 1)) 
             {
-                # print("Return true");
+                print(f"{next_solution}\n");
                 return true;
             }
         }
@@ -272,24 +191,8 @@ fun solve(solution: ref Solution) -> bool = {
 
 fun main() = {
     print("Hello, World!\n");
-    var queens: Queens;
-    queens.initialize(4);
-
-    var list: i32[16] = [0, 0, 0, 0,
-                         0, 1, 1, 1,
-                         2, 2, 3, 3,
-                         2, 3, 3, 3];
-
-    var i = 0;
-    while (i < 16)
-    {
-        queens.board.at(i) = list[i];
-        i += 1;
-    }
-
-    print_queens(&queens);
 
     var solution : Solution;
-    solution.initialize(&queens);
+    solution.initialize(N, board);
     solve(&solution);
 }
