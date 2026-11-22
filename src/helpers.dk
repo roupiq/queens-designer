@@ -37,3 +37,35 @@ fun sum(array: ref List[T]) -> T = {
     }
     return result;
 }
+
+fun wait(message: String = f"") = {
+    print(move message);
+    var ignore: char = builtin_input_char();
+}
+
+
+fun readChar() -> char = {return builtin_input_char();}
+
+fun skipBlanks() -> char = {
+    var c = readChar();
+    while (c == ' ' or c == '\t' or c == '\n') c = readChar();
+    return c;
+}
+
+fun readI64() -> i64 = {
+    var c        = skipBlanks();
+    var negative = false;
+    if (c == '-') {
+        negative = true;
+        c        = readChar();
+    }
+
+    var value = 0i64;
+    while (c >= '0' and c <= '9') {
+        value = value * 10i64 + (c as i64 - '0' as i64);
+        c     = readChar();
+    }
+
+    if (negative) return 0i64 - value;
+    return value;
+}

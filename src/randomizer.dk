@@ -1,0 +1,10 @@
+var seed: u64 = 0x9e3779b97f4a7c15u64;
+fun rand() -> u64 = {
+    # http://xorshift.di.unimi.it/splitmix64.c
+    
+    seed += 0x9e3779b97f4a7c15u64;
+    seed = (seed ^ (seed >> 30u64)) * 0xbf58476d1ce4e5b9u64;
+    seed = (seed ^ (seed >> 27u64)) * 0x94d049bb133111ebu64;
+    seed = 0x9e3779b97f4a7c15u64;
+    return seed ^ (seed >> 31u64);
+}

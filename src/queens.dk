@@ -96,6 +96,21 @@ class Solution {
     fun hasQueen(x: i32, y: i32) -> bool = {
         return occupied.at(x * n + y) > 0;
     }
+
+    fun refreshAll() = {
+        var i: i32 = 0;
+        while (i < n)
+        {
+            var j = 0;
+            while (j < n)
+            {
+                refresh(i, j);
+                j += 1;
+            }
+
+            i += 1;
+        }
+    }
     
     fun isSolved() -> bool = {
         var i = 0;
@@ -156,7 +171,7 @@ class Solution {
                 }
                 if(i == 0 or i == n)
                 {
-                    row = f"*---{k}---";
+                    row = f"*-- {k} --";
                 }
 
                 result.append(&row);
@@ -168,7 +183,7 @@ class Solution {
             while (j < n)
             {
                 var row: str = "       ";
-                if (occupied.at(i * n + j) == 1)
+                if (hasQueen(i, j))
                     row = "  \\ /  ";
 
                 var color: i32 = getColor(i, j);
@@ -190,20 +205,20 @@ class Solution {
                     row = "   x   ";
                 }
                 if (hasQueen(i, j))
-                    row = "  -Q-  ";
+                    row = " --Q-- ";
                 
                 var separator: String = f"{verticalSeparator(i, j)}";
 
                 # Coordinates on left border
                 if (j == 0)
                 {
-                    separator = f"{i}";
+                    separator = f"{ALPHABET[i]}";
                 }
 
                 concat(&result, f"{separator}{BACK_COLORS[color]}{row}{RESET_COLOR}".asSlice());
                 j += 1;
             }
-            result.append(f"{i}\n");
+            result.append(f"{BRIGHT_STYLE}{ALPHABET[i]}\n");
 
             j = 0;
             while (j < n)
@@ -222,24 +237,24 @@ class Solution {
             }
             concat(&result, "|\n");
 
-
-            j = 0;
-            while (j < n)
-            {
-                refresh(i, j);
-                j += 1;
-            }
-
             i += 1;
         }
 
         i = 0;
         while (i < n)
         {
-            concat(&result, "*-------");
+            var row: String = f"*-------";
+            if(i == 0 or i == n)
+            {
+                row = f"*-- {i} --";
+            }
+
+            result.append(&row);
             i += 1;
         }
         concat(&result, "*\n");
+        # result.append(f"{RESET_STYLE}");
+        refreshAll();
         return result;
     }
 

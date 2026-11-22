@@ -6,16 +6,16 @@ import queens.*;
 import strategies.*;
 
 var solution_found: Solution;
-fun solve(solution: ref Solution, start: i32 = 0) -> bool = {
-
+fun solve(solution: ref Solution, start: i32 = 0) -> i32 = {
     if (solution.isSolved()) {
         solution_found = copy solution;
-        print(f"Solved\n{solution}\n");
-
-        return true;
+        solution.refreshAll();
+        print(f"\nSolution\n{solution}\n");
+        return 1;
     }
 
     var n = solution.n;
+    var solutions = 0;
     var i = start;
 
     while (i < solution.n * solution.n)
@@ -29,28 +29,27 @@ fun solve(solution: ref Solution, start: i32 = 0) -> bool = {
 
             next_solution.placeQueen(x, y);
 
-            if(solve(&next_solution, i + 1)) 
-            {
-                print(f"{solution}\n");
-                return true;
-            }
+            solutions += solve(&next_solution, i + 1);
         }
 
         i += 1;
     }
 
-    return false;
+    return solutions;
 }
 
 fun solveLikeHuman(solution: ref Solution) = {
-    print("Attempting to solve\n");
+    
+    print("\n\n");
     print(f"{solution}");
+    print("Attempting to solve using human-like heuristics.\n");
     
     while (not solution.isSolved())
     {
-        print("Press any key to continue.");
+        print("Press any key to continue.\n");
+        
         var ignore: char = builtin_input_char();
-
+    
         # var progres: bool = true;
         print("\n");
         print("\n");
@@ -60,6 +59,7 @@ fun solveLikeHuman(solution: ref Solution) = {
         {
             print(f"{solution}");
             print(" -- Applied strategy 1 -- \n");
+            print(f"{message}");
             continue;
         }
 
@@ -67,6 +67,7 @@ fun solveLikeHuman(solution: ref Solution) = {
         {
             print(f"{solution}");
             print(" -- Applied strategy 1.5 -- \n");
+            print(f"{message}");
             continue;
         }
 
@@ -74,14 +75,16 @@ fun solveLikeHuman(solution: ref Solution) = {
         {
             print(f"{solution}");
             print(" -- Applied strategy 2 -- \n");
+            print(f"{message}");
             continue;
         }
         
         
         if(apply3(&solution))
         {
-            print(f"{solution}");
             print(" -- Applied strategy 3 -- \n");
+            print(f"{solution}");
+            print(f"{message}");
             continue;
         }
 
@@ -89,24 +92,98 @@ fun solveLikeHuman(solution: ref Solution) = {
         {
             print(f"{solution}");
             print(" -- Applied strategy 4 -- \n");
+            print(f"{message}");
             continue;
         }
         
-        print("Heuristics failed! 😔\n");
+        print("All heuristics failed! 😔\n");
         return;
     }
     print("GAME SOLVED! 😃\n");
 }
 
-fun main() = {
-    var boardList: List[i32] = toList[i32, Puzzles.N2](&Puzzles.board);
-    
+# fun genRandom() -> Solution = {
+#     var colored = false;
+#     while(colored)
+#     {
+
+#     }
+# }
+
+
+fun readBoard() -> Solution = {
+    var n: i32 = readI64() as i32;
+    var boardList: List[i32];
+
+    var x: i32 = 0;
+    while (x < n)
+    {
+        var y: i32 = 0;
+        while (y < n)
+        {
+            var color: i32 = skipBlanks() as i8 - '0' as i8;
+            print(color);
+            boardList.push(color);
+            y += 1;
+        }
+        # var endl: char = readChar();
+        
+        x += 1;
+    }
+    print("read");
+
     var solution : Solution;
     solution.initialize(
-        Puzzles.N,
+        n,
         &boardList
     );
+    return solution;
+}
 
-    # solve(&solution);
+fun main() = {
+    print("[2J\n");
+    
+    print(f"{BRIGHT_STYLE} .oOOOo.                                         o      O        o                   \n");
+    print(f"{BRIGHT_STYLE}.O     o.                                        O      o       O                    \n");
+    print(f"{BRIGHT_STYLE}o       O                                        o      O       o                    \n");
+    print(f"{BRIGHT_STYLE}O       o                                        OoOooOOo       O                    \n");
+    print(f"{BRIGHT_STYLE}o       O  O   o  .oOo. .oOo. 'OoOo. .oOo        o      O .oOo. o  .oOo. .oOo. `OoOo.\n");
+    print(f"{BRIGHT_STYLE}O    Oo o  o   O  OooO' OooO'  o   O `Ooo.       O      o OooO' O  O   o OooO'  o    \n");
+    print(f"{BRIGHT_STYLE}`o     O'  O   o  O     O      O   o     O       o      o O     o  o   O O      O    \n");
+    print(f"{BRIGHT_STYLE} `OoooO Oo `OoO'o `OoO' `OoO'  o   O `OoO'       o      O `OoO' Oo oOoO' `OoO'  o    \n");
+    print(f"{BRIGHT_STYLE}                                                                   O                 \n");
+    print(f"{BRIGHT_STYLE}                                                                   o'                \n");
+
+    # print("\n\n\n\n\n\n\n\n\n\n\n\n\n");
+
+
+    var boardList: List[i32] = toList[i32, Puzzles.N2](&Puzzles.board);
+    
+    # var solution : Solution;
+    # solution.initialize(
+    #     Puzzles.N,
+    #     &boardList
+    # );
+    print(f"Paste your board here.\n");
+    var solution: Solution = readBoard();
+
+    readBoard();
+
+    var solutions_count: i32 = solve(&solution);
+    if (solutions_count == 0)
+    {
+        print(f"There is no solution to this puzzle 😔.\n");
+        return 0;
+    }
+    if (solutions_count == 1)
+    {
+        print(f"There is exactly one solution to this puzzle 😃.\n");
+    }
+    if (solutions_count > 1)
+    {
+        print(f"There are {solutions_count} solutions to this puzzle 😔.\n");
+    }
+    wait(f"Press any key to start analisys");
+
     solveLikeHuman(&solution);
 }

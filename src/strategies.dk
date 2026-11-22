@@ -12,6 +12,10 @@ fun max(a: i32, b: i32) -> i32 = {
     return if a > b then a else b;
 }
 
+fun coords(x: i32, y: i32) -> String = {
+    return f"{ALPHABET[x]}{y}";
+}
+
 ## min_x, max_x, min_y, max_y
 fun getColorRange(solution: ref Solution, color: i32) -> i32[4] = {
     var result: i32[4] = [INF, -1, INF, -1];
@@ -55,7 +59,7 @@ fun getColorCount(solution: ref Solution, color: i32) -> i32 = {
     return result;
 }
 
-fun findFreeColor(solution: ref Solution, color: i32) -> i32[2] = {
+fun findFreeColor(solution: ref Solution, color: i32) -> i32[3] = {
     var x = 0;
     while (x < solution.n)
     {
@@ -63,13 +67,13 @@ fun findFreeColor(solution: ref Solution, color: i32) -> i32[2] = {
         while (y < solution.n)
         {
             if (solution.getColor(x, y) == color and solution.canPlace(x, y))
-                return [x, y];
+                return [x, y, color];
             y += 1;
         }
 
         x += 1;
     }
-    return [-1, -1];
+    return [-1, -1, -1];
 }
 
 fun areColorsValid(solution: ref Solution) -> i32 = {
@@ -85,6 +89,8 @@ fun areColorsValid(solution: ref Solution) -> i32 = {
     return -1;
 }
 
+var message: String;
+
 fun apply1(solution: ref Solution) -> bool = {
     var i = 0;
 
@@ -95,7 +101,7 @@ fun apply1(solution: ref Solution) -> bool = {
         if(freeColorI == 1)
         {
             var pos = findFreeColor(&solution, i);
-            print(f"Placing queen at {pos[0]} {pos[1]} because thats the only placable field with this color.\n");
+            message = f"Placing queen at {coords(pos[0], pos[1])} because thats the only placable {COLOR_NAMES[pos[2]]} tile.\n";
             solution.placeQueen(pos[0], pos[1]);
             return true;
         }
@@ -104,7 +110,8 @@ fun apply1(solution: ref Solution) -> bool = {
     return false;
 }
 
-# Checks if there are some rows (or columns) that have only one placable cell
+
+# Checks if there are some rows (or columns) that have only one placable tile
 fun apply15(solution: ref Solution) -> bool = {
     if (singleOneInColumn(&solution))
         return true;
@@ -137,9 +144,8 @@ fun apply2(solution: ref Solution) -> bool = {
             }
             if(anything_changed)
             {
-                print(f"{range}");
                 # print(f"{range[0]}, {range[1]}, {range[2]}, {range[3]}");
-                print(f"Color {COLOR_NAMES[i]} has every placable tile on the same row {x}\n");
+                message = f"Color {COLOR_NAMES[i]} has every placable tile on the row {ALPHABET[x]}.\n";
                 return true;
             }
         }
@@ -160,7 +166,7 @@ fun apply2(solution: ref Solution) -> bool = {
             }
             if(anything_changed)
             {
-                print(f"Color {COLOR_NAMES[i]} has every placable tile on the same column {y}\n");
+                message = f"Color {COLOR_NAMES[i]} has every placable tile on the column {y}.\n";
                 return true;
             }
         }
@@ -196,7 +202,7 @@ fun singleOneInColumn(solution: ref Solution) -> bool = {
         if (pos[0] != -1)
         {
             solution.placeQueen(pos[0], pos[1]);
-            print(f"Cell {pos[0]}, {pos[1]} is the only placable one at this column");
+            message = f"Cell {coords(pos[0], pos[1])} is the only placable one at this column";
             return true;
         }
 
@@ -231,7 +237,7 @@ fun singleOneInRow(solution: ref Solution) -> bool = {
         if (pos[0] != -1)
         {
             solution.placeQueen(pos[0], pos[1]);
-            print(f"Cell {pos[0]}, {pos[1]} is the only placable one at this row.\n");
+            message = f"Cell {coords(pos[0], pos[1])} is the only placable one at this row.\n";
             return true;
         }
 
@@ -242,7 +248,7 @@ fun singleOneInRow(solution: ref Solution) -> bool = {
 
 
 fun apply3(solution: ref Solution) -> bool = {
-    # For each cell placing queen and checking if it does break.
+    # For each tile placing queen and checking if it does break.
 
     var x = 0;
     while (x < solution.n)
@@ -258,7 +264,7 @@ fun apply3(solution: ref Solution) -> bool = {
                 if (blocked_color != -1)
                 {
                     solution.placeCross(x, y);
-                    print(f"Queen at position {x}, {y} bloks {COLOR_NAMES[blocked_color]} fields.\n");
+                    message = f"Queen at position {coords(x, y)} bloks all {COLOR_NAMES[blocked_color]} tiles.\n";
                     return true;
                 }
             }
@@ -412,26 +418,26 @@ fun apply4(solution: ref Solution) -> bool = {
     while (i <= n)
     {
         if(rowsSegmentsStrategy(&solution, n - i, n))
-        {
-            print(f"There are exactly {i} placable colors on rows {n - i}-{n - 1}\n");
+        {   
+            message = f"There are exactly {i} placable colors on rows {ALPHABET[n - i]}-{ALPHABET[n - 1]}\n";
             return true;
         }
 
         if(rowsSegmentsStrategy(&solution, 0, i))
         {
-            print(f"There are exactly {i} placable colors on rows {0}-{i - 1}\n");
+            message = f"There are exactly {i} placable colors on rows {ALPHABET[0]}-{ALPHABET[i - 1]}\n";
             return true;
         }
 
         if(columnsSegmentsStrategy(&solution, n - i, n))
         {
-            print(f"There are exactly {i} placable colors on columns {n - i}-{n - 1}\n");
+            message = f"There are exactly {i} placable colors on columns {n - i}-{n - 1}\n";
             return true;
         }
 
         if(columnsSegmentsStrategy(&solution, 0, i))
         {
-            print(f"There are exactly {i} placable colors on columns {0}-{i - 1}\n");
+            message = f"There are exactly {i} placable colors on columns {0}-{i - 1}\n";
             return true;
         }
 
@@ -451,13 +457,13 @@ fun apply5(solution: ref Solution) -> bool = {
         {
             if(rowsSegmentsStrategy(&solution, j, i + j))
             {
-                print(f"Same number of placable colors as number of placable rows on segment {j}-{j + i - 1}\n");
+                message = f"Same number of placable colors as number of placable rows from {ALPHABET[j]}-{ALPHABET[j + i - 1]}\n";
                 return true;
             }
 
             if(columnsSegmentsStrategy(&solution, j, i + j))
             {
-                print(f"Same number of placable colors as number of placable columns on segment {j}-{j + i - 1}\n");
+                message = f"Same number of placable colors as number of placable columns from {j}-{j + i - 1}\n";
                 return true;
             }
             i += 1;

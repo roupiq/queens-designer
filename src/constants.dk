@@ -1,4 +1,8 @@
+let ALPHABET: str = "abcdefghijklmnopqrstuvwxyz";
 let RESET_COLOR: str = "[49m";
+let BRIGHT_STYLE: str = "[1m";
+let RESET_STYLE: str = "[0m";
+
 let BACK_COLORS: str[9] = [
     "[40m",
     "[41m",
@@ -22,6 +26,5 @@ let COLOR_NAMES: str[9] = [
     "white",
     "gray",
 ];
-
 
 var INF = 10000;
