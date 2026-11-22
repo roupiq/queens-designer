@@ -1,7 +1,6 @@
 import core.builtins.*;
 import src.constants.*;
 import src.helpers.*;
-import src.puzzles.*;
 
 class Solution {
     n: i32;
@@ -44,7 +43,7 @@ class Solution {
             z += 1;
         }
 
-        # Diagonal
+        # Diagonals
         placeCross(x + 1, y + 1);
         placeCross(x + 1, y - 1);
         placeCross(x - 1, y + 1);
@@ -59,12 +58,10 @@ class Solution {
         {
             if (hasQueen(x, y))
             {
-                # print(f"Row checking queen at {x} {y}\n");
                 return true;
             }
             y += 1;
         }
-        # print("queen not found\n");
         return false;
     }
 
@@ -74,12 +71,10 @@ class Solution {
         {
             if (hasQueen(x, y))
             {
-                # print(f"Column checking queen at {x} {y}\n");
                 return true;
             }
             x += 1;
         }
-        # print("queen not found\n");
         return false;
     }
 
@@ -209,7 +204,6 @@ class Solution {
                 
                 var separator: String = f"{verticalSeparator(i, j)}";
 
-                # Coordinates on left border
                 if (j == 0)
                 {
                     separator = f"{ALPHABET[i]}";
@@ -243,18 +237,13 @@ class Solution {
         i = 0;
         while (i < n)
         {
-            var row: String = f"*-------";
-            if(i == 0 or i == n)
-            {
-                row = f"*-- {i} --";
-            }
-
+            var row: String = if i == 0 then f"*-- {i} --" else f"*-------";
             result.append(&row);
             i += 1;
         }
         concat(&result, "*\n");
-        # result.append(f"{RESET_STYLE}");
         refreshAll();
+
         return result;
     }
 

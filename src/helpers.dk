@@ -43,7 +43,6 @@ fun wait(message: String = f"") = {
     var ignore: char = builtin_input_char();
 }
 
-
 fun readChar() -> char = {return builtin_input_char();}
 
 fun skipBlanks() -> char = {
@@ -61,7 +60,7 @@ fun readI64() -> i64 = {
     }
 
     var value = 0i64;
-    while (c >= '0' and c <= '9') {
+    while ('0' <= c <= '9') {
         value = value * 10i64 + (c as i64 - '0' as i64);
         c     = readChar();
     }

@@ -1,9 +1,9 @@
 import core.builtins.*;
 import constants.*;
 import helpers.*;
-import puzzles.*;
 import queens.*;
 import strategies.*;
+import randomizer.*;
 
 var solution_found: Solution;
 fun solve(solution: ref Solution, start: i32 = 0) -> i32 = {
@@ -153,13 +153,9 @@ fun main() = {
     print(f"{BRIGHT_STYLE}                                                                   o'                \n");
 
 
-    var boardList: List[i32] = toList[i32, Puzzles.N2](&Puzzles.board);
-    
     print(f"Paste your board here.\n");
     var solution: Solution = readBoard();
-
-    readBoard();
-
+    
     var solutions_count: i32 = solve(&solution);
     if (solutions_count == 0)
     {

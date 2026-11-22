@@ -1,7 +1,6 @@
 import core.builtins.*;
 import src.constants.*;
 import src.helpers.*;
-import src.puzzles.*;
 import src.queens.*;
 
 fun min(a: i32, b: i32) -> i32 = {
