@@ -122,7 +122,6 @@ fun readBoard() -> Solution = {
         while (y < n)
         {
             var color: i32 = skipBlanks() as i8 - '0' as i8;
-            print(color);
             boardList.push(color);
             y += 1;
         }
@@ -130,7 +129,6 @@ fun readBoard() -> Solution = {
         
         x += 1;
     }
-    print("read");
 
     var solution : Solution;
     solution.initialize(
