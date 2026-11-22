@@ -155,12 +155,11 @@ fun main() = {
 
     print(f"Paste your board here.\n");
     var solution: Solution = readBoard();
-    
+
     var solutions_count: i32 = solve(&solution);
     if (solutions_count == 0)
     {
-        print(f"There is no solution to this puzzle 😔.\n");
-        return 0;
+        print(f"There is no solution to this puzzle 😔. Trying anyway.\n");
     }
     if (solutions_count == 1)
     {
