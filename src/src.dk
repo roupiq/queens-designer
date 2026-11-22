@@ -152,16 +152,9 @@ fun main() = {
     print(f"{BRIGHT_STYLE}                                                                   O                 \n");
     print(f"{BRIGHT_STYLE}                                                                   o'                \n");
 
-    # print("\n\n\n\n\n\n\n\n\n\n\n\n\n");
-
 
     var boardList: List[i32] = toList[i32, Puzzles.N2](&Puzzles.board);
     
-    # var solution : Solution;
-    # solution.initialize(
-    #     Puzzles.N,
-    #     &boardList
-    # );
     print(f"Paste your board here.\n");
     var solution: Solution = readBoard();
 

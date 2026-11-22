@@ -1,0 +1,46 @@
+type data: _Q_CP4core4core8optionalN19optional_primitives4NoneE {
+    _0: i32,
+}
+
+type primitive: i32 4
+type pointer: ptr__Q_CP4core4core8optionalN19optional_primitives4NoneE _Q_CP4core4core8optionalN19optional_primitives4NoneE
+type pointer: ptr_i32 i32
+
+global_data _Q_P4core4core8optionalG4none _Q_CP4core4core8optionalN19optional_primitives4NoneE {
+    constructor: _Q_P4core4core8optionalG4nonegc
+}
+
+
+function _Q_P4core4core8optionalG4nonegc {  } -> {  } {
+    label                   label_0;
+    init_pany_type             var0, _Q_CP4core4core8optionalN19optional_primitives4NoneE;
+    init_pany_type             var1, ptr__Q_CP4core4core8optionalN19optional_primitives4NoneE;
+    init_pany_type         addr_of0, ptr__Q_CP4core4core8optionalN19optional_primitives4NoneE;
+    ref_pptr_pany          addr_of0, _Q_P4core4core8optionalG4none;
+    mov_pptr_pptr              var1, addr_of0;
+    deinit                ;
+    init_pany_type         call_result1, _Q_CP4core4core8optionalN19optional_primitives4NoneE;
+    init_pany_type         call_arg0_2,      i32;
+    mov_p32_imm            call_arg0_2,        0;
+    call_func              _Q__Q_CP4core4core8optionalN19optional_primitives4NoneEHicNF_Q_CP4core4core8optionalN19optional_primitives4NoneEjdE12_placeholderEE;
+    mov_pste_pste              var0, call_result1;
+    deinit                ;
+    store_pptr_pany            var1,     var0;
+    deinit                ;
+    deinit                ;
+    ret                   ;
+}
+
+function _Q__Q_CP4core4core8optionalN19optional_primitives4NoneEHicNF_Q_CP4core4core8optionalN19optional_primitives4NoneEjdE12_placeholderEE { i32 } -> { _Q_CP4core4core8optionalN19optional_primitives4NoneE } {
+    label                   label_0;
+    init_pany_type             var1, _Q_CP4core4core8optionalN19optional_primitives4NoneE;
+    init_pany_type         field_addr0,  ptr_i32;
+    structLea_pptr_pste_field field_addr0,     var1, _Q_CP4core4core8optionalN19optional_primitives4NoneE._0;
+    store_pptr_pany        field_addr0,     arg0;
+    deinit                ;
+    mov_pste_pste              ret0,     var1;
+    deinit                ;
+    ret                   ;
+}
+
+

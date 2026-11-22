@@ -1,0 +1,1503 @@
+{
+    "functions": {
+        "_Q_HddNFNuR_Q_CP4core4core10containersG6StringE2_0EE": {
+            "instr_offsets_to_metadata": [],
+            "instr_offsets_to_variable_init": [],
+            "parameter_indexes_to_metadata": [
+                [
+                    0,
+                    {
+                        "name": "_0"
+                    }
+                ]
+            ]
+        },
+        "_Q_HtoStringNF_Q_CP4core4core10containersG6StringNbE2_0EE": {
+            "instr_offsets_to_metadata": [],
+            "instr_offsets_to_variable_init": [],
+            "parameter_indexes_to_metadata": [
+                [
+                    0,
+                    {
+                        "name": "_0"
+                    }
+                ]
+            ]
+        },
+        "_Q_HtoStringNF_Q_CP4core4core10containersG6StringNuE2_0EE": {
+            "instr_offsets_to_metadata": [],
+            "instr_offsets_to_variable_init": [],
+            "parameter_indexes_to_metadata": []
+        },
+        "_Q_P4core4core6printsG5printFiqR_Q_CP4core4core10containersG6StringE1vE": {
+            "function_name": "print",
+            "instr_offsets_to_metadata": [
+                [
+                    1,
+                    {
+                        "position": {
+                            "type": "PstHashPosition",
+                            "value": {
+                                "position_scope_begin": [
+                                    456124075337841428,
+                                    10610068038058755836,
+                                    10337412159476134552,
+                                    4316284790678746103
+                                ],
+                                "position_scope_end": [
+                                    8675772462355716486,
+                                    4951343233351904351,
+                                    690128663831547128,
+                                    12099443181061932296
+                                ]
+                            }
+                        }
+                    }
+                ],
+                [
+                    7,
+                    {
+                        "position": {
+                            "type": "PstHashPosition",
+                            "value": {
+                                "position_scope_begin": [
+                                    456124075337841428,
+                                    10610068038058755836,
+                                    10337412159476134552,
+                                    4316284790678746103
+                                ],
+                                "position_scope_end": [
+                                    8675772462355716486,
+                                    4951343233351904351,
+                                    690128663831547128,
+                                    12099443181061932296
+                                ]
+                            }
+                        }
+                    }
+                ]
+            ],
+            "instr_offsets_to_variable_init": [],
+            "parameter_indexes_to_metadata": [
+                [
+                    0,
+                    {
+                        "name": "v",
+                        "position": {
+                            "type": "PstHashPosition",
+                            "value": {
+                                "position_scope_begin": [
+                                    1070503848164982209,
+                                    11130701941056104759,
+                                    17638271498368379951,
+                                    2585157318764842643
+                                ]
+                            }
+                        }
+                    }
+                ]
+            ],
+            "position": {
+                "type": "PstHashPosition",
+                "value": {
+                    "position_scope_begin": [
+                        897541049297444000,
+                        13439273699072414198,
+                        13633081312114241681,
+                        2348386456755228604
+                    ]
+                }
+            }
+        },
+        "_Q_P4core4core6printsG5printFiqScEE1vE": {
+            "function_name": "print",
+            "instr_offsets_to_metadata": [
+                [
+                    1,
+                    {
+                        "position": {
+                            "type": "PstHashPosition",
+                            "value": {
+                                "position_scope_begin": [
+                                    2991762104044001957,
+                                    3667152562265624852,
+                                    11968941649824629313,
+                                    7497636857993309847
+                                ],
+                                "position_scope_end": [
+                                    11207021765544495997,
+                                    4591502505379150421,
+                                    7721260020373411186,
+                                    17503773992756908359
+                                ]
+                            }
+                        }
+                    }
+                ],
+                [
+                    7,
+                    {
+                        "position": {
+                            "type": "PstHashPosition",
+                            "value": {
+                                "position_scope_begin": [
+                                    2991762104044001957,
+                                    3667152562265624852,
+                                    11968941649824629313,
+                                    7497636857993309847
+                                ],
+                                "position_scope_end": [
+                                    11207021765544495997,
+                                    4591502505379150421,
+                                    7721260020373411186,
+                                    17503773992756908359
+                                ]
+                            }
+                        }
+                    }
+                ]
+            ],
+            "instr_offsets_to_variable_init": [],
+            "parameter_indexes_to_metadata": [
+                [
+                    0,
+                    {
+                        "name": "v",
+                        "position": {
+                            "type": "PstHashPosition",
+                            "value": {
+                                "position_scope_begin": [
+                                    4464336098762012595,
+                                    15912781840271149261,
+                                    9317108010743155711,
+                                    13765496083947985428
+                                ]
+                            }
+                        }
+                    }
+                ]
+            ],
+            "position": {
+                "type": "PstHashPosition",
+                "value": {
+                    "position_scope_begin": [
+                        3551335707745046681,
+                        6407658834657845211,
+                        14734402250695923980,
+                        6106133930531979318
+                    ]
+                }
+            }
+        },
+        "_Q_P4core4core6printsG5printFiq_Q_CP4core4core10containersG6StringE1sE": {
+            "function_name": "print",
+            "instr_offsets_to_metadata": [
+                [
+                    2,
+                    {
+                        "position": {
+                            "type": "PstHashPosition",
+                            "value": {
+                                "position_scope_begin": [
+                                    16429087570588394633,
+                                    6427931367076514964,
+                                    15887063539778638317,
+                                    14156280384340768567
+                                ]
+                            }
+                        }
+                    }
+                ],
+                [
+                    6,
+                    {
+                        "position": {
+                            "type": "PstHashPosition",
+                            "value": {
+                                "position_scope_begin": [
+                                    12819604729564660640,
+                                    9673897155233609831,
+                                    17802885523253126927,
+                                    9472316427698466257
+                                ],
+                                "position_scope_end": [
+                                    7162816979868206507,
+                                    8412764455012608913,
+                                    531744747339958623,
+                                    924763742302804490
+                                ]
+                            }
+                        }
+                    }
+                ],
+                [
+                    23,
+                    {
+                        "position": {
+                            "type": "PstHashPosition",
+                            "value": {
+                                "position_scope_begin": [
+                                    12819604729564660640,
+                                    9673897155233609831,
+                                    17802885523253126927,
+                                    9472316427698466257
+                                ],
+                                "position_scope_end": [
+                                    7162816979868206507,
+                                    8412764455012608913,
+                                    531744747339958623,
+                                    924763742302804490
+                                ]
+                            }
+                        }
+                    }
+                ]
+            ],
+            "instr_offsets_to_variable_init": [],
+            "parameter_indexes_to_metadata": [
+                [
+                    0,
+                    {
+                        "name": "s",
+                        "position": {
+                            "type": "PstHashPosition",
+                            "value": {
+                                "position_scope_begin": [
+                                    4831524459124244461,
+                                    3078624279506705009,
+                                    13659262153887840800,
+                                    14625213225014391536
+                                ]
+                            }
+                        }
+                    }
+                ]
+            ],
+            "position": {
+                "type": "PstHashPosition",
+                "value": {
+                    "position_scope_begin": [
+                        1176503709042000423,
+                        329408337129785180,
+                        11546484244292099084,
+                        3193744186616736334
+                    ]
+                }
+            }
+        },
+        "_Q_P4core4core6printsG5printFiqbE1vE": {
+            "function_name": "print",
+            "instr_offsets_to_metadata": [
+                [
+                    2,
+                    {
+                        "position": {
+                            "type": "PstHashPosition",
+                            "value": {
+                                "position_scope_begin": [
+                                    3035811249768041420,
+                                    7141110253718358281,
+                                    4557426124419642882,
+                                    1337091701910750500
+                                ],
+                                "position_scope_end": [
+                                    7092997034380690645,
+                                    5044188151175070222,
+                                    444249618350070801,
+                                    17428974191193349426
+                                ]
+                            }
+                        }
+                    }
+                ],
+                [
+                    8,
+                    {
+                        "position": {
+                            "type": "PstHashPosition",
+                            "value": {
+                                "position_scope_begin": [
+                                    3106052038169177000,
+                                    17552175419354116600,
+                                    12648429534355992192,
+                                    3929666616487360268
+                                ],
+                                "position_scope_end": [
+                                    11853634843324306153,
+                                    13623648519992168476,
+                                    1930512103847468923,
+                                    2167926823404428684
+                                ]
+                            }
+                        }
+                    }
+                ],
+                [
+                    14,
+                    {
+                        "position": {
+                            "type": "PstHashPosition",
+                            "value": {
+                                "position_scope_begin": [
+                                    3106052038169177000,
+                                    17552175419354116600,
+                                    12648429534355992192,
+                                    3929666616487360268
+                                ],
+                                "position_scope_end": [
+                                    11853634843324306153,
+                                    13623648519992168476,
+                                    1930512103847468923,
+                                    2167926823404428684
+                                ]
+                            }
+                        }
+                    }
+                ]
+            ],
+            "instr_offsets_to_variable_init": [],
+            "parameter_indexes_to_metadata": [
+                [
+                    0,
+                    {
+                        "name": "v",
+                        "position": {
+                            "type": "PstHashPosition",
+                            "value": {
+                                "position_scope_begin": [
+                                    10724150066683566061,
+                                    4842126085275977560,
+                                    2171918099286451243,
+                                    11501139361753540569
+                                ]
+                            }
+                        }
+                    }
+                ]
+            ],
+            "position": {
+                "type": "PstHashPosition",
+                "value": {
+                    "position_scope_begin": [
+                        11881612321126321661,
+                        1259059467580574198,
+                        14643281018974364680,
+                        4635255898495686260
+                    ]
+                }
+            }
+        },
+        "_Q_P4core4core6printsG5printFiqcE1vE": {
+            "function_name": "print",
+            "instr_offsets_to_metadata": [
+                [
+                    1,
+                    {
+                        "position": {
+                            "type": "PstHashPosition",
+                            "value": {
+                                "position_scope_begin": [
+                                    18085835917395121630,
+                                    15214362496153526250,
+                                    7468498272919948642,
+                                    12495212061247556548
+                                ],
+                                "position_scope_end": [
+                                    15809276211100802703,
+                                    964961583450630202,
+                                    3604220437804718593,
+                                    2658481921362323610
+                                ]
+                            }
+                        }
+                    }
+                ],
+                [
+                    7,
+                    {
+                        "position": {
+                            "type": "PstHashPosition",
+                            "value": {
+                                "position_scope_begin": [
+                                    18085835917395121630,
+                                    15214362496153526250,
+                                    7468498272919948642,
+                                    12495212061247556548
+                                ],
+                                "position_scope_end": [
+                                    15809276211100802703,
+                                    964961583450630202,
+                                    3604220437804718593,
+                                    2658481921362323610
+                                ]
+                            }
+                        }
+                    }
+                ]
+            ],
+            "instr_offsets_to_variable_init": [],
+            "parameter_indexes_to_metadata": [
+                [
+                    0,
+                    {
+                        "name": "v",
+                        "position": {
+                            "type": "PstHashPosition",
+                            "value": {
+                                "position_scope_begin": [
+                                    1249831837430751347,
+                                    3946109131497742144,
+                                    11980384577159490942,
+                                    10993550053448737141
+                                ]
+                            }
+                        }
+                    }
+                ]
+            ],
+            "position": {
+                "type": "PstHashPosition",
+                "value": {
+                    "position_scope_begin": [
+                        18062175890615820115,
+                        6475105050648648518,
+                        8621730005646066212,
+                        16979228631356295625
+                    ]
+                }
+            }
+        },
+        "_Q_P4core4core6printsG5printFiqdE1vE": {
+            "function_name": "print",
+            "instr_offsets_to_metadata": [
+                [
+                    1,
+                    {
+                        "position": {
+                            "type": "PstHashPosition",
+                            "value": {
+                                "position_scope_begin": [
+                                    5316993758485216920,
+                                    14404882718623387860,
+                                    14085739265325092193,
+                                    1626928707893135196
+                                ],
+                                "position_scope_end": [
+                                    6769494719542177358,
+                                    7149748579315255773,
+                                    4594018469171534439,
+                                    8690621129926277923
+                                ]
+                            }
+                        }
+                    }
+                ],
+                [
+                    7,
+                    {
+                        "position": {
+                            "type": "PstHashPosition",
+                            "value": {
+                                "position_scope_begin": [
+                                    5316993758485216920,
+                                    14404882718623387860,
+                                    14085739265325092193,
+                                    1626928707893135196
+                                ],
+                                "position_scope_end": [
+                                    6769494719542177358,
+                                    7149748579315255773,
+                                    4594018469171534439,
+                                    8690621129926277923
+                                ]
+                            }
+                        }
+                    }
+                ]
+            ],
+            "instr_offsets_to_variable_init": [],
+            "parameter_indexes_to_metadata": [
+                [
+                    0,
+                    {
+                        "name": "v",
+                        "position": {
+                            "type": "PstHashPosition",
+                            "value": {
+                                "position_scope_begin": [
+                                    10042786270529032932,
+                                    15340867470671720561,
+                                    13736779346202110307,
+                                    17987786719052779795
+                                ]
+                            }
+                        }
+                    }
+                ]
+            ],
+            "position": {
+                "type": "PstHashPosition",
+                "value": {
+                    "position_scope_begin": [
+                        2800167526955434729,
+                        11197393663467213993,
+                        17903935015606020676,
+                        1059478145746670647
+                    ]
+                }
+            }
+        },
+        "_Q_P4core4core6printsG5printFiqfE1vE": {
+            "function_name": "print",
+            "instr_offsets_to_metadata": [
+                [
+                    2,
+                    {
+                        "position": {
+                            "type": "PstHashPosition",
+                            "value": {
+                                "position_scope_begin": [
+                                    6921210638846447213,
+                                    15272164029126205329,
+                                    4208904134501757209,
+                                    16484364573025584499
+                                ]
+                            }
+                        }
+                    }
+                ],
+                [
+                    3,
+                    {
+                        "position": {
+                            "type": "PstHashPosition",
+                            "value": {
+                                "position_scope_begin": [
+                                    1563375973852415965,
+                                    3134335661097918017,
+                                    6451544865689567982,
+                                    4985453091089159994
+                                ],
+                                "position_scope_end": [
+                                    39326070486304992,
+                                    7559980311266321046,
+                                    9840843578630498466,
+                                    1578179455251794549
+                                ]
+                            }
+                        }
+                    }
+                ],
+                [
+                    9,
+                    {
+                        "position": {
+                            "type": "PstHashPosition",
+                            "value": {
+                                "position_scope_begin": [
+                                    1563375973852415965,
+                                    3134335661097918017,
+                                    6451544865689567982,
+                                    4985453091089159994
+                                ],
+                                "position_scope_end": [
+                                    39326070486304992,
+                                    7559980311266321046,
+                                    9840843578630498466,
+                                    1578179455251794549
+                                ]
+                            }
+                        }
+                    }
+                ]
+            ],
+            "instr_offsets_to_variable_init": [],
+            "parameter_indexes_to_metadata": [
+                [
+                    0,
+                    {
+                        "name": "v",
+                        "position": {
+                            "type": "PstHashPosition",
+                            "value": {
+                                "position_scope_begin": [
+                                    6597315444057607713,
+                                    9896520048736684442,
+                                    1300582628535878932,
+                                    6865056850051168878
+                                ]
+                            }
+                        }
+                    }
+                ]
+            ],
+            "position": {
+                "type": "PstHashPosition",
+                "value": {
+                    "position_scope_begin": [
+                        5218487984533900943,
+                        6863253691793729833,
+                        16410825106787918364,
+                        200651082134620240
+                    ]
+                }
+            }
+        },
+        "_Q_P4core4core6printsG5printFiqibE1vE": {
+            "function_name": "print",
+            "instr_offsets_to_metadata": [
+                [
+                    2,
+                    {
+                        "position": {
+                            "type": "PstHashPosition",
+                            "value": {
+                                "position_scope_begin": [
+                                    9944175067951079933,
+                                    2950829271050786523,
+                                    11830832071267493854,
+                                    4294666172031297585
+                                ]
+                            }
+                        }
+                    }
+                ],
+                [
+                    3,
+                    {
+                        "position": {
+                            "type": "PstHashPosition",
+                            "value": {
+                                "position_scope_begin": [
+                                    9275297246683253501,
+                                    13091018609243398111,
+                                    18183476615350499924,
+                                    3978275797303455720
+                                ],
+                                "position_scope_end": [
+                                    14845085020376561990,
+                                    6491171577498020868,
+                                    3229183665106442688,
+                                    7282109941226874666
+                                ]
+                            }
+                        }
+                    }
+                ],
+                [
+                    9,
+                    {
+                        "position": {
+                            "type": "PstHashPosition",
+                            "value": {
+                                "position_scope_begin": [
+                                    9275297246683253501,
+                                    13091018609243398111,
+                                    18183476615350499924,
+                                    3978275797303455720
+                                ],
+                                "position_scope_end": [
+                                    14845085020376561990,
+                                    6491171577498020868,
+                                    3229183665106442688,
+                                    7282109941226874666
+                                ]
+                            }
+                        }
+                    }
+                ]
+            ],
+            "instr_offsets_to_variable_init": [],
+            "parameter_indexes_to_metadata": [
+                [
+                    0,
+                    {
+                        "name": "v",
+                        "position": {
+                            "type": "PstHashPosition",
+                            "value": {
+                                "position_scope_begin": [
+                                    9267439662493351656,
+                                    3826652970198752708,
+                                    12373269536554671410,
+                                    2704865285212543128
+                                ]
+                            }
+                        }
+                    }
+                ]
+            ],
+            "position": {
+                "type": "PstHashPosition",
+                "value": {
+                    "position_scope_begin": [
+                        11804306963291123330,
+                        2062174302221365781,
+                        511815479463887429,
+                        5225310881386247208
+                    ]
+                }
+            }
+        },
+        "_Q_P4core4core6printsG5printFiqidE1vE": {
+            "function_name": "print",
+            "instr_offsets_to_metadata": [
+                [
+                    2,
+                    {
+                        "position": {
+                            "type": "PstHashPosition",
+                            "value": {
+                                "position_scope_begin": [
+                                    4216733050533140339,
+                                    8470901596441425414,
+                                    411370985565430723,
+                                    4823658626359065876
+                                ]
+                            }
+                        }
+                    }
+                ],
+                [
+                    3,
+                    {
+                        "position": {
+                            "type": "PstHashPosition",
+                            "value": {
+                                "position_scope_begin": [
+                                    17158158741075661571,
+                                    18361032228197954799,
+                                    10532051991159707504,
+                                    18132518340450433801
+                                ],
+                                "position_scope_end": [
+                                    12753994616788737648,
+                                    4988971656929015110,
+                                    3233095856779369317,
+                                    15086980631727810644
+                                ]
+                            }
+                        }
+                    }
+                ],
+                [
+                    9,
+                    {
+                        "position": {
+                            "type": "PstHashPosition",
+                            "value": {
+                                "position_scope_begin": [
+                                    17158158741075661571,
+                                    18361032228197954799,
+                                    10532051991159707504,
+                                    18132518340450433801
+                                ],
+                                "position_scope_end": [
+                                    12753994616788737648,
+                                    4988971656929015110,
+                                    3233095856779369317,
+                                    15086980631727810644
+                                ]
+                            }
+                        }
+                    }
+                ]
+            ],
+            "instr_offsets_to_variable_init": [],
+            "parameter_indexes_to_metadata": [
+                [
+                    0,
+                    {
+                        "name": "v",
+                        "position": {
+                            "type": "PstHashPosition",
+                            "value": {
+                                "position_scope_begin": [
+                                    6130441846097644125,
+                                    647364616129351340,
+                                    4083634600131941502,
+                                    12541581687693938204
+                                ]
+                            }
+                        }
+                    }
+                ]
+            ],
+            "position": {
+                "type": "PstHashPosition",
+                "value": {
+                    "position_scope_begin": [
+                        3619628638631405694,
+                        1981187163257251236,
+                        14383195109434664347,
+                        5892448519963189168
+                    ]
+                }
+            }
+        },
+        "_Q_P4core4core6printsG5printFiqiqE1vE": {
+            "function_name": "print",
+            "instr_offsets_to_metadata": [
+                [
+                    1,
+                    {
+                        "position": {
+                            "type": "PstHashPosition",
+                            "value": {
+                                "position_scope_begin": [
+                                    15544278370702889684,
+                                    16551427747160915236,
+                                    11587258309523566984,
+                                    1299953760901279419
+                                ],
+                                "position_scope_end": [
+                                    9603707027738335617,
+                                    851384582619362942,
+                                    8223520497177031664,
+                                    3417209807272908270
+                                ]
+                            }
+                        }
+                    }
+                ],
+                [
+                    7,
+                    {
+                        "position": {
+                            "type": "PstHashPosition",
+                            "value": {
+                                "position_scope_begin": [
+                                    15544278370702889684,
+                                    16551427747160915236,
+                                    11587258309523566984,
+                                    1299953760901279419
+                                ],
+                                "position_scope_end": [
+                                    9603707027738335617,
+                                    851384582619362942,
+                                    8223520497177031664,
+                                    3417209807272908270
+                                ]
+                            }
+                        }
+                    }
+                ]
+            ],
+            "instr_offsets_to_variable_init": [],
+            "parameter_indexes_to_metadata": [
+                [
+                    0,
+                    {
+                        "name": "v",
+                        "position": {
+                            "type": "PstHashPosition",
+                            "value": {
+                                "position_scope_begin": [
+                                    315960124348550380,
+                                    2798553456471836567,
+                                    18122867809486968202,
+                                    15596430545670539092
+                                ]
+                            }
+                        }
+                    }
+                ]
+            ],
+            "position": {
+                "type": "PstHashPosition",
+                "value": {
+                    "position_scope_begin": [
+                        3285763286246315354,
+                        8065056370572121403,
+                        18085453708648253776,
+                        9268575379938274483
+                    ]
+                }
+            }
+        },
+        "_Q_P4core4core6printsG5printFiqiwE1vE": {
+            "function_name": "print",
+            "instr_offsets_to_metadata": [
+                [
+                    2,
+                    {
+                        "position": {
+                            "type": "PstHashPosition",
+                            "value": {
+                                "position_scope_begin": [
+                                    14728070816424666611,
+                                    14911496700060261814,
+                                    769904481384655878,
+                                    8776188657534867552
+                                ]
+                            }
+                        }
+                    }
+                ],
+                [
+                    3,
+                    {
+                        "position": {
+                            "type": "PstHashPosition",
+                            "value": {
+                                "position_scope_begin": [
+                                    1062707473168735920,
+                                    15477583520978955499,
+                                    9967106818282437537,
+                                    4783439422229008498
+                                ],
+                                "position_scope_end": [
+                                    16821573431909490764,
+                                    15844330363361272504,
+                                    9240462739687684549,
+                                    6470531652526654890
+                                ]
+                            }
+                        }
+                    }
+                ],
+                [
+                    9,
+                    {
+                        "position": {
+                            "type": "PstHashPosition",
+                            "value": {
+                                "position_scope_begin": [
+                                    1062707473168735920,
+                                    15477583520978955499,
+                                    9967106818282437537,
+                                    4783439422229008498
+                                ],
+                                "position_scope_end": [
+                                    16821573431909490764,
+                                    15844330363361272504,
+                                    9240462739687684549,
+                                    6470531652526654890
+                                ]
+                            }
+                        }
+                    }
+                ]
+            ],
+            "instr_offsets_to_variable_init": [],
+            "parameter_indexes_to_metadata": [
+                [
+                    0,
+                    {
+                        "name": "v",
+                        "position": {
+                            "type": "PstHashPosition",
+                            "value": {
+                                "position_scope_begin": [
+                                    12168241660609278811,
+                                    5827878028057017925,
+                                    17302930733373692580,
+                                    2940610511646760529
+                                ]
+                            }
+                        }
+                    }
+                ]
+            ],
+            "position": {
+                "type": "PstHashPosition",
+                "value": {
+                    "position_scope_begin": [
+                        17321171222995663782,
+                        17579882433323760224,
+                        4788446415288531943,
+                        12592099724158566268
+                    ]
+                }
+            }
+        },
+        "_Q_P4core4core6printsG5printFiqjbE1vE": {
+            "function_name": "print",
+            "instr_offsets_to_metadata": [
+                [
+                    2,
+                    {
+                        "position": {
+                            "type": "PstHashPosition",
+                            "value": {
+                                "position_scope_begin": [
+                                    5147290957275978817,
+                                    14426420472210452131,
+                                    14489120254400609157,
+                                    2725193527844290038
+                                ]
+                            }
+                        }
+                    }
+                ],
+                [
+                    3,
+                    {
+                        "position": {
+                            "type": "PstHashPosition",
+                            "value": {
+                                "position_scope_begin": [
+                                    8914113759324356783,
+                                    18389765561159871432,
+                                    16482175638546819946,
+                                    15918611864448809581
+                                ],
+                                "position_scope_end": [
+                                    18435795377116279874,
+                                    5313464229223501182,
+                                    13323507422665016060,
+                                    1476387939708592884
+                                ]
+                            }
+                        }
+                    }
+                ],
+                [
+                    9,
+                    {
+                        "position": {
+                            "type": "PstHashPosition",
+                            "value": {
+                                "position_scope_begin": [
+                                    8914113759324356783,
+                                    18389765561159871432,
+                                    16482175638546819946,
+                                    15918611864448809581
+                                ],
+                                "position_scope_end": [
+                                    18435795377116279874,
+                                    5313464229223501182,
+                                    13323507422665016060,
+                                    1476387939708592884
+                                ]
+                            }
+                        }
+                    }
+                ]
+            ],
+            "instr_offsets_to_variable_init": [],
+            "parameter_indexes_to_metadata": [
+                [
+                    0,
+                    {
+                        "name": "v",
+                        "position": {
+                            "type": "PstHashPosition",
+                            "value": {
+                                "position_scope_begin": [
+                                    12309627881650821555,
+                                    3257452595268456895,
+                                    5245761472124052861,
+                                    3144548879011785757
+                                ]
+                            }
+                        }
+                    }
+                ]
+            ],
+            "position": {
+                "type": "PstHashPosition",
+                "value": {
+                    "position_scope_begin": [
+                        3066963230702079063,
+                        11891387862527718629,
+                        604419764508339744,
+                        1931837984311170429
+                    ]
+                }
+            }
+        },
+        "_Q_P4core4core6printsG5printFiqjdE1vE": {
+            "function_name": "print",
+            "instr_offsets_to_metadata": [
+                [
+                    2,
+                    {
+                        "position": {
+                            "type": "PstHashPosition",
+                            "value": {
+                                "position_scope_begin": [
+                                    18225593140403180858,
+                                    8029650840745586985,
+                                    15328475902785650837,
+                                    6225850849186140571
+                                ]
+                            }
+                        }
+                    }
+                ],
+                [
+                    3,
+                    {
+                        "position": {
+                            "type": "PstHashPosition",
+                            "value": {
+                                "position_scope_begin": [
+                                    2039785940749792022,
+                                    11328248719037650264,
+                                    15335049287804918716,
+                                    11955494331256523280
+                                ],
+                                "position_scope_end": [
+                                    1538194470540917016,
+                                    4930399309131443036,
+                                    1567963105672405943,
+                                    5521752816145572305
+                                ]
+                            }
+                        }
+                    }
+                ],
+                [
+                    9,
+                    {
+                        "position": {
+                            "type": "PstHashPosition",
+                            "value": {
+                                "position_scope_begin": [
+                                    2039785940749792022,
+                                    11328248719037650264,
+                                    15335049287804918716,
+                                    11955494331256523280
+                                ],
+                                "position_scope_end": [
+                                    1538194470540917016,
+                                    4930399309131443036,
+                                    1567963105672405943,
+                                    5521752816145572305
+                                ]
+                            }
+                        }
+                    }
+                ]
+            ],
+            "instr_offsets_to_variable_init": [],
+            "parameter_indexes_to_metadata": [
+                [
+                    0,
+                    {
+                        "name": "v",
+                        "position": {
+                            "type": "PstHashPosition",
+                            "value": {
+                                "position_scope_begin": [
+                                    1742496677671492236,
+                                    5362201573352515597,
+                                    688910514329889195,
+                                    2417699522037454136
+                                ]
+                            }
+                        }
+                    }
+                ]
+            ],
+            "position": {
+                "type": "PstHashPosition",
+                "value": {
+                    "position_scope_begin": [
+                        14846212331698648073,
+                        3557401066548900888,
+                        11579851290853229509,
+                        6880181346375877825
+                    ]
+                }
+            }
+        },
+        "_Q_P4core4core6printsG5printFiqjqE1vE": {
+            "function_name": "print",
+            "instr_offsets_to_metadata": [
+                [
+                    1,
+                    {
+                        "position": {
+                            "type": "PstHashPosition",
+                            "value": {
+                                "position_scope_begin": [
+                                    1606017314708248362,
+                                    6110081496163166822,
+                                    7450532079776355515,
+                                    862242452190555135
+                                ],
+                                "position_scope_end": [
+                                    4911580189443472228,
+                                    7208491800638149835,
+                                    4763588318388173731,
+                                    17272010161373838484
+                                ]
+                            }
+                        }
+                    }
+                ],
+                [
+                    7,
+                    {
+                        "position": {
+                            "type": "PstHashPosition",
+                            "value": {
+                                "position_scope_begin": [
+                                    1606017314708248362,
+                                    6110081496163166822,
+                                    7450532079776355515,
+                                    862242452190555135
+                                ],
+                                "position_scope_end": [
+                                    4911580189443472228,
+                                    7208491800638149835,
+                                    4763588318388173731,
+                                    17272010161373838484
+                                ]
+                            }
+                        }
+                    }
+                ]
+            ],
+            "instr_offsets_to_variable_init": [],
+            "parameter_indexes_to_metadata": [
+                [
+                    0,
+                    {
+                        "name": "v",
+                        "position": {
+                            "type": "PstHashPosition",
+                            "value": {
+                                "position_scope_begin": [
+                                    13116074447333333380,
+                                    48146801347922202,
+                                    14144638219504602164,
+                                    11964051596493269516
+                                ]
+                            }
+                        }
+                    }
+                ]
+            ],
+            "position": {
+                "type": "PstHashPosition",
+                "value": {
+                    "position_scope_begin": [
+                        4767539747755373512,
+                        4738240641540987129,
+                        13547816296992476919,
+                        2186408609055792464
+                    ]
+                }
+            }
+        },
+        "_Q_P4core4core6printsG5printFiqjwE1vE": {
+            "function_name": "print",
+            "instr_offsets_to_metadata": [
+                [
+                    2,
+                    {
+                        "position": {
+                            "type": "PstHashPosition",
+                            "value": {
+                                "position_scope_begin": [
+                                    11214445529930837335,
+                                    10047899645902230167,
+                                    2339925295340970820,
+                                    853073509734240880
+                                ]
+                            }
+                        }
+                    }
+                ],
+                [
+                    3,
+                    {
+                        "position": {
+                            "type": "PstHashPosition",
+                            "value": {
+                                "position_scope_begin": [
+                                    1123500150676370620,
+                                    9283124147075338353,
+                                    8094198948827045342,
+                                    3792497643142408527
+                                ],
+                                "position_scope_end": [
+                                    1849520515813041808,
+                                    16303336037116444466,
+                                    11010203187117071438,
+                                    11491431880258480144
+                                ]
+                            }
+                        }
+                    }
+                ],
+                [
+                    9,
+                    {
+                        "position": {
+                            "type": "PstHashPosition",
+                            "value": {
+                                "position_scope_begin": [
+                                    1123500150676370620,
+                                    9283124147075338353,
+                                    8094198948827045342,
+                                    3792497643142408527
+                                ],
+                                "position_scope_end": [
+                                    1849520515813041808,
+                                    16303336037116444466,
+                                    11010203187117071438,
+                                    11491431880258480144
+                                ]
+                            }
+                        }
+                    }
+                ]
+            ],
+            "instr_offsets_to_variable_init": [],
+            "parameter_indexes_to_metadata": [
+                [
+                    0,
+                    {
+                        "name": "v",
+                        "position": {
+                            "type": "PstHashPosition",
+                            "value": {
+                                "position_scope_begin": [
+                                    12718406017752734087,
+                                    12391261381021260173,
+                                    2247975324671113573,
+                                    17741777873669490683
+                                ]
+                            }
+                        }
+                    }
+                ]
+            ],
+            "position": {
+                "type": "PstHashPosition",
+                "value": {
+                    "position_scope_begin": [
+                        18252110119811424868,
+                        3863687988740202202,
+                        6311951472082150860,
+                        5248916591271733041
+                    ]
+                }
+            }
+        },
+        "_Q_P4core4core6printsG5printFiquE1vE": {
+            "function_name": "print",
+            "instr_offsets_to_metadata": [
+                [
+                    2,
+                    {
+                        "position": {
+                            "type": "PstHashPosition",
+                            "value": {
+                                "position_scope_begin": [
+                                    7681129262473273050,
+                                    7691865193108436480,
+                                    7414972959155435139,
+                                    2383317891259512861
+                                ],
+                                "position_scope_end": [
+                                    6685667651338124886,
+                                    131416713532218683,
+                                    7029983901580088787,
+                                    6913546534622867843
+                                ]
+                            }
+                        }
+                    }
+                ],
+                [
+                    6,
+                    {
+                        "position": {
+                            "type": "PstHashPosition",
+                            "value": {
+                                "position_scope_begin": [
+                                    14935996716940338556,
+                                    82947507458982649,
+                                    15159993350579190906,
+                                    15402895162507892158
+                                ],
+                                "position_scope_end": [
+                                    6283604475772770781,
+                                    17086297565789285657,
+                                    17807548946979445763,
+                                    12668099517720380915
+                                ]
+                            }
+                        }
+                    }
+                ],
+                [
+                    12,
+                    {
+                        "position": {
+                            "type": "PstHashPosition",
+                            "value": {
+                                "position_scope_begin": [
+                                    14935996716940338556,
+                                    82947507458982649,
+                                    15159993350579190906,
+                                    15402895162507892158
+                                ],
+                                "position_scope_end": [
+                                    6283604475772770781,
+                                    17086297565789285657,
+                                    17807548946979445763,
+                                    12668099517720380915
+                                ]
+                            }
+                        }
+                    }
+                ]
+            ],
+            "instr_offsets_to_variable_init": [],
+            "parameter_indexes_to_metadata": [],
+            "position": {
+                "type": "PstHashPosition",
+                "value": {
+                    "position_scope_begin": [
+                        832320136363212434,
+                        17568959031516547653,
+                        518542793205311301,
+                        6857005028938230272
+                    ]
+                }
+            }
+        }
+    },
+    "globals": {},
+    "module_path": "/home/karol/code/projects/queens-helper/.duck_build/dev/queens-designer-1.0.0-e7e86d4d7384f0562634f674d47f17dcd843e423e0b0dbf1fd98d63cf913c4be/artifacts/query/query71/ef7671403a347f367854e56d3d35d072cace4bddb0877f2950125c0c7d37f737.dbc",
+    "source_positions_type": "PstHash",
+    "target": "DBC",
+    "types": {
+        "ScE": {
+            "name": "slice char"
+        },
+        "_Q_CP4core4core10containersG6String": {
+            "name": "Class String"
+        },
+        "f32": {
+            "name": "f32"
+        },
+        "f64": {
+            "name": "f64"
+        },
+        "i16": {
+            "name": "u16"
+        },
+        "i32": {
+            "name": "u32"
+        },
+        "i64": {
+            "name": "u64"
+        },
+        "i8": {
+            "name": "bool"
+        },
+        "ptr__Q_CP4core4core10containersG6String": {
+            "name": "ref Class String"
+        },
+        "ptr_dyntable_i8": {
+            "name": "manyptr char"
+        }
+    }
+}

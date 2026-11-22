@@ -1,0 +1,19 @@
+{
+  "packages": [
+    {
+      "id": "queens-designer-1.0.0-e7e86d4d7384f0562634f674d47f17dcd843e423e0b0dbf1fd98d63cf913c4be",
+      "name": "queens_designer",
+      "version": "1.0.0",
+      "features": [],
+      "path": "/home/karol/code/projects/queens-helper/src",
+      "dependencies": []
+    }
+  ],
+  "tasks": [
+    {
+      "package": "queens-designer-1.0.0-e7e86d4d7384f0562634f674d47f17dcd843e423e0b0dbf1fd98d63cf913c4be",
+      "strategy": "native",
+      "output_file": "/home/karol/code/projects/queens-helper/.duck_build/dev/queens-designer"
+    }
+  ]
+}

@@ -1,1 +1,0 @@
-duckc compile_package src --dvm-backend && VM_tc run duck_build/package_dvm.dbc

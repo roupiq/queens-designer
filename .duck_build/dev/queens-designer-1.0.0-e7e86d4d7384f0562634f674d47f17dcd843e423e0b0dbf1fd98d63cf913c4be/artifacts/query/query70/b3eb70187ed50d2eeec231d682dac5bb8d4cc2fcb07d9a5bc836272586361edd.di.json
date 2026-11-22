@@ -1,0 +1,56 @@
+{
+    "functions": {
+        "_Q_P3exp3expG1cFuEE": {
+            "function_name": "c",
+            "instr_offsets_to_metadata": [
+                [
+                    1,
+                    {
+                        "position": {
+                            "type": "FilePosition",
+                            "value": {
+                                "end_column": 12,
+                                "end_line": 5,
+                                "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/exp/exp.dk",
+                                "start_column": 9,
+                                "start_line": 5
+                            }
+                        }
+                    }
+                ],
+                [
+                    2,
+                    {
+                        "position": {
+                            "type": "FilePosition",
+                            "value": {
+                                "end_column": 11,
+                                "end_line": 6,
+                                "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/exp/exp.dk",
+                                "start_column": 8,
+                                "start_line": 6
+                            }
+                        }
+                    }
+                ]
+            ],
+            "instr_offsets_to_variable_init": [],
+            "parameter_indexes_to_metadata": [],
+            "position": {
+                "type": "FilePosition",
+                "value": {
+                    "end_column": 1,
+                    "end_line": 7,
+                    "file_path": "/home/karol/.local/share/duckling/bin/duck_lib/exp/exp.dk",
+                    "start_column": 1,
+                    "start_line": 4
+                }
+            }
+        }
+    },
+    "globals": {},
+    "module_path": "/home/karol/code/projects/queens-helper/.duck_build/dev/queens-designer-1.0.0-e7e86d4d7384f0562634f674d47f17dcd843e423e0b0dbf1fd98d63cf913c4be/artifacts/query/query71/47d8bf12918e099683c25950330c6508f3ea1ca0123b2e75c72889d6c3236214.dbc",
+    "source_positions_type": "LineColumn",
+    "target": "DBC",
+    "types": {}
+}
