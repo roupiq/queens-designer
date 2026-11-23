@@ -451,7 +451,80 @@ fun strategy5(queens: ref Queens) -> bool = {
                 explanation = f"There are exactly {i} free colors on columns {j}-{j + i - 1}\n";
                 return true;
             }
-            i += 1;
+            j += 1;
+        }
+
+        i += 1;
+    }
+    return false;
+}
+
+fun areThereRowsWithAllCrosses(queens: ref Queens) -> bool = {
+    var x = 1;
+    var n = queens.n;
+    while (x < n)
+    {
+        if(queens.rowHasQueen(x))
+        {
+            var y = 0;
+            var crosses = 0;
+            while (y < n)
+            {
+                if (queens.canPlace(x, y)) crosses += 1;
+                y += 1;
+            }
+            if(crosses == n)
+                return true;
+        }
+
+        x += 1;
+    }
+    return false;
+}
+
+fun areThereColumnsWithAllCrosses(queens: ref Queens) -> bool = {
+    var y = 1;
+    var n = queens.n;
+    while (y < n)
+    {
+        if(queens.columnHasQueen(y))
+        {
+            var x = 0;
+            var crosses = 0;
+            while (x < n)
+            {
+                if (queens.canPlace(y, x)) crosses += 1;
+                x += 1;
+            }
+            if(crosses == n)
+                return true;
+        }
+
+        y += 1;
+    }
+    return false;
+}
+
+fun strategy6(queens: ref Queens) -> bool = {
+    var i = 1;
+    var n = queens.n;
+    while (i < n)
+    {
+        var j = 0;
+        while (j < n)
+        {
+            if (queens.canPlace(i, j))
+            {
+                var queensCopy = copy queens;
+                queensCopy.placeQueen(i, j);
+                if(areThereRowsWithAllCrosses(&queensCopy))
+                {
+                    queens.placeCross(i, j);
+                    explanation = f"Queen at {coords(i, j)} would block whole row.";
+                    return true;
+                }
+            }
+            j += 1;
         }
 
         i += 1;

@@ -2,7 +2,7 @@ import src.helpers.*;
 
 var __seed: u64 = 0x9e3779b97f4a7c15u64;
 
-fun setSeed(seed: u64) = {__seed = seed};
+fun setSeed(seed: u64) = {__seed = seed}
 
 fun random() -> u64 = {
     # http://xorshift.di.unimi.it/splitmix64.c

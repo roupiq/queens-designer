@@ -92,6 +92,14 @@ fun solveLikeHuman(solution: ref Queens, verbose: bool = true) -> bool = {
         {
             strategyName = f"4";
         }
+        else if(strategy5(&solution))
+        {
+            strategyName = f"4";
+        }
+        else if(strategy6(&solution))
+        {
+            strategyName = f"6";
+        }
         else
         {
             if (verbose) print("All heuristics failed! 😔\n");
@@ -108,7 +116,6 @@ fun solveLikeHuman(solution: ref Queens, verbose: bool = true) -> bool = {
 
     return true;
 }
-
 
 fun randomQueens(n: i32) -> Queens = {
     var queens : Queens;
@@ -168,6 +175,7 @@ fun randomQueens(n: i32) -> Queens = {
             }
         }
     }
+    print(f"{queens}");
     return queens;
 }
 
@@ -250,7 +258,8 @@ fun main() = {
     print(f"{BRIGHT_STYLE}                                                                   o'                \n");
 
     setSeed(readI64() as u64);
-    var queens: Queens = randomHardSolvableQueens(9);
+
+    var queens: Queens = randomHardSolvableQueens(5);
 
     var solutions_count: i32 = solve(&queens);
     if (solutions_count == 0)
