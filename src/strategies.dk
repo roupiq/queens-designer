@@ -92,7 +92,7 @@ fun strategy1(solution: ref Solution) -> bool = {
         if(freeColorI == 1)
         {
             var pos = findFreeColor(&solution, i);
-            explanation = f"Placing queen at {coords(pos[0], pos[1])} because thats the only free {COLOR_NAMES[pos[2]]} tile.\n";
+            explanation = f"Placing queen at {coords(pos[0], pos[1])} because it is the only free {COLOR_NAMES[pos[2]]} tile.\n";
             solution.placeQueen(pos[0], pos[1]);
             return true;
         }
@@ -136,7 +136,7 @@ fun strategy2(solution: ref Solution) -> bool = {
             if(anything_changed)
             {
                 # print(f"{range[0]}, {range[1]}, {range[2]}, {range[3]}");
-                explanation = f"Color {COLOR_NAMES[i]} has every free tile on the row {ALPHABET[x]}.\n";
+                explanation = f"Every free tile in row {ALPHABET[x]} is {COLOR_NAMES[i]}.\n";
                 return true;
             }
         }
@@ -157,7 +157,7 @@ fun strategy2(solution: ref Solution) -> bool = {
             }
             if(anything_changed)
             {
-                explanation = f"Color {COLOR_NAMES[i]} has every free tile on the column {y}.\n";
+                explanation = f"Every free tile in column {y} is {COLOR_NAMES[i]}.\n";
                 return true;
             }
         }
@@ -255,7 +255,7 @@ fun strategy3(solution: ref Solution) -> bool = {
                 if (blocked_color != -1)
                 {
                     solution.placeCross(x, y);
-                    explanation = f"Queen at position {coords(x, y)} blocks all {COLOR_NAMES[blocked_color]} tiles.\n";
+                    explanation = f"Queen on {coords(x, y)} would block every free {COLOR_NAMES[blocked_color]} tiles.\n";
                     return true;
                 }
             }
@@ -291,9 +291,6 @@ fun rowsSegmentsStrategy(solution: ref Solution, x1: i32, x2: i32) -> bool = {
 
         x += 1;
     }
-
-    # Print colors
-    # print(f"[{x1}, {x2}), {colors} {fillableRows}\n");
 
     if (sum[i32](&colors) == fillableRows)
     {
@@ -359,10 +356,7 @@ fun columnsSegmentsStrategy(solution: ref Solution, y1: i32, y2: i32) -> bool = 
 
         y += 1;
     }
-
-    # Print colors
-    # print(f"[{x1}, {x2}), {colors} {fillableColumns}\n");
-
+    
     if (sum[i32](&colors) == fillableColumns)
     {
         y = 0;
@@ -410,7 +404,7 @@ fun strategy4(solution: ref Solution) -> bool = {
     {
         if(rowsSegmentsStrategy(&solution, n - i, n))
         {   
-            explanation = f"There are exactly {i} placable colors on rows {ALPHABET[n - i]}-{ALPHABET[n - 1]}\n";
+            explanation = f"There are exactly {i} free colors on rows {ALPHABET[n - i]}-{ALPHABET[n - 1]}\n";
             return true;
         }
 
@@ -448,13 +442,13 @@ fun strategy5(solution: ref Solution) -> bool = {
         {
             if(rowsSegmentsStrategy(&solution, j, i + j))
             {
-                explanation = f"The number of free colors is equal to the number of free rows from {ALPHABET[j]}-{ALPHABET[j + i - 1]}\n";
+                explanation = f"There are exactly {i} free colors on rows {ALPHABET[j]}-{ALPHABET[j + i - 1]}\n";
                 return true;
             }
 
             if(columnsSegmentsStrategy(&solution, j, i + j))
             {
-                explanation = f"Same number of free colors as number of free columns from {j}-{j + i - 1}\n";
+                explanation = f"There are exactly {i} free colors on columns {j}-{j + i - 1}\n";
                 return true;
             }
             i += 1;
