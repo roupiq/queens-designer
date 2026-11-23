@@ -1,0 +1,25 @@
+import src.helpers.*;
+
+var __seed: u64 = 0x9e3779b97f4a7c15u64;
+
+fun setSeed(seed: u64) = {__seed = seed};
+
+fun random() -> u64 = {
+    # http://xorshift.di.unimi.it/splitmix64.c
+    
+    __seed += 0x9e3779b97f4a7c15u64;
+    __seed = (__seed ^ (__seed >> 30u64)) * 0xbf58476d1ce4e5b9u64;
+    __seed = (__seed ^ (__seed >> 27u64)) * 0x94d049bb133111ebu64;
+
+    return __seed ^ (__seed >> 31u64);
+}
+
+template(T: type)
+fun shuffle(list: ref List[T]) = {
+    var i = 0;
+    var n = list.length();
+    while (i < n){
+        swap[T](list.at(i), list.at(random() % n));
+        i += 1;
+    }
+}

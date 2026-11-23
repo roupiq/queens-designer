@@ -2,7 +2,7 @@ import core.builtins.*;
 import src.constants.*;
 import src.helpers.*;
 
-class Solution {
+class Queens {
     n: i32;
     board: List[i32];
     occupied: List[i32];
@@ -10,6 +10,10 @@ class Solution {
 
     fun getColor(x: i32, y: i32) -> i32 = {
         return board.at(x * n + y);
+    }
+
+    fun setColor(x: i32, y: i32, color: i32) = {
+        board.at(x * n + y) = color;
     }
 
     fun initialize(_n: i32, _board: ref List[i32]) = {
@@ -85,7 +89,9 @@ class Solution {
     }
 
     fun canPlace(x: i32, y: i32) -> bool = {
-        return occupied.at(x * n + y) == 0 and occupiedColors.at(getColor(x, y)) == 0;
+        if (0 <= getColor(x, y) < n)
+            return occupied.at(x * n + y) == 0 and occupiedColors.at(getColor(x, y)) == 0;
+        return occupied.at(x * n + y) == 0;
     }
 
     fun hasQueen(x: i32, y: i32) -> bool = {
@@ -186,8 +192,7 @@ class Solution {
                 j += 1;
             }
             result.append("|\n");
-
-
+            
             j = 0;
             while (j < n)
             {

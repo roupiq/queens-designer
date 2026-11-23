@@ -3,33 +3,38 @@ import constants.*;
 import helpers.*;
 import queens.*;
 import strategies.*;
-import randomizer.*;
+import random.*;
 
-var solution_found: Solution;
-fun solve(solution: ref Solution, start: i32 = 0) -> i32 = {
-    if (solution.isSolved()) {
-        solution_found = copy solution;
-        solution.refreshAll();
-        print(f"\nSolution\n{solution}\n");
+var solutionFound: Queens;
+fun solveRecursive(queens: ref Queens, start: i32 = 0, silent: bool = true, limit: i32 = 100000, solutionsCount: ref i32) -> i32 = {
+    if (queens.isSolved()) {
+        solutionFound = copy queens;
+        queens.refreshAll();
+        if (not silent)
+            print(f"\nSolution\n{queens}\n");
+        solutionsCount += 1;
         return 1;
     }
 
-    var n = solution.n;
+    var n = queens.n;
     var solutions = 0;
     var i = start;
 
-    while (i < solution.n * solution.n)
+    while (i < queens.n * queens.n)
     {
         var x: i32 = i / n;
         var y: i32 = i % n;
         
-        if (solution.canPlace(x, y))
+        if (queens.canPlace(x, y))
         {
-            var next_solution: Solution = copy solution;
+            var next_queens: Queens = copy queens;
 
-            next_solution.placeQueen(x, y);
+            next_queens.placeQueen(x, y);
 
-            solutions += solve(&next_solution, i + 1);
+            solutions += solveRecursive(&next_queens, i + 1, silent, limit, solutionsCount);
+            if (solutionsCount == limit) {
+                return solutions;
+            }
         }
 
         i += 1;
@@ -38,22 +43,33 @@ fun solve(solution: ref Solution, start: i32 = 0) -> i32 = {
     return solutions;
 }
 
-fun solveLikeHuman(solution: ref Solution) = {
-    
-    print("\n\n");
-    print(f"{solution}");
-    print("Attempting to solve using human-like heuristics.\n");
+fun solve(queens: ref Queens, start: i32 = 0, silent: bool = true, limit: i32 = 100000) -> i32 = {
+    var solutionsCount = 0;
+    return solveRecursive(queens, start, silent, limit, &solutionsCount)
+}
+
+fun solveLikeHuman(solution: ref Queens, verbose: bool = true) -> bool = {
+    if (verbose)
+    {
+        print("\n\n");
+        print(f"{solution}");
+        print("Attempting to solve using human-like heuristics.\n");
+    }
     
     while (not solution.isSolved())
     {
-        print("Press any key to continue.\n");
-        
-        var ignore: char = builtin_input_char();
-    
+        if(verbose)
+        {
+            wait(f"Press any key to continue.\n");
+        }
+            
         # var progres: bool = true;
-        print("\n");
-        print("\n");
-        print("\n");
+        if(verbose)
+        {
+            print("\n");
+            print("\n");
+            print("\n");
+        }
 
         var strategyName: String;
         if(strategy1(&solution))
@@ -78,27 +94,117 @@ fun solveLikeHuman(solution: ref Solution) = {
         }
         else
         {
-            print("All heuristics failed! 😔\n");
-            return;
+            if (verbose) print("All heuristics failed! 😔\n");
+            return false;
         }
         
-        print(f"{solution}\n");
-        print(f"Using strategy {strategyName}\n");
-        print(f"Explanation: {explanation}\n");
+        if(verbose) {
+            print(f"{solution}\n");
+            print(f"Using strategy {strategyName}\n");
+            print(f"Explanation: {explanation}\n");
+        }
     }
-    print("GAME SOLVED! 😃\n");
+    if(verbose) print("GAME SOLVED! 😃\n");
+
+    return true;
 }
 
-# fun genRandom() -> Solution = {
-#     var colored = false;
-#     while(colored)
-#     {
 
-#     }
-# }
+fun randomQueens(n: i32) -> Queens = {
+    var queens : Queens;
+    var boardList: List[i32];
 
+    resize(&boardList, n * n, n);
 
-fun readBoard() -> Solution = {
+    queens.initialize(n, &boardList);
+
+    var queensPositionsX: List[i32];
+    var queensPositionsY: List[i32];
+    
+    var i = 0;
+    while (i < n) {
+        queensPositionsX.push(i);
+        queensPositionsY.push(i);
+        i += 1;
+    }
+
+    shuffle[i32](&queensPositionsX);
+    shuffle[i32](&queensPositionsY);
+
+    i = 0;
+    while (i < n) {
+        var x = queensPositionsX.at(i);
+        var y = queensPositionsY.at(i);
+        queens.setColor(x, y, i);
+        i += 1;
+    }
+
+    # print(f"{queensPositionsX}\n");
+    # print(f"{queensPositionsY}\n");
+
+    var colored = n;
+        
+    while(colored < n * n)
+    {
+        var x = random() % n;
+        var y = random() % n;
+
+        if (queens.getColor(x, y) == n)
+        {
+
+            var dir = random() % 4;
+
+            var sourceX = x + [-1, 1, 0, 0][dir];
+            var sourceY = y + [0, 0, -1, 1][dir];
+
+            if(0 <= sourceX < n and 0 <= sourceY < n)
+            {
+                var sourceColor = queens.getColor(sourceX, sourceY);
+                if (sourceColor != n)
+                {
+                    queens.setColor(x, y, sourceColor);
+                    colored += 1;
+                }
+            }
+        }
+    }
+    return queens;
+}
+
+fun randomSolvableQueens(n: i32) -> Queens = {
+    print(f"Generating random solvable queens\n");
+    
+    var queens: Queens;
+    while (true)
+    {
+        queens = randomQueens(n);
+        var solutionsCount = solve(&queens, 0, true, 2);
+        if (solutionsCount == 1)
+            return queens;
+    }
+    return queens;
+}
+
+fun randomHardSolvableQueens(n: i32) -> Queens = {
+    print(f"Generating random hard solvable queens\n");
+    
+    var queens: Queens;
+    while (true)
+    {
+        queens = randomSolvableQueens(n);
+        var queensCopy = copy queens;
+        
+        if(not solveLikeHuman(&queensCopy, false))
+        {
+            return queens;
+        }
+    }
+    return queens;
+}
+
+fun readBoard() -> Queens = {
+    print(f"Paste your puzzle here.\n");
+
     var n: i32 = readI64() as i32;
     var boardList: List[i32];
     
@@ -121,18 +227,17 @@ fun readBoard() -> Solution = {
         x += 1;
     }
 
-    var solution : Solution;
-    solution.initialize(
+    var queens : Queens;
+    queens.initialize(
         n,
         &boardList
     );
-    return solution;
+    return queens;
 }
 
 fun main() = {
     # Clear screen
     print("[2J\n");
-    
     print(f"{BRIGHT_STYLE} .oOOOo.                                         o      O        o                   \n");
     print(f"{BRIGHT_STYLE}.O     o.                                        O      o       O                    \n");
     print(f"{BRIGHT_STYLE}o       O                                        o      O       o                    \n");
@@ -143,11 +248,11 @@ fun main() = {
     print(f"{BRIGHT_STYLE} `OoooO Oo `OoO'o `OoO' `OoO'  o   O `OoO'       o      O `OoO' Oo oOoO' `OoO'  o    \n");
     print(f"{BRIGHT_STYLE}                                                                   O                 \n");
     print(f"{BRIGHT_STYLE}                                                                   o'                \n");
-    
-    print(f"Paste your board here.\n");
-    var solution: Solution = readBoard();
 
-    var solutions_count: i32 = solve(&solution);
+    setSeed(readI64() as u64);
+    var queens: Queens = randomHardSolvableQueens(9);
+
+    var solutions_count: i32 = solve(&queens);
     if (solutions_count == 0)
     {
         print(f"There is no solution to this puzzle 😔. Trying to solve anyway.\n");
@@ -160,7 +265,7 @@ fun main() = {
     {
         print(f"There are {solutions_count} solutions to this puzzle 😔.\n");
     }
-    wait(f"Press any key to start analisys");
 
-    solveLikeHuman(&solution);
+    wait(f"Press any key to start solving");
+    solveLikeHuman(&queens);
 }

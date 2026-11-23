@@ -8,16 +8,16 @@ fun coords(x: i32, y: i32) -> String = {
 }
 
 ## min_x, max_x, min_y, max_y
-fun getColorRange(solution: ref Solution, color: i32) -> i32[4] = {
+fun getColorRange(queens: ref Queens, color: i32) -> i32[4] = {
     var result: i32[4] = [INF, -1, INF, -1];
     var x = 0;
 
-    while (x < solution.n)
+    while (x < queens.n)
     {
         var y = 0;
-        while (y < solution.n)
+        while (y < queens.n)
         {
-            if (solution.getColor(x, y) == color and solution.canPlace(x, y))
+            if (queens.getColor(x, y) == color and queens.canPlace(x, y))
             {
                 result[0] = min(x, result[0]);
                 result[1] = max(x, result[1]);
@@ -32,15 +32,15 @@ fun getColorRange(solution: ref Solution, color: i32) -> i32[4] = {
     return result;
 }
 
-fun getColorCount(solution: ref Solution, color: i32) -> i32 = {
+fun getColorCount(queens: ref Queens, color: i32) -> i32 = {
     var result: i32 = 0;
     var x = 0;
-    while (x < solution.n)
+    while (x < queens.n)
     {
         var y = 0;
-        while (y < solution.n)
+        while (y < queens.n)
         {
-            if (solution.getColor(x, y) == color and solution.canPlace(x, y))
+            if (queens.getColor(x, y) == color and queens.canPlace(x, y))
                 result += 1;
             y += 1;
         }
@@ -50,14 +50,14 @@ fun getColorCount(solution: ref Solution, color: i32) -> i32 = {
     return result;
 }
 
-fun findFreeColor(solution: ref Solution, color: i32) -> i32[3] = {
+fun findFreeColor(queens: ref Queens, color: i32) -> i32[3] = {
     var x = 0;
-    while (x < solution.n)
+    while (x < queens.n)
     {
         var y = 0;
-        while (y < solution.n)
+        while (y < queens.n)
         {
-            if (solution.getColor(x, y) == color and solution.canPlace(x, y))
+            if (queens.getColor(x, y) == color and queens.canPlace(x, y))
                 return [x, y, color];
             y += 1;
         }
@@ -67,11 +67,11 @@ fun findFreeColor(solution: ref Solution, color: i32) -> i32[3] = {
     return [-1, -1, -1];
 }
 
-fun areColorsValid(solution: ref Solution) -> i32 = {
+fun areColorsValid(queens: ref Queens) -> i32 = {
     var color: i32 = 0;
-    while(color < solution.n)
+    while(color < queens.n)
     {
-        if (solution.occupiedColors.at(color) == 0 and getColorCount(&solution, color) == 0)
+        if (queens.occupiedColors.at(color) == 0 and getColorCount(&queens, color) == 0)
         {
             return color;
         }
@@ -82,18 +82,18 @@ fun areColorsValid(solution: ref Solution) -> i32 = {
 
 var explanation: String;
 
-fun strategy1(solution: ref Solution) -> bool = {
+fun strategy1(queens: ref Queens) -> bool = {
     var i = 0;
 
     # Checking each color
-    while (i < solution.n)
+    while (i < queens.n)
     {
-        var freeColorI: i32 = getColorCount(&solution, i);
+        var freeColorI: i32 = getColorCount(&queens, i);
         if(freeColorI == 1)
         {
-            var pos = findFreeColor(&solution, i);
+            var pos = findFreeColor(&queens, i);
             explanation = f"Placing queen at {coords(pos[0], pos[1])} because it is the only free {COLOR_NAMES[pos[2]]} tile.\n";
-            solution.placeQueen(pos[0], pos[1]);
+            queens.placeQueen(pos[0], pos[1]);
             return true;
         }
         i += 1;
@@ -103,33 +103,33 @@ fun strategy1(solution: ref Solution) -> bool = {
 
 
 # Checks if there are some rows (or columns) that have only one placable tile
-fun strategy15(solution: ref Solution) -> bool = {
-    if (singleOneInColumn(&solution))
+fun strategy15(queens: ref Queens) -> bool = {
+    if (singleOneInColumn(&queens))
         return true;
-    if (singleOneInRow(&solution))
+    if (singleOneInRow(&queens))
         return true;
     return false;
 }
 
-fun strategy2(solution: ref Solution) -> bool = {
+fun strategy2(queens: ref Queens) -> bool = {
     var i = 0;
 
     # Checking each color
-    while (i < solution.n)
+    while (i < queens.n)
     {
-        var range = getColorRange(&solution, i);
+        var range = getColorRange(&queens, i);
         var anything_changed: bool = false;
         # every tile of this color is on the same x coordinate
         if (range[0] == range[1])
         {
             var x = range[0];
             var y = 0;
-            while (y < solution.n)
+            while (y < queens.n)
             {
-                if(solution.getColor(x, y) != i and solution.canPlace(x, y))
+                if(queens.getColor(x, y) != i and queens.canPlace(x, y))
                 {
                     anything_changed = true;
-                    solution.placeCross(x, y);
+                    queens.placeCross(x, y);
                 }
                 y += 1;
             }
@@ -146,12 +146,12 @@ fun strategy2(solution: ref Solution) -> bool = {
         {
             var x = 0;
             var y = range[2];
-            while (x < solution.n)
+            while (x < queens.n)
             {
-                if(solution.getColor(x, y) != i and solution.canPlace(x, y))
+                if(queens.getColor(x, y) != i and queens.canPlace(x, y))
                 {
                     anything_changed = true;
-                    solution.placeCross(x, y);
+                    queens.placeCross(x, y);
                 }
                 x += 1;
             }
@@ -167,15 +167,15 @@ fun strategy2(solution: ref Solution) -> bool = {
     return false;
 }
 
-fun singleOneInColumn(solution: ref Solution) -> bool = {
+fun singleOneInColumn(queens: ref Queens) -> bool = {
     var x = 0;
-    while (x < solution.n)
+    while (x < queens.n)
     {
         var pos: i32[2] = [-1, -1];
 
         var y = 0;
-        while (y < solution.n) {
-            if (solution.canPlace(x, y))
+        while (y < queens.n) {
+            if (queens.canPlace(x, y))
             {
                 if (pos[0] == -1)
                 {
@@ -192,7 +192,7 @@ fun singleOneInColumn(solution: ref Solution) -> bool = {
 
         if (pos[0] != -1)
         {
-            solution.placeQueen(pos[0], pos[1]);
+            queens.placeQueen(pos[0], pos[1]);
             explanation = f"Tile {coords(pos[0], pos[1])} is the only free one at this column";
             return true;
         }
@@ -202,15 +202,15 @@ fun singleOneInColumn(solution: ref Solution) -> bool = {
     return false;
 }
 
-fun singleOneInRow(solution: ref Solution) -> bool = {
+fun singleOneInRow(queens: ref Queens) -> bool = {
     var y = 0;
-    while (y < solution.n)
+    while (y < queens.n)
     {
         var pos: i32[2] = [-1, -1];
 
         var x: i32 = 0;
-        while (x < solution.n) {
-            if (solution.canPlace(x, y))
+        while (x < queens.n) {
+            if (queens.canPlace(x, y))
             {
                 if (pos[0] == -1)
                 {
@@ -227,7 +227,7 @@ fun singleOneInRow(solution: ref Solution) -> bool = {
 
         if (pos[0] != -1)
         {
-            solution.placeQueen(pos[0], pos[1]);
+            queens.placeQueen(pos[0], pos[1]);
             explanation = f"Tile {coords(pos[0], pos[1])} is the only free one at this row.\n";
             return true;
         }
@@ -238,23 +238,23 @@ fun singleOneInRow(solution: ref Solution) -> bool = {
 }
 
 
-fun strategy3(solution: ref Solution) -> bool = {
+fun strategy3(queens: ref Queens) -> bool = {
     # For each tile placing queen and checking if it does break.
 
     var x = 0;
-    while (x < solution.n)
+    while (x < queens.n)
     {
         var y = 0;
-        while (y < solution.n) {
-            if(solution.canPlace(x, y))
+        while (y < queens.n) {
+            if(queens.canPlace(x, y))
             {
-                var next_solution: Solution = copy solution;
+                var next_solution: Queens = copy queens;
                 next_solution.placeQueen(x, y);
 
                 var blocked_color: i32 = areColorsValid(&next_solution);
                 if (blocked_color != -1)
                 {
-                    solution.placeCross(x, y);
+                    queens.placeCross(x, y);
                     explanation = f"Queen on {coords(x, y)} would block every free {COLOR_NAMES[blocked_color]} tiles.\n";
                     return true;
                 }
@@ -266,25 +266,25 @@ fun strategy3(solution: ref Solution) -> bool = {
     return false;
 }
 
-fun rowsSegmentsStrategy(solution: ref Solution, x1: i32, x2: i32) -> bool = {
+fun rowsSegmentsStrategy(queens: ref Queens, x1: i32, x2: i32) -> bool = {
     var x = x1;
     var colors: List[i32];
     
-    resize(&colors, solution.n);
+    resize(&colors, queens.n);
     var anything_changed: bool = false;
 
     var fillableRows = 0;
 
     while(x < x2)
     {
-        if(not (solution.rowHasQueen(x))) fillableRows += 1;
+        if(not (queens.rowHasQueen(x))) fillableRows += 1;
 
         var y = 0;
-        while (y < solution.n)
+        while (y < queens.n)
         {
-            if (solution.canPlace(x, y))
+            if (queens.canPlace(x, y))
             {
-                colors.at(solution.getColor(x, y)) = 1;
+                colors.at(queens.getColor(x, y)) = 1;
             }
             y += 1;
         }
@@ -298,11 +298,11 @@ fun rowsSegmentsStrategy(solution: ref Solution, x1: i32, x2: i32) -> bool = {
         while (x < x1)
         {
             var y = 0;
-            while (y < solution.n)
+            while (y < queens.n)
             {
-                if (solution.canPlace(x, y) and colors.at(solution.getColor(x, y)) == 1)
+                if (queens.canPlace(x, y) and colors.at(queens.getColor(x, y)) == 1)
                 {
-                    solution.placeCross(x, y);
+                    queens.placeCross(x, y);
                     anything_changed = true;
                 }
                 y += 1;
@@ -311,14 +311,14 @@ fun rowsSegmentsStrategy(solution: ref Solution, x1: i32, x2: i32) -> bool = {
         }
 
         x = x2;
-        while (x < solution.n)
+        while (x < queens.n)
         {
             var y = 0;
-            while (y < solution.n)
+            while (y < queens.n)
             {
-                if (solution.canPlace(x, y) and colors.at(solution.getColor(x, y)) == 1)
+                if (queens.canPlace(x, y) and colors.at(queens.getColor(x, y)) == 1)
                 {
-                    solution.placeCross(x, y);
+                    queens.placeCross(x, y);
                     anything_changed = true;
                 }
                 y += 1;
@@ -331,25 +331,25 @@ fun rowsSegmentsStrategy(solution: ref Solution, x1: i32, x2: i32) -> bool = {
     return anything_changed;
 }
 
-fun columnsSegmentsStrategy(solution: ref Solution, y1: i32, y2: i32) -> bool = {
+fun columnsSegmentsStrategy(queens: ref Queens, y1: i32, y2: i32) -> bool = {
     var y = y1;
     var colors: List[i32];
     
-    resize(&colors, solution.n);
+    resize(&colors, queens.n);
     var anything_changed: bool = false;
 
     var fillableColumns = 0;
 
     while(y < y2)
     {
-        if(not solution.columnHasQueen(y)) fillableColumns += 1;
+        if(not queens.columnHasQueen(y)) fillableColumns += 1;
 
         var x = 0;
-        while (x < solution.n)
+        while (x < queens.n)
         {
-            if (solution.canPlace(x, y))
+            if (queens.canPlace(x, y))
             {
-                colors.at(solution.getColor(x, y)) = 1;
+                colors.at(queens.getColor(x, y)) = 1;
             }
             x += 1;
         }
@@ -363,11 +363,11 @@ fun columnsSegmentsStrategy(solution: ref Solution, y1: i32, y2: i32) -> bool = 
         while (y < y1)
         {
             var x = 0;
-            while (x < solution.n)
+            while (x < queens.n)
             {
-                if (solution.canPlace(x, y) and colors.at(solution.getColor(x, y)) == 1)
+                if (queens.canPlace(x, y) and colors.at(queens.getColor(x, y)) == 1)
                 {
-                    solution.placeCross(x, y);
+                    queens.placeCross(x, y);
                     anything_changed = true;
                 }
                 x += 1;
@@ -376,14 +376,14 @@ fun columnsSegmentsStrategy(solution: ref Solution, y1: i32, y2: i32) -> bool = 
         }
 
         y = y2;
-        while (y < solution.n)
+        while (y < queens.n)
         {
             var x = 0;
-            while (x < solution.n)
+            while (x < queens.n)
             {
-                if (solution.canPlace(x, y) and colors.at(solution.getColor(x, y)) == 1)
+                if (queens.canPlace(x, y) and colors.at(queens.getColor(x, y)) == 1)
                 {
-                    solution.placeCross(x, y);
+                    queens.placeCross(x, y);
                     anything_changed = true;
                 }
                 x += 1;
@@ -396,31 +396,31 @@ fun columnsSegmentsStrategy(solution: ref Solution, y1: i32, y2: i32) -> bool = 
 }
 
 
-fun strategy4(solution: ref Solution) -> bool = {
+fun strategy4(queens: ref Queens) -> bool = {
     var i = 1;
-    var n = solution.n;
+    var n = queens.n;
 
     while (i <= n)
     {
-        if(rowsSegmentsStrategy(&solution, n - i, n))
+        if(rowsSegmentsStrategy(&queens, n - i, n))
         {   
             explanation = f"There are exactly {i} free colors on rows {ALPHABET[n - i]}-{ALPHABET[n - 1]}\n";
             return true;
         }
 
-        if(rowsSegmentsStrategy(&solution, 0, i))
+        if(rowsSegmentsStrategy(&queens, 0, i))
         {
             explanation = f"There are exactly {i} free colors on rows {ALPHABET[0]}-{ALPHABET[i - 1]}\n";
             return true;
         }
 
-        if(columnsSegmentsStrategy(&solution, n - i, n))
+        if(columnsSegmentsStrategy(&queens, n - i, n))
         {
             explanation = f"There are exactly {i} free colors on columns {n - i}-{n - 1}\n";
             return true;
         }
 
-        if(columnsSegmentsStrategy(&solution, 0, i))
+        if(columnsSegmentsStrategy(&queens, 0, i))
         {
             explanation = f"There are exactly {i} free colors on columns {0}-{i - 1}\n";
             return true;
@@ -432,21 +432,21 @@ fun strategy4(solution: ref Solution) -> bool = {
 }
 
 
-fun strategy5(solution: ref Solution) -> bool = {
+fun strategy5(queens: ref Queens) -> bool = {
     var i = 1;
-    var n = solution.n;
+    var n = queens.n;
     while (i <= n)
     {
         var j = 0;
         while (j + i <= n)
         {
-            if(rowsSegmentsStrategy(&solution, j, i + j))
+            if(rowsSegmentsStrategy(&queens, j, i + j))
             {
                 explanation = f"There are exactly {i} free colors on rows {ALPHABET[j]}-{ALPHABET[j + i - 1]}\n";
                 return true;
             }
 
-            if(columnsSegmentsStrategy(&solution, j, i + j))
+            if(columnsSegmentsStrategy(&queens, j, i + j))
             {
                 explanation = f"There are exactly {i} free colors on columns {j}-{j + i - 1}\n";
                 return true;

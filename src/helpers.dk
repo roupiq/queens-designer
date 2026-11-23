@@ -76,3 +76,18 @@ fun readI64() -> i64 = {
     if (negative) return 0i64 - value;
     return value;
 }
+
+fun %(lhs: u64, rhs: i32) -> i32 = {
+    return (lhs % rhs as u64) as i32;
+}
+
+fun %(lhs: u64, rhs: i64) -> i64 = {
+    return (lhs % rhs as u64) as i64;
+}
+
+template(T: type)
+fun swap(a: ref T, b: ref T) = {
+    var tmp: T = a;
+    a = b;
+    b = tmp;
+}
