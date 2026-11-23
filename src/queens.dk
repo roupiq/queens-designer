@@ -158,7 +158,7 @@ class Solution {
             var k = 0;
             while (k < n)
             {
-                var row: String = f"*-------";
+                var row: String = f"*———————";
                 if (0 < i < n)
                 {
                     if(getColor(i - 1, k) == getColor(i, k))
@@ -166,7 +166,7 @@ class Solution {
                 }
                 if(i == 0 or i == n)
                 {
-                    row = f"*-- {k} --";
+                    row = f"*—— {k} ——";
                 }
 
                 result.append(&row);
@@ -200,7 +200,7 @@ class Solution {
                     row = "   x   ";
                 }
                 if (hasQueen(i, j))
-                    row = " --Q-- ";
+                    row = " ——Q—— ";
                 
                 var separator: String = f"{verticalSeparator(i, j)}";
 
@@ -223,7 +223,7 @@ class Solution {
                     row = "  / \\  ";
                 
                 if (isNew(i,  j))
-                    row = " ##### ";
+                    row = " ----- ";
 
                 var color: i32 = getColor(i, j);
                 concat(&result, f"{verticalSeparator(i, j)}{BACK_COLORS[color]}{row}{RESET_COLOR}".asSlice());
@@ -237,7 +237,7 @@ class Solution {
         i = 0;
         while (i < n)
         {
-            var row: String = if i == 0 then f"*-- {i} --" else f"*-------";
+            var row: String = if i == 0 then f"*—— {i} ——" else f"*———————";
             result.append(&row);
             i += 1;
         }

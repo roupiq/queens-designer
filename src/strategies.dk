@@ -3,14 +3,6 @@ import src.constants.*;
 import src.helpers.*;
 import src.queens.*;
 
-fun min(a: i32, b: i32) -> i32 = {
-    return if a < b then a else b;
-}
-
-fun max(a: i32, b: i32) -> i32 = {
-    return if a > b then a else b;
-}
-
 fun coords(x: i32, y: i32) -> String = {
     return f"{ALPHABET[x]}{y}";
 }
@@ -88,9 +80,9 @@ fun areColorsValid(solution: ref Solution) -> i32 = {
     return -1;
 }
 
-var message: String;
+var explanation: String;
 
-fun apply1(solution: ref Solution) -> bool = {
+fun strategy1(solution: ref Solution) -> bool = {
     var i = 0;
 
     # Checking each color
@@ -100,7 +92,7 @@ fun apply1(solution: ref Solution) -> bool = {
         if(freeColorI == 1)
         {
             var pos = findFreeColor(&solution, i);
-            message = f"Placing queen at {coords(pos[0], pos[1])} because thats the only placable {COLOR_NAMES[pos[2]]} tile.\n";
+            explanation = f"Placing queen at {coords(pos[0], pos[1])} because thats the only free {COLOR_NAMES[pos[2]]} tile.\n";
             solution.placeQueen(pos[0], pos[1]);
             return true;
         }
@@ -111,7 +103,7 @@ fun apply1(solution: ref Solution) -> bool = {
 
 
 # Checks if there are some rows (or columns) that have only one placable tile
-fun apply15(solution: ref Solution) -> bool = {
+fun strategy15(solution: ref Solution) -> bool = {
     if (singleOneInColumn(&solution))
         return true;
     if (singleOneInRow(&solution))
@@ -119,7 +111,7 @@ fun apply15(solution: ref Solution) -> bool = {
     return false;
 }
 
-fun apply2(solution: ref Solution) -> bool = {
+fun strategy2(solution: ref Solution) -> bool = {
     var i = 0;
 
     # Checking each color
@@ -144,7 +136,7 @@ fun apply2(solution: ref Solution) -> bool = {
             if(anything_changed)
             {
                 # print(f"{range[0]}, {range[1]}, {range[2]}, {range[3]}");
-                message = f"Color {COLOR_NAMES[i]} has every placable tile on the row {ALPHABET[x]}.\n";
+                explanation = f"Color {COLOR_NAMES[i]} has every free tile on the row {ALPHABET[x]}.\n";
                 return true;
             }
         }
@@ -165,7 +157,7 @@ fun apply2(solution: ref Solution) -> bool = {
             }
             if(anything_changed)
             {
-                message = f"Color {COLOR_NAMES[i]} has every placable tile on the column {y}.\n";
+                explanation = f"Color {COLOR_NAMES[i]} has every free tile on the column {y}.\n";
                 return true;
             }
         }
@@ -201,7 +193,7 @@ fun singleOneInColumn(solution: ref Solution) -> bool = {
         if (pos[0] != -1)
         {
             solution.placeQueen(pos[0], pos[1]);
-            message = f"Cell {coords(pos[0], pos[1])} is the only placable one at this column";
+            explanation = f"Tile {coords(pos[0], pos[1])} is the only free one at this column";
             return true;
         }
 
@@ -236,7 +228,7 @@ fun singleOneInRow(solution: ref Solution) -> bool = {
         if (pos[0] != -1)
         {
             solution.placeQueen(pos[0], pos[1]);
-            message = f"Cell {coords(pos[0], pos[1])} is the only placable one at this row.\n";
+            explanation = f"Tile {coords(pos[0], pos[1])} is the only free one at this row.\n";
             return true;
         }
 
@@ -246,7 +238,7 @@ fun singleOneInRow(solution: ref Solution) -> bool = {
 }
 
 
-fun apply3(solution: ref Solution) -> bool = {
+fun strategy3(solution: ref Solution) -> bool = {
     # For each tile placing queen and checking if it does break.
 
     var x = 0;
@@ -263,7 +255,7 @@ fun apply3(solution: ref Solution) -> bool = {
                 if (blocked_color != -1)
                 {
                     solution.placeCross(x, y);
-                    message = f"Queen at position {coords(x, y)} bloks all {COLOR_NAMES[blocked_color]} tiles.\n";
+                    explanation = f"Queen at position {coords(x, y)} blocks all {COLOR_NAMES[blocked_color]} tiles.\n";
                     return true;
                 }
             }
@@ -281,11 +273,11 @@ fun rowsSegmentsStrategy(solution: ref Solution, x1: i32, x2: i32) -> bool = {
     resize(&colors, solution.n);
     var anything_changed: bool = false;
 
-    var fillableCollumns = 0;
+    var fillableRows = 0;
 
     while(x < x2)
     {
-        if(not (solution.rowHasQueen(x))) fillableCollumns += 1;
+        if(not (solution.rowHasQueen(x))) fillableRows += 1;
 
         var y = 0;
         while (y < solution.n)
@@ -301,9 +293,9 @@ fun rowsSegmentsStrategy(solution: ref Solution, x1: i32, x2: i32) -> bool = {
     }
 
     # Print colors
-    # print(f"[{x1}, {x2}), {colors} {fillableCollumns}\n");
+    # print(f"[{x1}, {x2}), {colors} {fillableRows}\n");
 
-    if (sum[i32](&colors) == fillableCollumns)
+    if (sum[i32](&colors) == fillableRows)
     {
         x = 0;
         while (x < x1)
@@ -349,11 +341,11 @@ fun columnsSegmentsStrategy(solution: ref Solution, y1: i32, y2: i32) -> bool = 
     resize(&colors, solution.n);
     var anything_changed: bool = false;
 
-    var fillableCollumns = 0;
+    var fillableColumns = 0;
 
     while(y < y2)
     {
-        if(not solution.columnHasQueen(y)) fillableCollumns += 1;
+        if(not solution.columnHasQueen(y)) fillableColumns += 1;
 
         var x = 0;
         while (x < solution.n)
@@ -369,9 +361,9 @@ fun columnsSegmentsStrategy(solution: ref Solution, y1: i32, y2: i32) -> bool = 
     }
 
     # Print colors
-    # print(f"[{x1}, {x2}), {colors} {fillableCollumns}\n");
+    # print(f"[{x1}, {x2}), {colors} {fillableColumns}\n");
 
-    if (sum[i32](&colors) == fillableCollumns)
+    if (sum[i32](&colors) == fillableColumns)
     {
         y = 0;
         while (y < y1)
@@ -410,7 +402,7 @@ fun columnsSegmentsStrategy(solution: ref Solution, y1: i32, y2: i32) -> bool = 
 }
 
 
-fun apply4(solution: ref Solution) -> bool = {
+fun strategy4(solution: ref Solution) -> bool = {
     var i = 1;
     var n = solution.n;
 
@@ -418,25 +410,25 @@ fun apply4(solution: ref Solution) -> bool = {
     {
         if(rowsSegmentsStrategy(&solution, n - i, n))
         {   
-            message = f"There are exactly {i} placable colors on rows {ALPHABET[n - i]}-{ALPHABET[n - 1]}\n";
+            explanation = f"There are exactly {i} placable colors on rows {ALPHABET[n - i]}-{ALPHABET[n - 1]}\n";
             return true;
         }
 
         if(rowsSegmentsStrategy(&solution, 0, i))
         {
-            message = f"There are exactly {i} placable colors on rows {ALPHABET[0]}-{ALPHABET[i - 1]}\n";
+            explanation = f"There are exactly {i} free colors on rows {ALPHABET[0]}-{ALPHABET[i - 1]}\n";
             return true;
         }
 
         if(columnsSegmentsStrategy(&solution, n - i, n))
         {
-            message = f"There are exactly {i} placable colors on columns {n - i}-{n - 1}\n";
+            explanation = f"There are exactly {i} free colors on columns {n - i}-{n - 1}\n";
             return true;
         }
 
         if(columnsSegmentsStrategy(&solution, 0, i))
         {
-            message = f"There are exactly {i} placable colors on columns {0}-{i - 1}\n";
+            explanation = f"There are exactly {i} free colors on columns {0}-{i - 1}\n";
             return true;
         }
 
@@ -446,7 +438,7 @@ fun apply4(solution: ref Solution) -> bool = {
 }
 
 
-fun apply5(solution: ref Solution) -> bool = {
+fun strategy5(solution: ref Solution) -> bool = {
     var i = 1;
     var n = solution.n;
     while (i <= n)
@@ -456,13 +448,13 @@ fun apply5(solution: ref Solution) -> bool = {
         {
             if(rowsSegmentsStrategy(&solution, j, i + j))
             {
-                message = f"Same number of placable colors as number of placable rows from {ALPHABET[j]}-{ALPHABET[j + i - 1]}\n";
+                explanation = f"The number of free colors is equal to the number of free rows from {ALPHABET[j]}-{ALPHABET[j + i - 1]}\n";
                 return true;
             }
 
             if(columnsSegmentsStrategy(&solution, j, i + j))
             {
-                message = f"Same number of placable colors as number of placable columns from {j}-{j + i - 1}\n";
+                explanation = f"Same number of free colors as number of free columns from {j}-{j + i - 1}\n";
                 return true;
             }
             i += 1;
@@ -472,51 +464,3 @@ fun apply5(solution: ref Solution) -> bool = {
     }
     return false;
 }
-
-
-# fun XWing(solution: ref Solution) -> bool = {
-#     var i = 0;
-
-#     # Checking each color
-#     while (i < solution.n)
-#     {
-#         var anything_changed: bool = false;
-#         if (getColorCount(&solution, i) == 2)
-#         {
-#             var range = getColorRange(&solution, i);
-
-#             var x = range[0];
-#             var y = range[2];
-#             if (solution.getColor(x, y))
-#             {
-#                 if (solution.canPlace(x, y))
-#                 {
-#                     anything_changed = true;
-#                     solution.placeCross(x, y);
-#                 }
-#             }
-
-# var x = range[0];
-#             var y = range[2];
-#             if (solution.getColor(x, y))
-#             {
-#                 if (solution.canPlace(x, y))
-#                 {
-#                     anything_changed = true;
-#                     solution.placeCross(x, y);
-#                 }
-#             }
-
-
-#             # if(anything_changed)
-#             # {
-#             #     print(f"Color {COLOR_NAMES[i]} has every tile on the same height {y}\n");
-#             #     return true;
-#             # }
-#         }
-#         }
-
-#         i += 1;
-#     }
-#     return false;
-# }

@@ -3,6 +3,14 @@ fun error(message: str) = {
     print("\n");
 }
 
+fun min(a: i32, b: i32) -> i32 = {
+    return if a < b then a else b;
+}
+
+fun max(a: i32, b: i32) -> i32 = {
+    return if a > b then a else b;
+}
+
 fun concat(lhs: ref String, rhs: str) = {
     lhs = copy lhs ++ (copy rhs.toString());
 }

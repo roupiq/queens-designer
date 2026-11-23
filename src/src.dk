@@ -55,49 +55,36 @@ fun solveLikeHuman(solution: ref Solution) = {
         print("\n");
         print("\n");
 
-        if(apply1(&solution))
+        var strategyName: String;
+        if(strategy1(&solution))
         {
-            print(f"{solution}");
-            print(" -- Applied strategy 1 -- \n");
-            print(f"{message}");
-            continue;
+            strategyName = f"1";
         }
-
-        if(apply15(&solution))
+        else if(strategy15(&solution))
         {
-            print(f"{solution}");
-            print(" -- Applied strategy 1.5 -- \n");
-            print(f"{message}");
-            continue;
+            strategyName = f"1.5";
         }
-
-        if(apply2(&solution))
+        else if(strategy2(&solution))
         {
-            print(f"{solution}");
-            print(" -- Applied strategy 2 -- \n");
-            print(f"{message}");
-            continue;
+            strategyName = f"2";
         }
-        
-        
-        if(apply3(&solution))
+        else if(strategy3(&solution))
         {
-            print(" -- Applied strategy 3 -- \n");
-            print(f"{solution}");
-            print(f"{message}");
-            continue;
+            strategyName = f"3";
         }
-
-        if(apply4(&solution))
+        else if(strategy4(&solution))
         {
-            print(f"{solution}");
-            print(" -- Applied strategy 4 -- \n");
-            print(f"{message}");
-            continue;
+            strategyName = f"4";
+        }
+        else
+        {
+            print("All heuristics failed! 😔\n");
+            return;
         }
         
-        print("All heuristics failed! 😔\n");
-        return;
+        print(f"{solution}\n");
+        print(f"Using strategy {strategyName}\n");
+        print(f"Explanation: {explanation}\n");
     }
     print("GAME SOLVED! 😃\n");
 }
@@ -114,7 +101,7 @@ fun solveLikeHuman(solution: ref Solution) = {
 fun readBoard() -> Solution = {
     var n: i32 = readI64() as i32;
     var boardList: List[i32];
-
+    
     var x: i32 = 0;
     while (x < n)
     {
@@ -122,10 +109,14 @@ fun readBoard() -> Solution = {
         while (y < n)
         {
             var color: i32 = skipBlanks() as i8 - '0' as i8;
+
+            if (color >= n) {
+                print(f"Color {color} out of range [0, {n - 1}]")
+            }
+
             boardList.push(color);
             y += 1;
         }
-        # var endl: char = readChar();
         
         x += 1;
     }
@@ -139,6 +130,7 @@ fun readBoard() -> Solution = {
 }
 
 fun main() = {
+    # Clear screen
     print("[2J\n");
     
     print(f"{BRIGHT_STYLE} .oOOOo.                                         o      O        o                   \n");
@@ -151,15 +143,14 @@ fun main() = {
     print(f"{BRIGHT_STYLE} `OoooO Oo `OoO'o `OoO' `OoO'  o   O `OoO'       o      O `OoO' Oo oOoO' `OoO'  o    \n");
     print(f"{BRIGHT_STYLE}                                                                   O                 \n");
     print(f"{BRIGHT_STYLE}                                                                   o'                \n");
-
-
+    
     print(f"Paste your board here.\n");
     var solution: Solution = readBoard();
 
     var solutions_count: i32 = solve(&solution);
     if (solutions_count == 0)
     {
-        print(f"There is no solution to this puzzle 😔. Trying anyway.\n");
+        print(f"There is no solution to this puzzle 😔. Trying to solve anyway.\n");
     }
     if (solutions_count == 1)
     {

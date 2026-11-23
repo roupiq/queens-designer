@@ -1,0 +1,14 @@
+# Kod projektu jest w Ducklingu (.dk, skrypty .dks). GitHub Linguist nie zna jeszcze tego języka;
+# gdy go doda, pliki zostaną rozpoznane po rozszerzeniu, a te linie nazywają język jawnie.
+*.dk  linguist-language=Duckling
+*.dks linguist-language=Duckling
+
+# Skrypty pomocnicze nie wliczają się do statystyk języków repozytorium.
+*.sh linguist-vendored
+*.py linguist-vendored
+
+# Oczekiwane wyjścia testów porównujemy bajt w bajt: zawsze końce linii LF.
+tests/cases/* text eol=lf
+*.dk  text eol=lf
+*.dks text eol=lf
+*.sh  text eol=lf
