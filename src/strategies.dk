@@ -255,7 +255,7 @@ fun strategy3(queens: ref Queens) -> bool = {
                 if (blocked_color != -1)
                 {
                     queens.placeCross(x, y);
-                    explanation = f"Queen on {coords(x, y)} would block every free {COLOR_NAMES[blocked_color]} tiles.\n";
+                    explanation = f"Queen on {coords(x, y)} would block all free {COLOR_NAMES[blocked_color]} tiles.\n";
                     return true;
                 }
             }
@@ -464,15 +464,9 @@ fun areThereRowsWithAllCrosses(queens: ref Queens) -> bool = {
     var n = queens.n;
     while (x < n)
     {
-        if(queens.rowHasQueen(x))
+        if(not queens.rowHasQueen(x))
         {
-            var y = 0;
-            var crosses = 0;
-            while (y < n)
-            {
-                if (queens.canPlace(x, y)) crosses += 1;
-                y += 1;
-            }
+            var crosses = queens.placableInRow(x);
             if(crosses == n)
                 return true;
         }
@@ -487,15 +481,12 @@ fun areThereColumnsWithAllCrosses(queens: ref Queens) -> bool = {
     var n = queens.n;
     while (y < n)
     {
-        if(queens.columnHasQueen(y))
+        if(not queens.columnHasQueen(y))
         {
-            var x = 0;
-            var crosses = 0;
-            while (x < n)
-            {
-                if (queens.canPlace(y, x)) crosses += 1;
-                x += 1;
-            }
+            # print(f"column {y} does not have queen\n");
+            var crosses = queens.placableInColumn(y);
+            # print(f"crosses: {crosses}\n");
+            # print(f"crosses row: {queens.placableInColumn(y)}\n");
             if(crosses == n)
                 return true;
         }
@@ -517,10 +508,18 @@ fun strategy6(queens: ref Queens) -> bool = {
             {
                 var queensCopy = copy queens;
                 queensCopy.placeQueen(i, j);
+                
                 if(areThereRowsWithAllCrosses(&queensCopy))
                 {
                     queens.placeCross(i, j);
-                    explanation = f"Queen at {coords(i, j)} would block whole row.";
+                    explanation = f"Queen at {coords(i, j)} would block whole other row.";
+                    return true;
+                }
+
+                if(areThereColumnsWithAllCrosses(&queensCopy))
+                {
+                    queens.placeCross(i, j);
+                    explanation = f"Queen at {coords(i, j)} would block whole other column.";
                     return true;
                 }
             }
