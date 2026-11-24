@@ -266,9 +266,12 @@ fun main() = {
     print(f"{BRIGHT_STYLE}                                                                   O                 \n");
     print(f"{BRIGHT_STYLE}                                                                   o'                \n");
 
+    print("Enter seed\n");
     setSeed(readI64() as u64);
+    print("Enter size\n");
+    var n = readI64() as i32;
 
-    var queens: Queens = randomHardSolvableQueens(8, 7, 7);
+    var queens: Queens = randomHardSolvableQueens(n, 7, 7);
 
     var solutions_count: i32 = solve(&queens);
     if (solutions_count == 0)
