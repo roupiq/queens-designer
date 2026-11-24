@@ -78,35 +78,35 @@ fun solveLikeHuman(solution: ref Queens, verbose: bool = true) -> i32 = {
             result = max(result, 1);
             strategyName = f"1";
         }
-        else if(strategy15(&solution))
-        {
-            result = max(result, 2);
-            strategyName = f"1.5";
-        }
         else if(strategy2(&solution))
         {
-            result = max(result, 3);
+            result = max(result, 2);
             strategyName = f"2";
         }
         else if(strategy3(&solution))
         {
-            result = max(result, 4);
+            result = max(result, 3);
             strategyName = f"3";
         }
         else if(strategy4(&solution))
         {
-            result = max(result, 5);
+            result = max(result, 4);
             strategyName = f"4";
         }
         else if(strategy5(&solution))
         {
-            result = max(result, 6);
+            result = max(result, 5);
             strategyName = f"5";
         }
         else if(strategy6(&solution))
         {
-            result = max(result, 7);
+            result = max(result, 6);
             strategyName = f"6";
+        }
+        else if(strategy7(&solution))
+        {
+            result = max(result, 7);
+            strategyName = f"7";
         }
         else
         {
@@ -272,19 +272,31 @@ fun main() = {
     print(" 1. Generate a random puzzle\n");
     print(" 2. Solve an existing puzzle\n");
     print("> ");
-    var option = readI64();
 
-    if(option == 1) {
+    while (true)
+    {
+        var option = readI64();
+        if(option == 1) {
             print("Enter seed\n");
             setSeed(readI64() as u64);
             print("Enter size\n");
             var n = readI64() as i32;
-            queens = randomHardSolvableQueens(n, 7, 7);
-    }
-    else if (option == 2)
-    {
-        print("Enter puzzle\n");
-        queens = readBoard();
+            print("Enter difficulty from range [-1, 7] (-1 for INFINITE difficulty level)\n");
+            var difficulty = readI64() as i32;
+            if (difficulty == -1) difficulty = INF;
+            queens = randomHardSolvableQueens(n, difficulty, difficulty);
+            break;
+        }
+        else if (option == 2)
+        {
+            print("Enter puzzle\n");
+            queens = readBoard();
+            break;
+        }
+        else
+        {
+            print(f"Invalid option {option}\n> ");
+        }
     }
 
     var solutions_count: i32 = solve(&queens);

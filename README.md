@@ -5,6 +5,20 @@ Sprawdza czy podana zagadka ma dokładnie jedno rozwiązanie oraz pokazuje w jak
 
 ![Napisane w Duckling](https://img.shields.io/badge/napisane%20w-Duckling-f2c94c)
 
+## Format wejścia
+Przykładowy format zagadki poniżej
+```
+8
+11111333
+11112223
+11132333
+11033343
+10033553
+00773555
+00733656
+07766666
+```
+
 ## Wymagania
 
 Duckling 0.3 ([wydanie v0.3](https://github.com/ducktype-org/duckling/releases/tag/v0.3)). Na Linuksie x86_64:

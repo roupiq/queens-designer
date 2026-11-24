@@ -103,7 +103,7 @@ fun strategy1(queens: ref Queens) -> bool = {
 
 
 # Checks if there are some rows (or columns) that have only one placable tile
-fun strategy15(queens: ref Queens) -> bool = {
+fun strategy2(queens: ref Queens) -> bool = {
     if (singleOneInColumn(&queens))
         return true;
     if (singleOneInRow(&queens))
@@ -111,7 +111,7 @@ fun strategy15(queens: ref Queens) -> bool = {
     return false;
 }
 
-fun strategy2(queens: ref Queens) -> bool = {
+fun strategy3(queens: ref Queens) -> bool = {
     var i = 0;
 
     # Checking each color
@@ -238,7 +238,7 @@ fun singleOneInRow(queens: ref Queens) -> bool = {
 }
 
 
-fun strategy3(queens: ref Queens) -> bool = {
+fun strategy4(queens: ref Queens) -> bool = {
     # For each tile placing queen and checking if it does break.
 
     var x = 0;
@@ -396,7 +396,7 @@ fun columnsSegmentsStrategy(queens: ref Queens, y1: i32, y2: i32) -> bool = {
 }
 
 
-fun strategy4(queens: ref Queens) -> bool = {
+fun strategy5(queens: ref Queens) -> bool = {
     var i = 1;
     var n = queens.n;
 
@@ -432,7 +432,7 @@ fun strategy4(queens: ref Queens) -> bool = {
 }
 
 
-fun strategy5(queens: ref Queens) -> bool = {
+fun strategy6(queens: ref Queens) -> bool = {
     var i = 1;
     var n = queens.n;
     while (i <= n)
@@ -496,7 +496,7 @@ fun areThereColumnsWithAllCrosses(queens: ref Queens) -> bool = {
     return false;
 }
 
-fun strategy6(queens: ref Queens) -> bool = {
+fun strategy7(queens: ref Queens) -> bool = {
     var i = 1;
     var n = queens.n;
     while (i < n)
@@ -508,7 +508,7 @@ fun strategy6(queens: ref Queens) -> bool = {
             {
                 var queensCopy = copy queens;
                 queensCopy.placeQueen(i, j);
-                
+
                 if(areThereRowsWithAllCrosses(&queensCopy))
                 {
                     queens.placeCross(i, j);

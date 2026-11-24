@@ -4,7 +4,6 @@ let BRIGHT_STYLE: str = "[1m";
 let RESET_STYLE: str = "[0m";
 
 let BACK_COLORS: str[9] = [
-    "[40m",
     "[41m",
     "[42m",
     "[43m",
@@ -13,10 +12,10 @@ let BACK_COLORS: str[9] = [
     "[46m",
     "[47m",
     "[48m",
+    "[40m",
 ];
 
 let COLOR_NAMES: str[9] = [
-    "black",
     "red",
     "green",
     "yellow",
@@ -25,6 +24,7 @@ let COLOR_NAMES: str[9] = [
     "light blue",
     "white",
     "gray",
+    "black",
 ];
 
 var INF = 10000;
