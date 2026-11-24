@@ -266,12 +266,26 @@ fun main() = {
     print(f"{BRIGHT_STYLE}                                                                   O                 \n");
     print(f"{BRIGHT_STYLE}                                                                   o'                \n");
 
-    print("Enter seed\n");
-    setSeed(readI64() as u64);
-    print("Enter size\n");
-    var n = readI64() as i32;
 
-    var queens: Queens = randomHardSolvableQueens(n, 7, 7);
+    var queens: Queens;
+    print("Select option: \n");
+    print(" 1. Generate a random puzzle\n");
+    print(" 2. Solve an existing puzzle\n");
+    print("> ");
+    var option = readI64();
+
+    if(option == 1) {
+            print("Enter seed\n");
+            setSeed(readI64() as u64);
+            print("Enter size\n");
+            var n = readI64() as i32;
+            queens = randomHardSolvableQueens(n, 7, 7);
+    }
+    else if (option == 2)
+    {
+        print("Enter puzzle\n");
+        queens = readBoard();
+    }
 
     var solutions_count: i32 = solve(&queens);
     if (solutions_count == 0)
