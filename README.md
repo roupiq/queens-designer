@@ -1,12 +1,13 @@
 # Queens Helper in Duckling
-
-Pomocnik do tworzenia zagadek queens.
-Sprawdza czy podana zagadka ma dokładnie jedno rozwiązanie oraz pokazuje w jaki sposób do rozwiązania mógłby podejść człowiek.
-
 ![Napisane w Duckling](https://img.shields.io/badge/napisane%20w-Duckling-f2c94c)
 
-<img src="image.png" alt="example" width="300"/>
+Program pozwala na:
+1. Generowanie zagadek o podanym rozmiarze oraz poziomie trudności.
+2. Przeanalizowanie kolejnych kroków prowadzących do rozwiązania wraz z wyjaśnieniem.
 
+
+
+![example](image.png)
 
 ## Format wejścia
 Przykładowy format zagadki poniżej
