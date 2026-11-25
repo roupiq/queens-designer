@@ -2,8 +2,8 @@
 ![Napisane w Duckling](https://img.shields.io/badge/napisane%20w-Duckling-f2c94c)
 
 Program pozwala na:
-1. Generowanie zagadek o podanym rozmiarze oraz poziomie trudności.
-2. Przeanalizowanie kolejnych kroków prowadzących do rozwiązania wraz z wyjaśnieniem.
+- Generowanie zagadek o podanym rozmiarze oraz poziomie trudności.
+- Przeanalizowanie kolejnych kroków prowadzących do rozwiązania wraz z wyjaśnieniem.
 
 
 
