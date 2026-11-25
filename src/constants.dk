@@ -5,31 +5,31 @@ let RESET_STYLE: str = "[0m";
 
 const COLORS_NUMBER = 11;
 let BACK_COLORS: str[COLORS_NUMBER] = [
-    "[41m",
-    "[42m",
-    "[43m",
-    "[44m",
     "[45m",
     "[46m",
+    "[43m",
+    "[41m",
+    "[42m",
     "[47m",
-    "[48m",
+    "[44m",
     "[100m",
     "[105m",
     "[40m",
+    "[48m",
 ];
 
 let COLOR_NAMES: str[COLORS_NUMBER] = [
-    "red",
-    "green",
-    "yellow",
-    "blue",
     "magenta",
     "cyan",
+    "yellow",
+    "red",
+    "green",
     "white",
-    "background color",
+    "blue",
     "gray",
     "pink",
     "black",
+    "background color",
 ];
 
 var INF = 10000;
