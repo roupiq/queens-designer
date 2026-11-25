@@ -5,6 +5,8 @@ Sprawdza czy podana zagadka ma dokładnie jedno rozwiązanie oraz pokazuje w jak
 
 ![Napisane w Duckling](https://img.shields.io/badge/napisane%20w-Duckling-f2c94c)
 
+![example](image.png)
+
 ## Format wejścia
 Przykładowy format zagadki poniżej
 ```

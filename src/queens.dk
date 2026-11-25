@@ -270,7 +270,7 @@ class Queens {
         i = 0;
         while (i < n)
         {
-            var row: String = if i == 0 then f"*—— {i} ——" else f"*———————";
+            var row: String = f"*—— {i} ——";
             result.append(&row);
             i += 1;
         }
@@ -280,4 +280,23 @@ class Queens {
         return result;
     }
 
+
+    fun toString2() -> String = {
+        var result: String = f"{n}\n";
+
+        var i = 0;
+        while (i < n)
+        {
+            var j = 0;
+            while (j < n)
+            {
+                result.append(f"{getColor(i, j)}");
+                j += 1;
+            }
+            result.append("\n");
+            i += 1
+        }
+
+        return result;
+    }
 }

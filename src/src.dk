@@ -6,7 +6,9 @@ import strategies.*;
 import random.*;
 
 var solutionFound: Queens;
-fun solveRecursive(queens: ref Queens, start: i32 = 0, silent: bool = true, limit: i32 = 100000, solutionsCount: ref i32) -> i32 = {
+fun solveRecursive(queens: Queens, start: i32 = 0, silent: bool = true, limit: i32 = INF, solutionsCount: ref i32) -> i32 = {
+    while(strategy1(&queens) or strategy2(&queens) or strategy3(&queens)) {}
+
     if (queens.isSolved()) {
         solutionFound = copy queens;
         queens.refreshAll();
@@ -15,6 +17,8 @@ fun solveRecursive(queens: ref Queens, start: i32 = 0, silent: bool = true, limi
         solutionsCount += 1;
         return 1;
     }
+
+    if (not isSolvableHeuristic(&queens)) return 0;
 
     var n = queens.n;
     var solutions = 0;
@@ -31,10 +35,11 @@ fun solveRecursive(queens: ref Queens, start: i32 = 0, silent: bool = true, limi
 
             next_queens.placeQueen(x, y);
 
-            solutions += solveRecursive(&next_queens, i + 1, silent, limit, solutionsCount);
+            solutions += solveRecursive(move next_queens, i + 1, silent, limit, solutionsCount);
             if (solutionsCount == limit) {
                 return solutions;
             }
+            queens.placeCross(x, y);
         }
 
         i += 1;
@@ -45,7 +50,7 @@ fun solveRecursive(queens: ref Queens, start: i32 = 0, silent: bool = true, limi
 
 fun solve(queens: ref Queens, start: i32 = 0, silent: bool = true, limit: i32 = 100000) -> i32 = {
     var solutionsCount = 0;
-    return solveRecursive(queens, start, silent, limit, &solutionsCount)
+    return solveRecursive(copy queens, start, silent, limit, &solutionsCount)
 }
 
 fun solveLikeHuman(solution: ref Queens, verbose: bool = true) -> i32 = {
@@ -189,12 +194,12 @@ fun randomQueens(n: i32) -> Queens = {
 }
 
 fun randomSolvableQueens(n: i32) -> Queens = {
-    print(f"Generating random solvable queens\n");
     
     var queens: Queens;
     while (true)
     {
         queens = randomQueens(n);
+        
         var solutionsCount = solve(&queens, 0, true, 2);
         if (solutionsCount == 1)
             return queens;
@@ -208,10 +213,17 @@ fun randomHardSolvableQueens(n: i32, minLevel: i32 = 7, maxLevel: i32 = INF) -> 
     var queens: Queens;
     while (true)
     {
+        print(f"Generating random solvable queens\n");
         queens = randomSolvableQueens(n);
         var queensCopy = copy queens;
-        
-        if(minLevel <= solveLikeHuman(&queensCopy, false) <= maxLevel)
+        var difficultyLevel = solveLikeHuman(&queensCopy, false);
+
+        if (difficultyLevel == -1)
+            print(f"Puzzle found! Difficulty: INF\n");
+        else
+            print(f"Puzzle found! Difficulty: {difficultyLevel}\n");
+
+        if(minLevel <= difficultyLevel <= maxLevel)
         {
             return queens;
         }
@@ -255,6 +267,7 @@ fun readBoard() -> Queens = {
 fun main() = {
     # Clear screen
     print("[2J\n");
+    
     print(f"{BRIGHT_STYLE} .oOOOo.                                         o      O        o                   \n");
     print(f"{BRIGHT_STYLE}.O     o.                                        O      o       O                    \n");
     print(f"{BRIGHT_STYLE}o       O                                        o      O       o                    \n");
@@ -272,19 +285,28 @@ fun main() = {
     print(" 1. Generate a random puzzle\n");
     print(" 2. Solve an existing puzzle\n");
     print("> ");
+    
+    var option: i64;
 
     while (true)
     {
-        var option = readI64();
+        option = readI64();
         if(option == 1) {
             print("Enter seed\n");
             setSeed(readI64() as u64);
             print("Enter size\n");
             var n = readI64() as i32;
-            print("Enter difficulty from range [-1, 7] (-1 for INFINITE difficulty level)\n");
-            var difficulty = readI64() as i32;
-            if (difficulty == -1) difficulty = INF;
-            queens = randomHardSolvableQueens(n, difficulty, difficulty);
+            
+            print("Enter minimal difficulty from range [-1, 7] (-1 for INFINITE difficulty level)\n");
+            var min_difficulty = readI64() as i32;
+            
+            print("Enter maximal difficulty from range [-1, 7] (-1 for INFINITE difficulty level)\n");
+            var max_difficulty = readI64() as i32;
+
+            if (min_difficulty == -1) min_difficulty = INF;
+            if (max_difficulty == -1) max_difficulty = INF;
+            
+            queens = randomHardSolvableQueens(n, min_difficulty, max_difficulty);
             break;
         }
         else if (option == 2)
@@ -295,7 +317,7 @@ fun main() = {
         }
         else
         {
-            print(f"Invalid option {option}\n> ");
+            print(f"Invalid option {option}, expected 1 or 2\n> ");
         }
     }
 
@@ -315,4 +337,9 @@ fun main() = {
 
     wait(f"Press any key to start solving");
     solveLikeHuman(&queens);
+
+    if (option == 1)
+    {
+        print(f"\nGenerated puzzle: \n{queens.toString2()}");
+    }
 }

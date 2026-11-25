@@ -3,7 +3,8 @@ let RESET_COLOR: str = "[49m";
 let BRIGHT_STYLE: str = "[1m";
 let RESET_STYLE: str = "[0m";
 
-let BACK_COLORS: str[9] = [
+const COLORS_NUMBER = 11;
+let BACK_COLORS: str[COLORS_NUMBER] = [
     "[41m",
     "[42m",
     "[43m",
@@ -12,18 +13,22 @@ let BACK_COLORS: str[9] = [
     "[46m",
     "[47m",
     "[48m",
+    "[100m",
+    "[105m",
     "[40m",
 ];
 
-let COLOR_NAMES: str[9] = [
+let COLOR_NAMES: str[COLORS_NUMBER] = [
     "red",
     "green",
     "yellow",
     "blue",
-    "pink",
-    "light blue",
+    "magenta",
+    "cyan",
     "white",
+    "background color",
     "gray",
+    "pink",
     "black",
 ];
 

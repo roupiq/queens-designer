@@ -136,7 +136,7 @@ fun strategy3(queens: ref Queens) -> bool = {
             if(anything_changed)
             {
                 # print(f"{range[0]}, {range[1]}, {range[2]}, {range[3]}");
-                explanation = f"Every free tile in row {ALPHABET[x]} is {COLOR_NAMES[i]}.\n";
+                explanation = f"Every free {COLOR_NAMES[i]} tile is in row {ALPHABET[x]}.\n";
                 return true;
             }
         }
@@ -157,7 +157,7 @@ fun strategy3(queens: ref Queens) -> bool = {
             }
             if(anything_changed)
             {
-                explanation = f"Every free tile in column {y} is {COLOR_NAMES[i]}.\n";
+                explanation = f"Every free {COLOR_NAMES[i]} tile is in column {y}.\n";
                 return true;
             }
         }
@@ -496,6 +496,7 @@ fun areThereColumnsWithAllCrosses(queens: ref Queens) -> bool = {
     return false;
 }
 
+
 fun strategy7(queens: ref Queens) -> bool = {
     var i = 1;
     var n = queens.n;
@@ -529,4 +530,29 @@ fun strategy7(queens: ref Queens) -> bool = {
         i += 1;
     }
     return false;
+}
+
+fun isSolvableHeuristic(queens: ref Queens) -> bool = {
+    var i = 1;
+    var n = queens.n;
+    while (i < n)
+    {
+        var j = 0;
+        while (j < n)
+        {
+            if(areThereRowsWithAllCrosses(&queens))
+            {
+                return false;
+            }
+
+            if(areThereColumnsWithAllCrosses(&queens))
+            {
+                return false;
+            }
+            j += 1;
+        }
+
+        i += 1;
+    }
+    return true;
 }
